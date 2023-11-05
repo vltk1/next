@@ -1,2 +1,0 @@
-# next
-Landing page
