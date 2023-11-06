@@ -752,7 +752,7 @@
 }
 
 // Thiết đặt mặc định hình ảnh
-img[class*="fbox"], img[class*="fbox x+"], img[class*="fbox x-"]
+img[class*="fbox"], img[class*="fbox x+"], img[class*="fbox x-"], [class*="fbox"] > img
 {width: 100%;height: 100%;}
 
 
