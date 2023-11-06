@@ -1,0 +1,423 @@
+.font{
+    font-weight: normal;
+    // text-align
+    &.\*\>{text-align: left;}
+    &.\*\<\>{text-align: center;}
+    &.\*\<{text-align: right;}
+
+
+    /* Font Weight*/
+    &.\*1{font-weight: 100;}
+    &.\*2{font-weight: 200;}
+    &.\*3{font-weight: 300;}
+    &.\*4{font-weight: 400;}
+    &.\*5{font-weight: 500;}
+    &.\*6{font-weight: 600;}
+    &.\*7{font-weight: 700;}
+    &.\*8{font-weight: 800;}
+    &.\*9{font-weight: 900;}
+
+    /* Font Size*/
+    &.\*10{font-size: 10px;}
+    &.\*11{font-size: 11px;}
+    &.\*12{font-size: 12px;}
+    &.\*13{font-size: 13px;}
+    &.\*14{font-size: 14px;}
+    &.\*15{font-size: 15px;}
+    &.\*16{font-size: 16px;}
+    &.\*17{font-size: 17px;}
+    &.\*18{font-size: 18px;}
+    &.\*19{font-size: 19px;}
+    &.\*20{font-size: 20px;}
+    &.\*21{font-size: 21px;}
+    &.\*22{font-size: 22px;}
+    &.\*23{font-size: 23px;}
+    &.\*24{font-size: 24px;}
+    &.\*25{font-size: 25px;}
+    &.\*26{font-size: 26px;}
+    &.\*27{font-size: 27px;}
+    &.\*28{font-size: 28px;}
+    &.\*29{font-size: 29px;}
+    &.\*30{font-size: 30px;}
+    &.\*31{font-size: 31px;}
+    &.\*32{font-size: 32px;}
+    &.\*33{font-size: 33px;}
+    &.\*34{font-size: 34px;}
+    &.\*35{font-size: 35px;}
+    &.\*36{font-size: 36px;}
+    &.\*37{font-size: 37px;}
+    &.\*38{font-size: 38px;}
+    &.\*39{font-size: 39px;}
+    &.\*40{font-size: 40px;}
+    &.\*41{font-size: 41px;}
+    &.\*42{font-size: 42px;}
+    &.\*43{font-size: 43px;}
+    &.\*44{font-size: 44px;}
+    &.\*45{font-size: 45px;}
+    &.\*46{font-size: 46px;}
+    &.\*47{font-size: 47px;}
+    &.\*48{font-size: 48px;}
+    &.\*49{font-size: 49px;}
+    &.\*50{font-size: 50px;}
+    &.\*51{font-size: 51px;}
+    &.\*52{font-size: 52px;}
+    &.\*53{font-size: 53px;}
+    &.\*54{font-size: 54px;}
+    &.\*55{font-size: 55px;}
+    &.\*56{font-size: 56px;}
+    &.\*57{font-size: 57px;}
+    &.\*58{font-size: 58px;}
+    &.\*59{font-size: 59px;}
+    &.\*60{font-size: 60px;}
+    &.\*61{font-size: 61px;}
+    &.\*62{font-size: 62px;}
+    &.\*63{font-size: 63px;}
+    &.\*64{font-size: 64px;}
+    &.\*65{font-size: 65px;}
+    &.\*66{font-size: 66px;}
+    &.\*67{font-size: 67px;}
+    &.\*68{font-size: 68px;}
+    &.\*69{font-size: 69px;}
+    &.\*70{font-size: 70px;}
+    &.\*71{font-size: 71px;}
+    &.\*72{font-size: 72px;}
+    &.\*73{font-size: 73px;}
+    &.\*74{font-size: 74px;}
+    &.\*75{font-size: 75px;}
+    &.\*76{font-size: 76px;}
+    &.\*77{font-size: 77px;}
+    &.\*78{font-size: 78px;}
+    &.\*79{font-size: 79px;}
+    &.\*80{font-size: 80px;}
+    &.\*81{font-size: 81px;}
+    &.\*82{font-size: 82px;}
+    &.\*83{font-size: 83px;}
+    &.\*84{font-size: 84px;}
+    &.\*85{font-size: 85px;}
+    &.\*86{font-size: 86px;}
+    &.\*87{font-size: 87px;}
+    &.\*88{font-size: 88px;}
+    &.\*89{font-size: 89px;}
+    &.\*90{font-size: 90px;}
+    &.\*91{font-size: 91px;}
+    &.\*92{font-size: 92px;}
+    &.\*93{font-size: 93px;}
+    &.\*94{font-size: 94px;}
+    &.\*95{font-size: 95px;}
+    &.\*96{font-size: 96px;}
+    &.\*97{font-size: 97px;}
+    &.\*98{font-size: 98px;}
+    &.\*99{font-size: 99px;}
+    &.\*100{font-size: 100px;}
+
+
+    /* Font Height*/
+    &.\*1\.0{line-height: 1.0;}
+    &.\*1\.1{line-height: 1.1;}
+    &.\*1\.2{line-height: 1.2;}
+    &.\*1\.3{line-height: 1.3;}
+    &.\*1\.4{line-height: 1.4;}
+    &.\*1\.5{line-height: 1.5;}
+    &.\*1\.6{line-height: 1.6;}
+    &.\*1\.7{line-height: 1.7;}
+    &.\*1\.8{line-height: 1.8;}
+    &.\*1\.9{line-height: 1.9;}
+    &.\*2\.0{line-height: 2.0;}
+
+}
+
+.font{
+    /* Dark */
+    &.d\*0{color: #000000}
+    &.d\*1{color: #303033;}
+    &.d\*2{color: #303033;}
+
+    /* Light */
+    &.l\*0{color: #ffffff}
+    &.l\*1{color: #F6F6F6;}
+
+    /* Red */
+    &.r\*{color: rgb(255, 0, 0, 0);}
+    &.r\*{color: rgb(255, 0, 0, 0.1);}
+
+    /* Red Orange*/
+    &.ro\*0{color: rgb(255, 0, 0, 0);}
+    &.ro\*1{color: rgb(255, 0, 0, 0.1);}
+
+    /* Orange*/
+    &.o\*{color: rgb(255, 0, 0, 0);}
+    /* Yellow Orange*/
+    &.yo\*0{color: rgb(255, 0, 0, 0);}
+    /* Yellow */
+    &.y\*{color: rgb(255, 0, 0, 0);}
+    &.y\*{color: rgb(255, 0, 0, 0.1);}
+    /* Yellow Green */
+    &.yg\*0{color: rgb(255, 0, 0, 0);}
+    &.yg\*1{color: rgb(255, 0, 0, 0.1);}
+    /* Green */
+    &.g\*{color: rgb(255, 0, 0, 0);}
+    &.g\*{color: rgb(255, 0, 0, 0.1);}
+    /* Blue Green */
+    &.bg\*0{color: rgb(255, 0, 0, 0);}
+    &.bg\*1{color: rgb(255, 0, 0, 0.1);}
+    /* Blue */
+    &.b\*{color: rgb(255, 0, 0, 0);}
+    &.b\*{color: rgb(255, 0, 0, 0.1);}
+    /* Blue Violet */
+    &.bv\*0{color: rgb(255, 0, 0, 0);}
+    &.bv\*1{color: rgb(255, 0, 0, 0.1);}
+    /* Violet */
+    &.v\*{color: rgb(255, 0, 0, 0);}
+    &.v\*{color: rgb(255, 0, 0, 0.1);}
+    /* Red Violet */
+    &.rv\*0{color: rgb(255, 0, 0, 0);}
+    &.rv\*1{color: rgb(255, 0, 0, 0.1);}
+    }
+
+@media (min-width: 768px){
+    .font{
+        // text-align
+        &._\*\>{text-align: left;}
+        &._\*\<\>{text-align: center;}
+        &._\*\<{text-align: right;}
+
+        /* Font Weight*/
+        &._\*1{font-weight: 100;}
+        &._\*2{font-weight: 200;}
+        &._\*3{font-weight: 300;}
+        &._\*4{font-weight: 400;}
+        &._\*5{font-weight: 500;}
+        &._\*6{font-weight: 600;}
+        &._\*7{font-weight: 700;}
+        &._\*8{font-weight: 800;}
+        &._\*9{font-weight: 900;}
+
+        /* Font Size*/
+        &._\*10{font-size: 10px;}
+        &._\*11{font-size: 11px;}
+        &._\*12{font-size: 12px;}
+        &._\*13{font-size: 13px;}
+        &._\*14{font-size: 14px;}
+        &._\*15{font-size: 15px;}
+        &._\*16{font-size: 16px;}
+        &._\*17{font-size: 17px;}
+        &._\*18{font-size: 18px;}
+        &._\*19{font-size: 19px;}
+        &._\*20{font-size: 20px;}
+        &._\*21{font-size: 21px;}
+        &._\*22{font-size: 22px;}
+        &._\*23{font-size: 23px;}
+        &._\*24{font-size: 24px;}
+        &._\*25{font-size: 25px;}
+        &._\*26{font-size: 26px;}
+        &._\*27{font-size: 27px;}
+        &._\*28{font-size: 28px;}
+        &._\*29{font-size: 29px;}
+        &._\*30{font-size: 30px;}
+        &._\*31{font-size: 31px;}
+        &._\*32{font-size: 32px;}
+        &._\*33{font-size: 33px;}
+        &._\*34{font-size: 34px;}
+        &._\*35{font-size: 35px;}
+        &._\*36{font-size: 36px;}
+        &._\*37{font-size: 37px;}
+        &._\*38{font-size: 38px;}
+        &._\*39{font-size: 39px;}
+        &._\*40{font-size: 40px;}
+        &._\*41{font-size: 41px;}
+        &._\*42{font-size: 42px;}
+        &._\*43{font-size: 43px;}
+        &._\*44{font-size: 44px;}
+        &._\*45{font-size: 45px;}
+        &._\*46{font-size: 46px;}
+        &._\*47{font-size: 47px;}
+        &._\*48{font-size: 48px;}
+        &._\*49{font-size: 49px;}
+        &._\*50{font-size: 50px;}
+        &._\*51{font-size: 51px;}
+        &._\*52{font-size: 52px;}
+        &._\*53{font-size: 53px;}
+        &._\*54{font-size: 54px;}
+        &._\*55{font-size: 55px;}
+        &._\*56{font-size: 56px;}
+        &._\*57{font-size: 57px;}
+        &._\*58{font-size: 58px;}
+        &._\*59{font-size: 59px;}
+        &._\*60{font-size: 60px;}
+        &._\*61{font-size: 61px;}
+        &._\*62{font-size: 62px;}
+        &._\*63{font-size: 63px;}
+        &._\*64{font-size: 64px;}
+        &._\*65{font-size: 65px;}
+        &._\*66{font-size: 66px;}
+        &._\*67{font-size: 67px;}
+        &._\*68{font-size: 68px;}
+        &._\*69{font-size: 69px;}
+        &._\*70{font-size: 70px;}
+        &._\*71{font-size: 71px;}
+        &._\*72{font-size: 72px;}
+        &._\*73{font-size: 73px;}
+        &._\*74{font-size: 74px;}
+        &._\*75{font-size: 75px;}
+        &._\*76{font-size: 76px;}
+        &._\*77{font-size: 77px;}
+        &._\*78{font-size: 78px;}
+        &._\*79{font-size: 79px;}
+        &._\*80{font-size: 80px;}
+        &._\*81{font-size: 81px;}
+        &._\*82{font-size: 82px;}
+        &._\*83{font-size: 83px;}
+        &._\*84{font-size: 84px;}
+        &._\*85{font-size: 85px;}
+        &._\*86{font-size: 86px;}
+        &._\*87{font-size: 87px;}
+        &._\*88{font-size: 88px;}
+        &._\*89{font-size: 89px;}
+        &._\*90{font-size: 90px;}
+        &._\*91{font-size: 91px;}
+        &._\*92{font-size: 92px;}
+        &._\*93{font-size: 93px;}
+        &._\*94{font-size: 94px;}
+        &._\*95{font-size: 95px;}
+        &._\*96{font-size: 96px;}
+        &._\*97{font-size: 97px;}
+        &._\*98{font-size: 98px;}
+        &._\*99{font-size: 99px;}
+        &._\*100{font-size: 100px;}
+
+        /* Font Height*/
+        &._\*1\.0{line-height: 1.0;}
+        &._\*1\.1{line-height: 1.1;}
+        &._\*1\.2{line-height: 1.2;}
+        &._\*1\.3{line-height: 1.3;}
+        &._\*1\.4{line-height: 1.4;}
+        &._\*1\.5{line-height: 1.5;}
+        &._\*1\.6{line-height: 1.6;}
+        &._\*1\.7{line-height: 1.7;}
+        &._\*1\.8{line-height: 1.8;}
+        &._\*1\.9{line-height: 1.9;}
+        &._\*2\.0{line-height: 2.0;}
+    }
+}
+
+@media (min-width: 992px){
+
+    .font{
+        /* Font Weight*/
+        &.__\*1{font-weight: 100;}
+        &.__\*2{font-weight: 200;}
+        &.__\*3{font-weight: 300;}
+        &.__\*4{font-weight: 400;}
+        &.__\*5{font-weight: 500;}
+        &.__\*6{font-weight: 600;}
+        &.__\*7{font-weight: 700;}
+        &.__\*8{font-weight: 800;}
+        &.__\*9{font-weight: 900;}
+
+        /* Font Size*/
+        &.__\*10{font-size: 10px;}
+        &.__\*11{font-size: 11px;}
+        &.__\*12{font-size: 12px;}
+        &.__\*13{font-size: 13px;}
+        &.__\*14{font-size: 14px;}
+        &.__\*15{font-size: 15px;}
+        &.__\*16{font-size: 16px;}
+        &.__\*17{font-size: 17px;}
+        &.__\*18{font-size: 18px;}
+        &.__\*19{font-size: 19px;}
+        &.__\*20{font-size: 20px;}
+        &.__\*21{font-size: 21px;}
+        &.__\*22{font-size: 22px;}
+        &.__\*23{font-size: 23px;}
+        &.__\*24{font-size: 24px;}
+        &.__\*25{font-size: 25px;}
+        &.__\*26{font-size: 26px;}
+        &.__\*27{font-size: 27px;}
+        &.__\*28{font-size: 28px;}
+        &.__\*29{font-size: 29px;}
+        &.__\*30{font-size: 30px;}
+        &.__\*31{font-size: 31px;}
+        &.__\*32{font-size: 32px;}
+        &.__\*33{font-size: 33px;}
+        &.__\*34{font-size: 34px;}
+        &.__\*35{font-size: 35px;}
+        &.__\*36{font-size: 36px;}
+        &.__\*37{font-size: 37px;}
+        &.__\*38{font-size: 38px;}
+        &.__\*39{font-size: 39px;}
+        &.__\*40{font-size: 40px;}
+        &.__\*41{font-size: 41px;}
+        &.__\*42{font-size: 42px;}
+        &.__\*43{font-size: 43px;}
+        &.__\*44{font-size: 44px;}
+        &.__\*45{font-size: 45px;}
+        &.__\*46{font-size: 46px;}
+        &.__\*47{font-size: 47px;}
+        &.__\*48{font-size: 48px;}
+        &.__\*49{font-size: 49px;}
+        &.__\*50{font-size: 50px;}
+        &.__\*51{font-size: 51px;}
+        &.__\*52{font-size: 52px;}
+        &.__\*53{font-size: 53px;}
+        &.__\*54{font-size: 54px;}
+        &.__\*55{font-size: 55px;}
+        &.__\*56{font-size: 56px;}
+        &.__\*57{font-size: 57px;}
+        &.__\*58{font-size: 58px;}
+        &.__\*59{font-size: 59px;}
+        &.__\*60{font-size: 60px;}
+        &.__\*61{font-size: 61px;}
+        &.__\*62{font-size: 62px;}
+        &.__\*63{font-size: 63px;}
+        &.__\*64{font-size: 64px;}
+        &.__\*65{font-size: 65px;}
+        &.__\*66{font-size: 66px;}
+        &.__\*67{font-size: 67px;}
+        &.__\*68{font-size: 68px;}
+        &.__\*69{font-size: 69px;}
+        &.__\*70{font-size: 70px;}
+        &.__\*71{font-size: 71px;}
+        &.__\*72{font-size: 72px;}
+        &.__\*73{font-size: 73px;}
+        &.__\*74{font-size: 74px;}
+        &.__\*75{font-size: 75px;}
+        &.__\*76{font-size: 76px;}
+        &.__\*77{font-size: 77px;}
+        &.__\*78{font-size: 78px;}
+        &.__\*79{font-size: 79px;}
+        &.__\*80{font-size: 80px;}
+        &.__\*81{font-size: 81px;}
+        &.__\*82{font-size: 82px;}
+        &.__\*83{font-size: 83px;}
+        &.__\*84{font-size: 84px;}
+        &.__\*85{font-size: 85px;}
+        &.__\*86{font-size: 86px;}
+        &.__\*87{font-size: 87px;}
+        &.__\*88{font-size: 88px;}
+        &.__\*89{font-size: 89px;}
+        &.__\*90{font-size: 90px;}
+        &.__\*91{font-size: 91px;}
+        &.__\*92{font-size: 92px;}
+        &.__\*93{font-size: 93px;}
+        &.__\*94{font-size: 94px;}
+        &.__\*95{font-size: 95px;}
+        &.__\*96{font-size: 96px;}
+        &.__\*97{font-size: 97px;}
+        &.__\*98{font-size: 98px;}
+        &.__\*99{font-size: 99px;}
+        &.__\*100{font-size: 100px;}
+
+        /* Font Height*/
+        &.__\*1\.0{line-height: 1.0;}
+        &.__\*1\.1{line-height: 1.1;}
+        &.__\*1\.2{line-height: 1.2;}
+        &.__\*1\.3{line-height: 1.3;}
+        &.__\*1\.4{line-height: 1.4;}
+        &.__\*1\.5{line-height: 1.5;}
+        &.__\*1\.6{line-height: 1.6;}
+        &.__\*1\.7{line-height: 1.7;}
+        &.__\*1\.8{line-height: 1.8;}
+        &.__\*1\.9{line-height: 1.9;}
+        &.__\*2\.0{line-height: 2.0;}
+    }
+}
