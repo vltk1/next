@@ -1,20 +1,21 @@
-import "../../../styles/fbox.scss"
+import "../../../styles/axis.scss"
 
-interface Fbox{
+interface Axis{
     el?: string;
     attr?: string;
     xs?: number[];
     md?: number[];
+    children: any;
 }
 
 
-function Fbox(props: Fbox) {
+function Axis(props: Axis) {
     let {el = "div", attr, xs, md} = props
     let arrs: any = props.children
-    
+    console.log(arrs)
    
     const els = (elVal: string) => {///
-        const elClass = "fbox x-100" + (attr ? " " + attr: "")
+        const elClass = "axis x-100" + (attr ? " " + attr: "")
         switch(elVal){
             case "section":
                 return <section className={elClass}>{box()}</section>
@@ -23,7 +24,7 @@ function Fbox(props: Fbox) {
             case "nav":
                 return <nav className={elClass}>{box()}</nav>
             case "menu":
-                return <menu className="fbox x+100">{box()}</menu>
+                return <menu className="axis x+100">{box()}</menu>
             case "aside":
                 return <aside className={elClass}>{box()}</aside>
             default:
@@ -48,7 +49,7 @@ function Fbox(props: Fbox) {
     //console.log(arrs[1].type)
    
     const box = () => {
-        if(Array.isArray(arrs)){// Check  nội dung truyền vào có phải là mảng không
+        if((Array.isArray(arrs)) && (Array.isArray(xs))){// Check  nội dung truyền vào có phải là mảng không
             
             // console.log(arrs)
 
@@ -58,7 +59,7 @@ function Fbox(props: Fbox) {
                
 
                 if(typeof e.type === 'function'){ // Kiểm tra element truyền vào có phải hàm không
-
+                    
                      // XS - MD: Số cột, Kích thước cột và căn nội dung theo trên dưới, trái phải
                      let [xsIICol, xsIISpace, xsIIAlignX, xsIIAlignY, xsIIWrap = 0] = e.props.xs ? e.props.xs : [0, 0, 0, 0]
                      let xsIIWraps = (xsIIWrap === 0) ? "" : " o" // Căn nội dung trái phải
@@ -72,17 +73,17 @@ function Fbox(props: Fbox) {
                      let mdIIAlignYs = (mdIIAlignY === 0) ? "" : " _o+" + mdIIAlignY
                      let mdIICols = (mdIICol === 0) ? "" : " _x+" + ((100 - (mdIISpace * (mdIICol - 1))) / mdIICol).toFixed()
 
-                    if(Array.isArray(arrChild)){ // Check  nội dung truyền vào có phải là mảng không
+                    if((Array.isArray(arrChild)) && (Array.isArray(e.props.xs))){ // Check  nội dung truyền vào có phải là mảng không
                         
                         return (// thêm class ở phần tử con
                             <div key={index} className={
-                                "fbox" + xsCols + mdCols
+                                "axis" + xsCols + mdCols
                                 }>
                                 {arrChild.map((e3, index)=> {// duyệt phần tử cháu
 
-                                    if(typeof e3.type === 'function'){ // kiểm tra phần tử cháu có phải Fbox hay element
+                                    if(typeof e3.type === 'function'){ // kiểm tra phần tử cháu có phải axis hay element
                                         return <div key={index} className={
-                                            "fbox" 
+                                            "axis" 
                                             + xsIICols + xsIIAlignXs + xsIIAlignYs + xsIIWraps
                                             + mdIICols + mdIIAlignXs + mdIIAlignYs + mdIIWraps
                                         
@@ -95,7 +96,7 @@ function Fbox(props: Fbox) {
                         )
                     }else{// hiển thị phần tử cháu
                         return <div key={index} className={
-                            "fbox" 
+                            "axis" 
                             + xsCols+ xsAlignXs + xsAlignYs + xsWraps
                             + mdCols + mdAlignXs + mdAlignYs + mdWraps
                         }>{e.props.children}</div>
@@ -113,4 +114,4 @@ function Fbox(props: Fbox) {
     )
 }
 
-export default Fbox;
+export default Axis;
