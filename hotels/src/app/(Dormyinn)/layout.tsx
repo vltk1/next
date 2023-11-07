@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import '../styles/globals.scss'
 import Axis from '../components/containers/Axis'
 
 export const metadata: Metadata = {
@@ -7,6 +6,7 @@ export const metadata: Metadata = {
   keywords: 'Dormyinn',
   description: 'Dormyinn page all'
 }
+
 
 export default function DromyinnLayout({
   children,

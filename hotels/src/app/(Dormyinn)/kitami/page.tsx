@@ -1,28 +1,27 @@
-import Axis from '../../components/containers/Axis'
+import Card from '@/app/components/containers/Card'
+import Axis2 from '../../components/containers/Axis2'
 import Font from '../../components/containers/Font'
-
+import '../../styles/globals.scss'
 export default function Kitami() {
+  // let t = ""
+  // for(let i=0;i<100;i++){
+  //   t +=  ".axis-w" + i + "{max-width:" + i + "%}"
+  //       for(let s=0;s<i;s++){
+  //         if(s == 5){
+  //           t +=  ".axis-w" + i + "__." + s + "{max-width:" + i + "." + s + "%}"
+  //         }
+  //   }
+  // }
     return (
      <main>
-      <Font el="h2" xs="*36 *1.8 *5 *<>">Dormyinn static</Font>
-      <Axis xs={[4, 5, 0, 4]}>
-        <Axis>
-          <img src="https://alukas.presslayouts.com/wp-content/uploads/2023/02/Rings-360x360.jpg" alt="" />
-          <Font el="h2" xs="*24 *1.6 *7 *<>">RINGS</Font>
-        </Axis>
-        <Axis>
-          <img src="https://alukas.presslayouts.com/wp-content/uploads/2023/02/Rose-Gold-Bracelet-1-360x360.jpg" alt="" />
-          <Font el="h2" xs="*24 *1.6 *7 *<>">BRACELETS</Font>
-        </Axis>
-        <Axis>
-          <img src="https://alukas.presslayouts.com/wp-content/uploads/2023/02/Sterling-Silver-Dangles-Earrings-1-360x360.jpg" alt="" />
-          <Font el="h2" xs="*24 *1.6 *7 *<>">EARNINGS</Font>
-        </Axis>
-        <Axis>
-          <img src="https://alukas.presslayouts.com/wp-content/uploads/2023/02/Charm-Dangles-360x360.jpg" alt="" />
-          <Font el="h2" xs="*24 *1.6 *7 *<>">CHARM</Font>
-        </Axis>
-      </Axis>
+      <Axis2 xs={[[600, 3], [250, 200], [0, 0]]}>
+        <div>
+          <h2>Hello</h2>
+        </div>
+        <div>
+          <h3>Hello</h3>
+        </div>
+      </Axis2>
      </main>
     )
   }
