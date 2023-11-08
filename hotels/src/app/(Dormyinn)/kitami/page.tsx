@@ -5,18 +5,23 @@ import '../../styles/globals.scss'
 export default function Kitami() {
   // let t = ""
   // for(let i=0;i<100;i++){
-  //   t +=  ".axis-w" + i + "{max-width:" + i + "%}"
-  //       for(let s=0;s<i;s++){
-  //         if(s == 5){
-  //           t +=  ".axis-w" + i + "__." + s + "{max-width:" + i + "." + s + "%}"
-  //         }
-  //   }
+  //   t +=  ".axis-f" + i+ "{font-size:" + i  + "px}"
   // }
+
     return (
      <main>
-      <Axis2 xs={[[600, 3], [250, 200], [0, 0]]}>
+      {/* {t} */}
+      <Font el="h2" xs={[18, 1, 5]}>1212</Font>
+      <Axis2 xs={[[1000, 2], [250, 100], [3, 2]]}
+             md={[[1000, 2], [250, 100], [3, 2]]}>
         <div>
           <h2>Hello</h2>
+        </div>
+        <div>
+          <h3>Hello</h3>
+        </div>
+        <div>
+          <h3>Hello</h3>
         </div>
         <div>
           <h3>Hello</h3>

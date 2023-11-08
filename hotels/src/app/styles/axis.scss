@@ -1,1523 +1,2493 @@
-.axis{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+.axis-w0{
+    max-width: 0%;
+}
+.axis-w10{
+    max-width: 10%;
+}
+.axis-w10\.2 {
+    max-width: 10.2%;
+}
+.axis-w10\.4 {
+    max-width: 10.4%;
+}
+.axis-w10\.6 {
+    max-width: 10.6%;
+}
+.axis-w10\.8 {
+    max-width: 10.8%;
+}
+.axis-w11{
+    max-width: 11%;
+}
+.axis-w11\.2 {
+    max-width: 11.2%;
+}
+.axis-w11\.4 {
+    max-width: 11.4%;
+}
+.axis-w11\.6 {
+    max-width: 11.6%;
+}
+.axis-w11\.8 {
+    max-width: 11.8%;
+}
+.axis-w12{
+    max-width: 12%;
+}
+.axis-w12\.2 {
+    max-width: 12.2%;
+}
+.axis-w12\.4 {
+    max-width: 12.4%;
+}
+.axis-w12\.6 {
+    max-width: 12.6%;
+}
+.axis-w12\.8 {
+    max-width: 12.8%;
+}
+.axis-w13{
+    max-width: 13%;
+}
+.axis-w13\.2 {
+    max-width: 13.2%;
+}
+.axis-w13\.4 {
+    max-width: 13.4%;
+}
+.axis-w13\.6 {
+    max-width: 13.6%;
+}
+.axis-w13\.8 {
+    max-width: 13.8%;
+}
+.axis-w14{
+    max-width: 14%;
+}
+.axis-w14\.2 {
+    max-width: 14.2%;
+}
+.axis-w14\.4 {
+    max-width: 14.4%;
+}
+.axis-w14\.6 {
+    max-width: 14.6%;
+}
+.axis-w14\.8 {
+    max-width: 14.8%;
+}
+.axis-w15{
+    max-width: 15%;
+}
+.axis-w15\.2 {
+    max-width: 15.2%;
+}
+.axis-w15\.4 {
+    max-width: 15.4%;
+}
+.axis-w15\.6 {
+    max-width: 15.6%;
+}
+.axis-w15\.8 {
+    max-width: 15.8%;
+}
+.axis-w16{
+    max-width: 16%;
+}
+.axis-w16\.2 {
+    max-width: 16.2%;
+}
+.axis-w16\.4 {
+    max-width: 16.4%;
+}
+.axis-w16\.6 {
+    max-width: 16.6%;
+}
+.axis-w16\.8 {
+    max-width: 16.8%;
+}
+.axis-w17{
+    max-width: 17%;
+}
+.axis-w17\.2 {
+    max-width: 17.2%;
+}
+.axis-w17\.4 {
+    max-width: 17.4%;
+}
+.axis-w17\.6 {
+    max-width: 17.6%;
+}
+.axis-w17\.8 {
+    max-width: 17.8%;
+}
+.axis-w18{
+    max-width: 18%;
+}
+.axis-w18\.2 {
+    max-width: 18.2%;
+}
+.axis-w18\.4 {
+    max-width: 18.4%;
+}
+.axis-w18\.6 {
+    max-width: 18.6%;
+}
+.axis-w18\.8 {
+    max-width: 18.8%;
+}
+.axis-w19{
+    max-width: 19%;
+}
+.axis-w19\.2 {
+    max-width: 19.2%;
+}
+.axis-w19\.4 {
+    max-width: 19.4%;
+}
+.axis-w19\.6 {
+    max-width: 19.6%;
+}
+.axis-w19\.8 {
+    max-width: 19.8%;
+}
+.axis-w20{
+    max-width: 20%;
+}
+.axis-w20\.2 {
+    max-width: 20.2%;
+}
+.axis-w20\.4 {
+    max-width: 20.4%;
+}
+.axis-w20\.6 {
+    max-width: 20.6%;
+}
+.axis-w20\.8 {
+    max-width: 20.8%;
+}
+.axis-w21{
+    max-width: 21%;
+}
+.axis-w21\.2 {
+    max-width: 21.2%;
+}
+.axis-w21\.4 {
+    max-width: 21.4%;
+}
+.axis-w21\.6 {
+    max-width: 21.6%;
+}
+.axis-w21\.8 {
+    max-width: 21.8%;
+}
+.axis-w22{
+    max-width: 22%;
+}
+.axis-w22\.2 {
+    max-width: 22.2%;
+}
+.axis-w22\.4 {
+    max-width: 22.4%;
+}
+.axis-w22\.6 {
+    max-width: 22.6%;
+}
+.axis-w22\.8 {
+    max-width: 22.8%;
+}
+.axis-w23{
+    max-width: 23%;
+}
+.axis-w23\.2 {
+    max-width: 23.2%;
+}
+.axis-w23\.4 {
+    max-width: 23.4%;
+}
+.axis-w23\.6 {
+    max-width: 23.6%;
+}
+.axis-w23\.8 {
+    max-width: 23.8%;
+}
+.axis-w24{
+    max-width: 24%;
+}
+.axis-w24\.2 {
+    max-width: 24.2%;
+}
+.axis-w24\.4 {
+    max-width: 24.4%;
+}
+.axis-w24\.6 {
+    max-width: 24.6%;
+}
+.axis-w24\.8 {
+    max-width: 24.8%;
+}
+.axis-w25{
+    max-width: 25%;
+}
+.axis-w25\.2 {
+    max-width: 25.2%;
+}
+.axis-w25\.4 {
+    max-width: 25.4%;
+}
+.axis-w25\.6 {
+    max-width: 25.6%;
+}
+.axis-w25\.8 {
+    max-width: 25.8%;
+}
+.axis-w26{
+    max-width: 26%;
+}
+.axis-w26\.2 {
+    max-width: 26.2%;
+}
+.axis-w26\.4 {
+    max-width: 26.4%;
+}
+.axis-w26\.6 {
+    max-width: 26.6%;
+}
+.axis-w26\.8 {
+    max-width: 26.8%;
+}
+.axis-w27{
+    max-width: 27%;
+}
+.axis-w27\.2 {
+    max-width: 27.2%;
+}
+.axis-w27\.4 {
+    max-width: 27.4%;
+}
+.axis-w27\.6 {
+    max-width: 27.6%;
+}
+.axis-w27\.8 {
+    max-width: 27.8%;
+}
+.axis-w28{
+    max-width: 28%;
+}
+.axis-w28\.2 {
+    max-width: 28.2%;
+}
+.axis-w28\.4 {
+    max-width: 28.4%;
+}
+.axis-w28\.6 {
+    max-width: 28.6%;
+}
+.axis-w28\.8 {
+    max-width: 28.8%;
+}
+.axis-w29{
+    max-width: 29%;
+}
+.axis-w29\.2 {
+    max-width: 29.2%;
+}
+.axis-w29\.4 {
+    max-width: 29.4%;
+}
+.axis-w29\.6 {
+    max-width: 29.6%;
+}
+.axis-w29\.8 {
+    max-width: 29.8%;
+}
+.axis-w30{
+    max-width: 30%;
+}
+.axis-w30\.2 {
+    max-width: 30.2%;
+}
+.axis-w30\.4 {
+    max-width: 30.4%;
+}
+.axis-w30\.6 {
+    max-width: 30.6%;
+}
+.axis-w30\.8 {
+    max-width: 30.8%;
+}
+.axis-w31{
+    max-width: 31%;
+}
+.axis-w31\.2 {
+    max-width: 31.2%;
+}
+.axis-w31\.4 {
+    max-width: 31.4%;
+}
+.axis-w31\.6 {
+    max-width: 31.6%;
+}
+.axis-w31\.8 {
+    max-width: 31.8%;
+}
+.axis-w32{
+    max-width: 32%;
+}
+.axis-w32\.2 {
+    max-width: 32.2%;
+}
+.axis-w32\.4 {
+    max-width: 32.4%;
+}
+.axis-w32\.6 {
+    max-width: 32.6%;
+}
+.axis-w32\.8 {
+    max-width: 32.8%;
+}
+.axis-w33{
+    max-width: 33%;
+}
+.axis-w33\.2 {
+    max-width: 33.2%;
+}
+.axis-w33\.4 {
+    max-width: 33.4%;
+}
+.axis-w33\.6 {
+    max-width: 33.6%;
+}
+.axis-w33\.8 {
+    max-width: 33.8%;
+}
+.axis-w34{
+    max-width: 34%;
+}
+.axis-w34\.2 {
+    max-width: 34.2%;
+}
+.axis-w34\.4 {
+    max-width: 34.4%;
+}
+.axis-w34\.6 {
+    max-width: 34.6%;
+}
+.axis-w34\.8 {
+    max-width: 34.8%;
+}
+.axis-w35{
+    max-width: 35%;
+}
+.axis-w35\.2 {
+    max-width: 35.2%;
+}
+.axis-w35\.4 {
+    max-width: 35.4%;
+}
+.axis-w35\.6 {
+    max-width: 35.6%;
+}
+.axis-w35\.8 {
+    max-width: 35.8%;
+}
+.axis-w36{
+    max-width: 36%;
+}
+.axis-w36\.2 {
+    max-width: 36.2%;
+}
+.axis-w36\.4 {
+    max-width: 36.4%;
+}
+.axis-w36\.6 {
+    max-width: 36.6%;
+}
+.axis-w36\.8 {
+    max-width: 36.8%;
+}
+.axis-w37{
+    max-width: 37%;
+}
+.axis-w37\.2 {
+    max-width: 37.2%;
+}
+.axis-w37\.4 {
+    max-width: 37.4%;
+}
+.axis-w37\.6 {
+    max-width: 37.6%;
+}
+.axis-w37\.8 {
+    max-width: 37.8%;
+}
+.axis-w38{
+    max-width: 38%;
+}
+.axis-w38\.2 {
+    max-width: 38.2%;
+}
+.axis-w38\.4 {
+    max-width: 38.4%;
+}
+.axis-w38\.6 {
+    max-width: 38.6%;
+}
+.axis-w38\.8 {
+    max-width: 38.8%;
+}
+.axis-w39{
+    max-width: 39%;
+}
+.axis-w39\.2 {
+    max-width: 39.2%;
+}
+.axis-w39\.4 {
+    max-width: 39.4%;
+}
+.axis-w39\.6 {
+    max-width: 39.6%;
+}
+.axis-w39\.8 {
+    max-width: 39.8%;
+}
+.axis-w40{
+    max-width: 40%;
+}
+.axis-w40\.2 {
+    max-width: 40.2%;
+}
+.axis-w40\.4 {
+    max-width: 40.4%;
+}
+.axis-w40\.6 {
+    max-width: 40.6%;
+}
+.axis-w40\.8 {
+    max-width: 40.8%;
+}
+.axis-w41{
+    max-width: 41%;
+}
+.axis-w41\.2 {
+    max-width: 41.2%;
+}
+.axis-w41\.4 {
+    max-width: 41.4%;
+}
+.axis-w41\.6 {
+    max-width: 41.6%;
+}
+.axis-w41\.8 {
+    max-width: 41.8%;
+}
+.axis-w42{
+    max-width: 42%;
+}
+.axis-w42\.2 {
+    max-width: 42.2%;
+}
+.axis-w42\.4 {
+    max-width: 42.4%;
+}
+.axis-w42\.6 {
+    max-width: 42.6%;
+}
+.axis-w42\.8 {
+    max-width: 42.8%;
+}
+.axis-w43{
+    max-width: 43%;
+}
+.axis-w43\.2 {
+    max-width: 43.2%;
+}
+.axis-w43\.4 {
+    max-width: 43.4%;
+}
+.axis-w43\.6 {
+    max-width: 43.6%;
+}
+.axis-w43\.8 {
+    max-width: 43.8%;
+}
+.axis-w44{
+    max-width: 44%;
+}
+.axis-w44\.2 {
+    max-width: 44.2%;
+}
+.axis-w44\.4 {
+    max-width: 44.4%;
+}
+.axis-w44\.6 {
+    max-width: 44.6%;
+}
+.axis-w44\.8 {
+    max-width: 44.8%;
+}
+.axis-w45{
+    max-width: 45%;
+}
+.axis-w45\.2 {
+    max-width: 45.2%;
+}
+.axis-w45\.4 {
+    max-width: 45.4%;
+}
+.axis-w45\.6 {
+    max-width: 45.6%;
+}
+.axis-w45\.8 {
+    max-width: 45.8%;
+}
+.axis-w46{
+    max-width: 46%;
+}
+.axis-w46\.2 {
+    max-width: 46.2%;
+}
+.axis-w46\.4 {
+    max-width: 46.4%;
+}
+.axis-w46\.6 {
+    max-width: 46.6%;
+}
+.axis-w46\.8 {
+    max-width: 46.8%;
+}
+.axis-w47{
+    max-width: 47%;
+}
+.axis-w47\.2 {
+    max-width: 47.2%;
+}
+.axis-w47\.4 {
+    max-width: 47.4%;
+}
+.axis-w47\.6 {
+    max-width: 47.6%;
+}
+.axis-w47\.8 {
+    max-width: 47.8%;
+}
+.axis-w48{
+    max-width: 48%;
+}
+.axis-w48\.2 {
+    max-width: 48.2%;
+}
+.axis-w48\.4 {
+    max-width: 48.4%;
+}
+.axis-w48\.6 {
+    max-width: 48.6%;
+}
+.axis-w48\.8 {
+    max-width: 48.8%;
+}
+.axis-w49{
+    max-width: 49%;
+}
+.axis-w49\.2 {
+    max-width: 49.2%;
+}
+.axis-w49\.4 {
+    max-width: 49.4%;
+}
+.axis-w49\.6 {
+    max-width: 49.6%;
+}
+.axis-w49\.8 {
+    max-width: 49.8%;
+}
+.axis-w50 {
+    max-width: 50%;
+}
+.axis-w100{
+    max-width: 100%;
 }
 
 
-// Thiết đặt kiểu sắp xếp nội dung cột và hàng
-.axis{
-    &.o{flex-wrap: nowrap;}
-    &.o-1{justify-content: flex-start;}
-    &.o-2{justify-content: center;}
-    &.o-3{justify-content: flex-end}
-    &.o-4{justify-content: space-between;}
-    &.o-5{justify-content: space-evenly;}
-    &.o-6{justify-content: space-around;}
+.axis-f0 {
+    line-height: 2;
+}
+.axis-f1\.1 {
+    font-weight: 100;
+}
+.axis-f1\.2 {
+    font-weight: 200;
+}
+.axis-f1\.3 {
+    font-weight: 300;
+}
+.axis-f1\.4 {
+    font-weight: 400;
+}
+.axis-f1\.5 {
+    font-weight: 500;
+}
+.axis-f1\.6 {
+    font-weight: 600;
+}
+.axis-f1\.7 {
+    font-weight: 700;
+}
+.axis-f1\.8 {
+    font-weight: 800;
+}
+.axis-f1\.9 {
+    font-weight: 900;
+}
+
+.axis-f1 {
+    line-height: 1.1;
+}
+.axis-f2 {
+    line-height: 1.2;
+}
+.axis-f3 {
+    line-height: 1.3;
+}
+.axis-f4 {
+    line-height: 1.4;
+}
+.axis-f5 {
+    line-height: 1.5;
+}
+.axis-f6 {
+    line-height: 1.6;
+}
+.axis-f7 {
+    line-height: 1.7;
+}
+.axis-f8 {
+    font-size: 1.8;
+}
+.axis-f9 {
+    font-size: 1.9;
+}
+.axis-f10 {
+    font-size: 10;
+}
+.axis-f11 {
+    font-size: 11px;
+}
+.axis-f12 {
+    font-size: 12px;
+}
+.axis-f13 {
+    font-size: 13px;
+}
+.axis-f14 {
+    font-size: 14px;
+}
+.axis-f15 {
+    font-size: 15px;
+}
+.axis-f16 {
+    font-size: 16px;
+}
+.axis-f17 {
+    font-size: 17px;
+}
+.axis-f18 {
+    font-size: 18px;
+}
+.axis-f19 {
+    font-size: 19px;
+}
+.axis-f20 {
+    font-size: 20px;
+}
+.axis-f21 {
+    font-size: 21px;
+}
+.axis-f22 {
+    font-size: 22px;
+}
+.axis-f23 {
+    font-size: 23px;
+}
+.axis-f24 {
+    font-size: 24px;
+}
+.axis-f25 {
+    font-size: 25px;
+}
+.axis-f26 {
+    font-size: 26px;
+}
+.axis-f27 {
+    font-size: 27px;
+}
+.axis-f28 {
+    font-size: 28px;
+}
+.axis-f29 {
+    font-size: 29px;
+}
+.axis-f30 {
+    font-size: 30px;
+}
+.axis-f31 {
+    font-size: 31px;
+}
+.axis-f32 {
+    font-size: 32px;
+}
+.axis-f33 {
+    font-size: 33px;
+}
+.axis-f34 {
+    font-size: 34px;
+}
+.axis-f35 {
+    font-size: 35px;
+}
+.axis-f36 {
+    font-size: 36px;
+}
+.axis-f37 {
+    font-size: 37px;
+}
+.axis-f38 {
+    font-size: 38px;
+}
+.axis-f39 {
+    font-size: 39px;
+}
+.axis-f40 {
+    font-size: 40px;
+}
+.axis-f41 {
+    font-size: 41px;
+}
+.axis-f42 {
+    font-size: 42px;
+}
+.axis-f43 {
+    font-size: 43px;
+}
+.axis-f44 {
+    font-size: 44px;
+}
+.axis-f45 {
+    font-size: 45px;
+}
+.axis-f46 {
+    font-size: 46px;
+}
+.axis-f47 {
+    font-size: 47px;
+}
+.axis-f48 {
+    font-size: 48px;
+}
+.axis-f49 {
+    font-size: 49px;
+}
+.axis-f50 {
+    font-size: 50px;
+}
+.axis-f51 {
+    font-size: 51px;
+}
+.axis-f52 {
+    font-size: 52px;
+}
+.axis-f53 {
+    font-size: 53px;
+}
+.axis-f54 {
+    font-size: 54px;
+}
+.axis-f55 {
+    font-size: 55px;
+}
+.axis-f56 {
+    font-size: 56px;
+}
+.axis-f57 {
+    font-size: 57px;
+}
+.axis-f58 {
+    font-size: 58px;
+}
+.axis-f59 {
+    font-size: 59px;
+}
+.axis-f60 {
+    font-size: 60px;
+}
+.axis-f61 {
+    font-size: 61px;
+}
+.axis-f62 {
+    font-size: 62px;
+}
+.axis-f63 {
+    font-size: 63px;
+}
+.axis-f64 {
+    font-size: 64px;
+}
+.axis-f65 {
+    font-size: 65px;
+}
+.axis-f66 {
+    font-size: 66px;
+}
+.axis-f67 {
+    font-size: 67px;
+}
+.axis-f68 {
+    font-size: 68px;
+}
+.axis-f69 {
+    font-size: 69px;
+}
+.axis-f70 {
+    font-size: 70px;
+}
+.axis-f71 {
+    font-size: 71px;
+}
+.axis-f72 {
+    font-size: 72px;
+}
+.axis-f73 {
+    font-size: 73px;
+}
+.axis-f74 {
+    font-size: 74px;
+}
+.axis-f75 {
+    font-size: 75px;
+}
+.axis-f76 {
+    font-size: 76px;
+}
+.axis-f77 {
+    font-size: 77px;
+}
+.axis-f78 {
+    font-size: 78px;
+}
+.axis-f79 {
+    font-size: 79px;
+}
+.axis-f80 {
+    font-size: 80px;
+}
+.axis-f81 {
+    font-size: 81px;
+}
+.axis-f82 {
+    font-size: 82px;
+}
+.axis-f83 {
+    font-size: 83px;
+}
+.axis-f84 {
+    font-size: 84px;
+}
+.axis-f85 {
+    font-size: 85px;
+}
+.axis-f86 {
+    font-size: 86px;
+}
+.axis-f87 {
+    font-size: 87px;
+}
+.axis-f88 {
+    font-size: 88px;
+}
+.axis-f89 {
+    font-size: 89px;
+}
+.axis-f90 {
+    font-size: 90px;
+}
+.axis-f91 {
+    font-size: 91px;
+}
+.axis-f92 {
+    font-size: 92px;
+}
+.axis-f93 {
+    font-size: 93px;
+}
+.axis-f94 {
+    font-size: 94px;
+}
+.axis-f95 {
+    font-size: 95px;
+}
+.axis-f96 {
+    font-size: 96px;
+}
+.axis-f97 {
+    font-size: 97px;
+}
+.axis-f98 {
+    font-size: 98px;
+}
+.axis-f99 {
+    font-size: 99px;
+}
+
+@media (min-width:768px){
+    ._axis-w0{
+        max-width: 0%;
+    }
+    ._axis-w10{
+        max-width: 10%;
+    }
+    ._axis-w10\.2 {
+        max-width: 10.2%;
+    }
+    ._axis-w10\.4 {
+        max-width: 10.4%;
+    }
+    ._axis-w10\.6 {
+        max-width: 10.6%;
+    }
+    ._axis-w10\.8 {
+        max-width: 10.8%;
+    }
+    ._axis-w11{
+        max-width: 11%;
+    }
+    ._axis-w11\.2 {
+        max-width: 11.2%;
+    }
+    ._axis-w11\.4 {
+        max-width: 11.4%;
+    }
+    ._axis-w11\.6 {
+        max-width: 11.6%;
+    }
+    ._axis-w11\.8 {
+        max-width: 11.8%;
+    }
+    ._axis-w12{
+        max-width: 12%;
+    }
+    ._axis-w12\.2 {
+        max-width: 12.2%;
+    }
+    ._axis-w12\.4 {
+        max-width: 12.4%;
+    }
+    ._axis-w12\.6 {
+        max-width: 12.6%;
+    }
+    ._axis-w12\.8 {
+        max-width: 12.8%;
+    }
+    ._axis-w13{
+        max-width: 13%;
+    }
+    ._axis-w13\.2 {
+        max-width: 13.2%;
+    }
+    ._axis-w13\.4 {
+        max-width: 13.4%;
+    }
+    ._axis-w13\.6 {
+        max-width: 13.6%;
+    }
+    ._axis-w13\.8 {
+        max-width: 13.8%;
+    }
+    ._axis-w14{
+        max-width: 14%;
+    }
+    ._axis-w14\.2 {
+        max-width: 14.2%;
+    }
+    ._axis-w14\.4 {
+        max-width: 14.4%;
+    }
+    ._axis-w14\.6 {
+        max-width: 14.6%;
+    }
+    ._axis-w14\.8 {
+        max-width: 14.8%;
+    }
+    ._axis-w15{
+        max-width: 15%;
+    }
+    ._axis-w15\.2 {
+        max-width: 15.2%;
+    }
+    ._axis-w15\.4 {
+        max-width: 15.4%;
+    }
+    ._axis-w15\.6 {
+        max-width: 15.6%;
+    }
+    ._axis-w15\.8 {
+        max-width: 15.8%;
+    }
+    ._axis-w16{
+        max-width: 16%;
+    }
+    ._axis-w16\.2 {
+        max-width: 16.2%;
+    }
+    ._axis-w16\.4 {
+        max-width: 16.4%;
+    }
+    ._axis-w16\.6 {
+        max-width: 16.6%;
+    }
+    ._axis-w16\.8 {
+        max-width: 16.8%;
+    }
+    ._axis-w17{
+        max-width: 17%;
+    }
+    ._axis-w17\.2 {
+        max-width: 17.2%;
+    }
+    ._axis-w17\.4 {
+        max-width: 17.4%;
+    }
+    ._axis-w17\.6 {
+        max-width: 17.6%;
+    }
+    ._axis-w17\.8 {
+        max-width: 17.8%;
+    }
+    ._axis-w18{
+        max-width: 18%;
+    }
+    ._axis-w18\.2 {
+        max-width: 18.2%;
+    }
+    ._axis-w18\.4 {
+        max-width: 18.4%;
+    }
+    ._axis-w18\.6 {
+        max-width: 18.6%;
+    }
+    ._axis-w18\.8 {
+        max-width: 18.8%;
+    }
+    ._axis-w19{
+        max-width: 19%;
+    }
+    ._axis-w19\.2 {
+        max-width: 19.2%;
+    }
+    ._axis-w19\.4 {
+        max-width: 19.4%;
+    }
+    ._axis-w19\.6 {
+        max-width: 19.6%;
+    }
+    ._axis-w19\.8 {
+        max-width: 19.8%;
+    }
+    ._axis-w20{
+        max-width: 20%;
+    }
+    ._axis-w20\.2 {
+        max-width: 20.2%;
+    }
+    ._axis-w20\.4 {
+        max-width: 20.4%;
+    }
+    ._axis-w20\.6 {
+        max-width: 20.6%;
+    }
+    ._axis-w20\.8 {
+        max-width: 20.8%;
+    }
+    ._axis-w21{
+        max-width: 21%;
+    }
+    ._axis-w21\.2 {
+        max-width: 21.2%;
+    }
+    ._axis-w21\.4 {
+        max-width: 21.4%;
+    }
+    ._axis-w21\.6 {
+        max-width: 21.6%;
+    }
+    ._axis-w21\.8 {
+        max-width: 21.8%;
+    }
+    ._axis-w22{
+        max-width: 22%;
+    }
+    ._axis-w22\.2 {
+        max-width: 22.2%;
+    }
+    ._axis-w22\.4 {
+        max-width: 22.4%;
+    }
+    ._axis-w22\.6 {
+        max-width: 22.6%;
+    }
+    ._axis-w22\.8 {
+        max-width: 22.8%;
+    }
+    ._axis-w23{
+        max-width: 23%;
+    }
+    ._axis-w23\.2 {
+        max-width: 23.2%;
+    }
+    ._axis-w23\.4 {
+        max-width: 23.4%;
+    }
+    ._axis-w23\.6 {
+        max-width: 23.6%;
+    }
+    ._axis-w23\.8 {
+        max-width: 23.8%;
+    }
+    ._axis-w24{
+        max-width: 24%;
+    }
+    ._axis-w24\.2 {
+        max-width: 24.2%;
+    }
+    ._axis-w24\.4 {
+        max-width: 24.4%;
+    }
+    ._axis-w24\.6 {
+        max-width: 24.6%;
+    }
+    ._axis-w24\.8 {
+        max-width: 24.8%;
+    }
+    ._axis-w25{
+        max-width: 25%;
+    }
+    ._axis-w25\.2 {
+        max-width: 25.2%;
+    }
+    ._axis-w25\.4 {
+        max-width: 25.4%;
+    }
+    ._axis-w25\.6 {
+        max-width: 25.6%;
+    }
+    ._axis-w25\.8 {
+        max-width: 25.8%;
+    }
+    ._axis-w26{
+        max-width: 26%;
+    }
+    ._axis-w26\.2 {
+        max-width: 26.2%;
+    }
+    ._axis-w26\.4 {
+        max-width: 26.4%;
+    }
+    ._axis-w26\.6 {
+        max-width: 26.6%;
+    }
+    ._axis-w26\.8 {
+        max-width: 26.8%;
+    }
+    ._axis-w27{
+        max-width: 27%;
+    }
+    ._axis-w27\.2 {
+        max-width: 27.2%;
+    }
+    ._axis-w27\.4 {
+        max-width: 27.4%;
+    }
+    ._axis-w27\.6 {
+        max-width: 27.6%;
+    }
+    ._axis-w27\.8 {
+        max-width: 27.8%;
+    }
+    ._axis-w28{
+        max-width: 28%;
+    }
+    ._axis-w28\.2 {
+        max-width: 28.2%;
+    }
+    ._axis-w28\.4 {
+        max-width: 28.4%;
+    }
+    ._axis-w28\.6 {
+        max-width: 28.6%;
+    }
+    ._axis-w28\.8 {
+        max-width: 28.8%;
+    }
+    ._axis-w29{
+        max-width: 29%;
+    }
+    ._axis-w29\.2 {
+        max-width: 29.2%;
+    }
+    ._axis-w29\.4 {
+        max-width: 29.4%;
+    }
+    ._axis-w29\.6 {
+        max-width: 29.6%;
+    }
+    ._axis-w29\.8 {
+        max-width: 29.8%;
+    }
+    ._axis-w30{
+        max-width: 30%;
+    }
+    ._axis-w30\.2 {
+        max-width: 30.2%;
+    }
+    ._axis-w30\.4 {
+        max-width: 30.4%;
+    }
+    ._axis-w30\.6 {
+        max-width: 30.6%;
+    }
+    ._axis-w30\.8 {
+        max-width: 30.8%;
+    }
+    ._axis-w31{
+        max-width: 31%;
+    }
+    ._axis-w31\.2 {
+        max-width: 31.2%;
+    }
+    ._axis-w31\.4 {
+        max-width: 31.4%;
+    }
+    ._axis-w31\.6 {
+        max-width: 31.6%;
+    }
+    ._axis-w31\.8 {
+        max-width: 31.8%;
+    }
+    ._axis-w32{
+        max-width: 32%;
+    }
+    ._axis-w32\.2 {
+        max-width: 32.2%;
+    }
+    ._axis-w32\.4 {
+        max-width: 32.4%;
+    }
+    ._axis-w32\.6 {
+        max-width: 32.6%;
+    }
+    ._axis-w32\.8 {
+        max-width: 32.8%;
+    }
+    ._axis-w33{
+        max-width: 33%;
+    }
+    ._axis-w33\.2 {
+        max-width: 33.2%;
+    }
+    ._axis-w33\.4 {
+        max-width: 33.4%;
+    }
+    ._axis-w33\.6 {
+        max-width: 33.6%;
+    }
+    ._axis-w33\.8 {
+        max-width: 33.8%;
+    }
+    ._axis-w34{
+        max-width: 34%;
+    }
+    ._axis-w34\.2 {
+        max-width: 34.2%;
+    }
+    ._axis-w34\.4 {
+        max-width: 34.4%;
+    }
+    ._axis-w34\.6 {
+        max-width: 34.6%;
+    }
+    ._axis-w34\.8 {
+        max-width: 34.8%;
+    }
+    ._axis-w35{
+        max-width: 35%;
+    }
+    ._axis-w35\.2 {
+        max-width: 35.2%;
+    }
+    ._axis-w35\.4 {
+        max-width: 35.4%;
+    }
+    ._axis-w35\.6 {
+        max-width: 35.6%;
+    }
+    ._axis-w35\.8 {
+        max-width: 35.8%;
+    }
+    ._axis-w36{
+        max-width: 36%;
+    }
+    ._axis-w36\.2 {
+        max-width: 36.2%;
+    }
+    ._axis-w36\.4 {
+        max-width: 36.4%;
+    }
+    ._axis-w36\.6 {
+        max-width: 36.6%;
+    }
+    ._axis-w36\.8 {
+        max-width: 36.8%;
+    }
+    ._axis-w37{
+        max-width: 37%;
+    }
+    ._axis-w37\.2 {
+        max-width: 37.2%;
+    }
+    ._axis-w37\.4 {
+        max-width: 37.4%;
+    }
+    ._axis-w37\.6 {
+        max-width: 37.6%;
+    }
+    ._axis-w37\.8 {
+        max-width: 37.8%;
+    }
+    ._axis-w38{
+        max-width: 38%;
+    }
+    ._axis-w38\.2 {
+        max-width: 38.2%;
+    }
+    ._axis-w38\.4 {
+        max-width: 38.4%;
+    }
+    ._axis-w38\.6 {
+        max-width: 38.6%;
+    }
+    ._axis-w38\.8 {
+        max-width: 38.8%;
+    }
+    ._axis-w39{
+        max-width: 39%;
+    }
+    ._axis-w39\.2 {
+        max-width: 39.2%;
+    }
+    ._axis-w39\.4 {
+        max-width: 39.4%;
+    }
+    ._axis-w39\.6 {
+        max-width: 39.6%;
+    }
+    ._axis-w39\.8 {
+        max-width: 39.8%;
+    }
+    ._axis-w40{
+        max-width: 40%;
+    }
+    ._axis-w40\.2 {
+        max-width: 40.2%;
+    }
+    ._axis-w40\.4 {
+        max-width: 40.4%;
+    }
+    ._axis-w40\.6 {
+        max-width: 40.6%;
+    }
+    ._axis-w40\.8 {
+        max-width: 40.8%;
+    }
+    ._axis-w41{
+        max-width: 41%;
+    }
+    ._axis-w41\.2 {
+        max-width: 41.2%;
+    }
+    ._axis-w41\.4 {
+        max-width: 41.4%;
+    }
+    ._axis-w41\.6 {
+        max-width: 41.6%;
+    }
+    ._axis-w41\.8 {
+        max-width: 41.8%;
+    }
+    ._axis-w42{
+        max-width: 42%;
+    }
+    ._axis-w42\.2 {
+        max-width: 42.2%;
+    }
+    ._axis-w42\.4 {
+        max-width: 42.4%;
+    }
+    ._axis-w42\.6 {
+        max-width: 42.6%;
+    }
+    ._axis-w42\.8 {
+        max-width: 42.8%;
+    }
+    ._axis-w43{
+        max-width: 43%;
+    }
+    ._axis-w43\.2 {
+        max-width: 43.2%;
+    }
+    ._axis-w43\.4 {
+        max-width: 43.4%;
+    }
+    ._axis-w43\.6 {
+        max-width: 43.6%;
+    }
+    ._axis-w43\.8 {
+        max-width: 43.8%;
+    }
+    ._axis-w44{
+        max-width: 44%;
+    }
+    ._axis-w44\.2 {
+        max-width: 44.2%;
+    }
+    ._axis-w44\.4 {
+        max-width: 44.4%;
+    }
+    ._axis-w44\.6 {
+        max-width: 44.6%;
+    }
+    ._axis-w44\.8 {
+        max-width: 44.8%;
+    }
+    ._axis-w45{
+        max-width: 45%;
+    }
+    ._axis-w45\.2 {
+        max-width: 45.2%;
+    }
+    ._axis-w45\.4 {
+        max-width: 45.4%;
+    }
+    ._axis-w45\.6 {
+        max-width: 45.6%;
+    }
+    ._axis-w45\.8 {
+        max-width: 45.8%;
+    }
+    ._axis-w46{
+        max-width: 46%;
+    }
+    ._axis-w46\.2 {
+        max-width: 46.2%;
+    }
+    ._axis-w46\.4 {
+        max-width: 46.4%;
+    }
+    ._axis-w46\.6 {
+        max-width: 46.6%;
+    }
+    ._axis-w46\.8 {
+        max-width: 46.8%;
+    }
+    ._axis-w47{
+        max-width: 47%;
+    }
+    ._axis-w47\.2 {
+        max-width: 47.2%;
+    }
+    ._axis-w47\.4 {
+        max-width: 47.4%;
+    }
+    ._axis-w47\.6 {
+        max-width: 47.6%;
+    }
+    ._axis-w47\.8 {
+        max-width: 47.8%;
+    }
+    ._axis-w48{
+        max-width: 48%;
+    }
+    ._axis-w48\.2 {
+        max-width: 48.2%;
+    }
+    ._axis-w48\.4 {
+        max-width: 48.4%;
+    }
+    ._axis-w48\.6 {
+        max-width: 48.6%;
+    }
+    ._axis-w48\.8 {
+        max-width: 48.8%;
+    }
+    ._axis-w49{
+        max-width: 49%;
+    }
+    ._axis-w49\.2 {
+        max-width: 49.2%;
+    }
+    ._axis-w49\.4 {
+        max-width: 49.4%;
+    }
+    ._axis-w49\.6 {
+        max-width: 49.6%;
+    }
+    ._axis-w49\.8 {
+        max-width: 49.8%;
+    }
+    ._axis-w50 {
+        max-width: 50%;
+    }
+    ._axis-w100{
+        max-width: 100%;
+    }
     
-    &.o\+1{align-items: flex-start;}
-    &.o\+2{align-items: center;}
-    &.o\+3{align-items: flex-end;}
-    &.o\+4{align-items: baseline;}
-    &.o\+5{align-items: stretch;}
-
-    &.ox{margin-left: auto;margin-right: auto;}
-    &.oy{margin-top: auto;margin-bottom: auto;}
-
-    &.x{display: flex;}
-}
-
-
-// Thiết đặt hàng và cột
-.axis{
-    &.x-0{max-width: 0;flex-shrink: 1;}
-    &.x\+0{min-width: 0;flex-grow: 1;}
-    &.x-100{display: flex;width: 100%;}
-    &.x\+100{display: flex;flex-wrap: wrap;}
-    &.y-100{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    
+    ._axis-f0 {
+        line-height: 2;
+    }
+    ._axis-f1\.1 {
+        font-weight: 100;
+    }
+    ._axis-f1\.2 {
+        font-weight: 200;
+    }
+    ._axis-f1\.3 {
+        font-weight: 300;
+    }
+    ._axis-f1\.4 {
+        font-weight: 400;
+    }
+    ._axis-f1\.5 {
+        font-weight: 500;
+    }
+    ._axis-f1\.6 {
+        font-weight: 600;
+    }
+    ._axis-f1\.7 {
+        font-weight: 700;
+    }
+    ._axis-f1\.8 {
+        font-weight: 800;
+    }
+    ._axis-f1\.9 {
+        font-weight: 900;
+    }
+    
+    ._axis-f1 {
+        line-height: 1.1;
+    }
+    ._axis-f2 {
+        line-height: 1.2;
+    }
+    ._axis-f3 {
+        line-height: 1.3;
+    }
+    ._axis-f4 {
+        line-height: 1.4;
+    }
+    ._axis-f5 {
+        line-height: 1.5;
+    }
+    ._axis-f6 {
+        line-height: 1.6;
+    }
+    ._axis-f7 {
+        line-height: 1.7;
+    }
+    ._axis-f8 {
+        font-size: 1.8;
+    }
+    ._axis-f9 {
+        font-size: 1.9;
+    }
+    ._axis-f10 {
+        font-size: 10;
+    }
+    ._axis-f11 {
+        font-size: 11px;
+    }
+    ._axis-f12 {
+        font-size: 12px;
+    }
+    ._axis-f13 {
+        font-size: 13px;
+    }
+    ._axis-f14 {
+        font-size: 14px;
+    }
+    ._axis-f15 {
+        font-size: 15px;
+    }
+    ._axis-f16 {
+        font-size: 16px;
+    }
+    ._axis-f17 {
+        font-size: 17px;
+    }
+    ._axis-f18 {
+        font-size: 18px;
+    }
+    ._axis-f19 {
+        font-size: 19px;
+    }
+    ._axis-f20 {
+        font-size: 20px;
+    }
+    ._axis-f21 {
+        font-size: 21px;
+    }
+    ._axis-f22 {
+        font-size: 22px;
+    }
+    ._axis-f23 {
+        font-size: 23px;
+    }
+    ._axis-f24 {
+        font-size: 24px;
+    }
+    ._axis-f25 {
+        font-size: 25px;
+    }
+    ._axis-f26 {
+        font-size: 26px;
+    }
+    ._axis-f27 {
+        font-size: 27px;
+    }
+    ._axis-f28 {
+        font-size: 28px;
+    }
+    ._axis-f29 {
+        font-size: 29px;
+    }
+    ._axis-f30 {
+        font-size: 30px;
+    }
+    ._axis-f31 {
+        font-size: 31px;
+    }
+    ._axis-f32 {
+        font-size: 32px;
+    }
+    ._axis-f33 {
+        font-size: 33px;
+    }
+    ._axis-f34 {
+        font-size: 34px;
+    }
+    ._axis-f35 {
+        font-size: 35px;
+    }
+    ._axis-f36 {
+        font-size: 36px;
+    }
+    ._axis-f37 {
+        font-size: 37px;
+    }
+    ._axis-f38 {
+        font-size: 38px;
+    }
+    ._axis-f39 {
+        font-size: 39px;
+    }
+    ._axis-f40 {
+        font-size: 40px;
+    }
+    ._axis-f41 {
+        font-size: 41px;
+    }
+    ._axis-f42 {
+        font-size: 42px;
+    }
+    ._axis-f43 {
+        font-size: 43px;
+    }
+    ._axis-f44 {
+        font-size: 44px;
+    }
+    ._axis-f45 {
+        font-size: 45px;
+    }
+    ._axis-f46 {
+        font-size: 46px;
+    }
+    ._axis-f47 {
+        font-size: 47px;
+    }
+    ._axis-f48 {
+        font-size: 48px;
+    }
+    ._axis-f49 {
+        font-size: 49px;
+    }
+    ._axis-f50 {
+        font-size: 50px;
+    }
+    ._axis-f51 {
+        font-size: 51px;
+    }
+    ._axis-f52 {
+        font-size: 52px;
+    }
+    ._axis-f53 {
+        font-size: 53px;
+    }
+    ._axis-f54 {
+        font-size: 54px;
+    }
+    ._axis-f55 {
+        font-size: 55px;
+    }
+    ._axis-f56 {
+        font-size: 56px;
+    }
+    ._axis-f57 {
+        font-size: 57px;
+    }
+    ._axis-f58 {
+        font-size: 58px;
+    }
+    ._axis-f59 {
+        font-size: 59px;
+    }
+    ._axis-f60 {
+        font-size: 60px;
+    }
+    ._axis-f61 {
+        font-size: 61px;
+    }
+    ._axis-f62 {
+        font-size: 62px;
+    }
+    ._axis-f63 {
+        font-size: 63px;
+    }
+    ._axis-f64 {
+        font-size: 64px;
+    }
+    ._axis-f65 {
+        font-size: 65px;
+    }
+    ._axis-f66 {
+        font-size: 66px;
+    }
+    ._axis-f67 {
+        font-size: 67px;
+    }
+    ._axis-f68 {
+        font-size: 68px;
+    }
+    ._axis-f69 {
+        font-size: 69px;
+    }
+    ._axis-f70 {
+        font-size: 70px;
+    }
+    ._axis-f71 {
+        font-size: 71px;
+    }
+    ._axis-f72 {
+        font-size: 72px;
+    }
+    ._axis-f73 {
+        font-size: 73px;
+    }
+    ._axis-f74 {
+        font-size: 74px;
+    }
+    ._axis-f75 {
+        font-size: 75px;
+    }
+    ._axis-f76 {
+        font-size: 76px;
+    }
+    ._axis-f77 {
+        font-size: 77px;
+    }
+    ._axis-f78 {
+        font-size: 78px;
+    }
+    ._axis-f79 {
+        font-size: 79px;
+    }
+    ._axis-f80 {
+        font-size: 80px;
+    }
+    ._axis-f81 {
+        font-size: 81px;
+    }
+    ._axis-f82 {
+        font-size: 82px;
+    }
+    ._axis-f83 {
+        font-size: 83px;
+    }
+    ._axis-f84 {
+        font-size: 84px;
+    }
+    ._axis-f85 {
+        font-size: 85px;
+    }
+    ._axis-f86 {
+        font-size: 86px;
+    }
+    ._axis-f87 {
+        font-size: 87px;
+    }
+    ._axis-f88 {
+        font-size: 88px;
+    }
+    ._axis-f89 {
+        font-size: 89px;
+    }
+    ._axis-f90 {
+        font-size: 90px;
+    }
+    ._axis-f91 {
+        font-size: 91px;
+    }
+    ._axis-f92 {
+        font-size: 92px;
+    }
+    ._axis-f93 {
+        font-size: 93px;
+    }
+    ._axis-f94 {
+        font-size: 94px;
+    }
+    ._axis-f95 {
+        font-size: 95px;
+    }
+    ._axis-f96 {
+        font-size: 96px;
+    }
+    ._axis-f97 {
+        font-size: 97px;
+    }
+    ._axis-f98 {
+        font-size: 98px;
+    }
+    ._axis-f99 {
+        font-size: 99px;
+    }
+    ._axis-f100 {
+        font-size: 100px;
     }
 }
-// X - chiều ngang nhỏ nhất là [1% - 50%]
-.axis{
-    &.x-1{min-width: 1%;}
-    &.x-2{min-width: 2%;}
-    &.x-3{min-width: 3%;}
-    &.x-4{min-width: 4%;}
-    &.x-5{min-width: 5%;}
-    &.x-6{min-width: 6%;}
-    &.x-7{min-width: 7%;}
-    &.x-8{min-width: 8%;}
-    &.x-9{min-width: 9%;}
+@media (min-width:768px){
 
-    &.x-10{min-width: 10%;}
-    &.x-11{min-width: 11%;}
-    &.x-12{min-width: 12%;}
-    &.x-13{min-width: 13%;}
-    &.x-14{min-width: 14%;}
-    &.x-15{min-width: 15%;}
-    &.x-16{min-width: 16%;}
-    &.x-17{min-width: 17%;}
-    &.x-18{min-width: 18%;}
-    &.x-19{min-width: 19%;}
-    &.x-20{min-width: 20%;}
-    &.x-21{min-width: 21%;}
-    &.x-22{min-width: 22%;}
-    &.x-23{min-width: 23%;}
-    &.x-24{min-width: 24%;}
-    &.x-25{min-width: 25%;}
-    &.x-26{min-width: 26%;}
-    &.x-27{min-width: 27%;}
-    &.x-28{min-width: 28%;}
-    &.x-29{min-width: 29%;}
-    &.x-30{min-width: 30%;}
-    &.x-31{min-width: 31%;}
-    &.x-32{min-width: 32%;}
-    &.x-33{min-width: 33.3333333333%;}
-    &.x-34{min-width: 34%;}
-    &.x-35{min-width: 35%;}
-    &.x-36{min-width: 36%;}
-    &.x-37{min-width: 37%;}
-    &.x-38{min-width: 38%;}
-    &.x-39{min-width: 39%;}
-    &.x-40{min-width: 40%;}
-    &.x-41{min-width: 41%;}
-    &.x-42{min-width: 42%;}
-    &.x-43{min-width: 43%;}
-    &.x-44{min-width: 44%;}
-    &.x-45{min-width: 45%;}
-    &.x-46{min-width: 46%;}
-    &.x-47{min-width: 47%;}
-    &.x-48{min-width: 48%;}
-    &.x-49{min-width: 49%;}
-    &.x-50{min-width: 50%;}
-}
-
-
-// X - chiều ngang lớn nhất là [1% - 50%]
-.axis{
-    &.x\+1{max-width: 1%;}
-    &.x\+2{max-width: 2%;}
-    &.x\+3{max-width: 3%;}
-    &.x\+4{max-width: 4%;}
-    &.x\+5{max-width: 5%;}
-    &.x\+6{max-width: 6%;}
-    &.x\+7{max-width: 7%;}
-    &.x\+8{max-width: 8%;}
-    &.x\+9{max-width: 9%;}
-
-    &.x\+10{max-width: 10%;}
-    &.x\+11{max-width: 11%;}
-    &.x\+12{max-width: 12%;}
-    &.x\+13{max-width: 13%;}
-    &.x\+14{max-width: 14%;}
-    &.x\+15{max-width: 15%;}
-    &.x\+16{max-width: 16%;}
-    &.x\+17{max-width: 17%;}
-    &.x\+18{max-width: 18%;}
-    &.x\+19{max-width: 19%;}
-    &.x\+20{max-width: 20%;}
-    &.x\+21{max-width: 21%;}
-    &.x\+22{max-width: 22%;}
-    &.x\+23{max-width: 23%;}
-    &.x\+24{max-width: 24%;}
-    &.x\+25{max-width: 25%;}
-    &.x\+26{max-width: 26%;}
-    &.x\+27{max-width: 27%;}
-    &.x\+28{max-width: 28%;}
-    &.x\+29{max-width: 29%;}
-    &.x\+30{max-width: 30%;}
-    &.x\+31{max-width: 31%;}
-    &.x\+32{max-width: 32%;}
-    &.x\+33{max-width: 33.333333%;}
-    &.x\+34{max-width: 34%;}
-    &.x\+35{max-width: 35%;}
-    &.x\+36{max-width: 36%;}
-    &.x\+37{max-width: 37%;}
-    &.x\+38{max-width: 38%;}
-    &.x\+39{max-width: 39%;}
-    &.x\+40{max-width: 40%;}
-    &.x\+41{max-width: 41%;}
-    &.x\+42{max-width: 42%;}
-    &.x\+43{max-width: 43%;}
-    &.x\+44{max-width: 44%;}
-    &.x\+45{max-width: 45%;}
-    &.x\+46{max-width: 46%;}
-    &.x\+47{max-width: 47%;}
-    &.x\+48{max-width: 48%;}
-    &.x\+49{max-width: 49%;}
-    &.x\+50{max-width: 50%;}
-}
-
-.axis{
-    &.x\~0{padding-left:0;padding-right:0;}
-    &.x\~1{padding-left:1%;padding-right:1%;}
-    &.x\~2{padding-left:2%;padding-right:2%;}
-    &.x\~3{padding-left:3%;padding-right:3%;}
-    &.x\~4{padding-left:4%;padding-right:4%;}
-    &.x\~5{padding-left:5%;padding-right:5%;}
-    &.x\~6{padding-left:6%;padding-right:6%;}
-    &.x\~7{padding-left:7%;padding-right:7%;}
-    &.x\~8{padding-left:8%;padding-right:8%;}
-    &.x\~9{padding-left:9%;padding-right:9%;}
-}
-
-
-
-// Khoảng cách trong, ở bên trái và phải
-.axis{
-    &.x\~10{padding-left:10%;padding-right:10%;}
-    &.x\~11{padding-left:11%;padding-right:11%;}
-    &.x\~12{padding-left:12%;padding-right:12%;}
-    &.x\~13{padding-left:13%;padding-right:13%;}
-    &.x\~14{padding-left:14%;padding-right:14%;}
-    &.x\~15{padding-left:15%;padding-right:15%;}
-    &.x\~16{padding-left:16%;padding-right:16%;}
-    &.x\~17{padding-left:17%;padding-right:17%;}
-    &.x\~18{padding-left:18%;padding-right:18%;}
-    &.x\~19{padding-left:19%;padding-right:19%;}
-    &.x\~20{padding-left:20%;padding-right:20%;}
-    &.x\~21{padding-left:21%;padding-right:21%;}
-    &.x\~22{padding-left:22%;padding-right:22%;}
-    &.x\~23{padding-left:23%;padding-right:23%;}
-    &.x\~24{padding-left:24%;padding-right:24%;}
-    &.x\~25{padding-left:25%;padding-right:25%;}
-    &.x\~26{padding-left:26%;padding-right:26%;}
-    &.x\~27{padding-left:27%;padding-right:27%;}
-    &.x\~28{padding-left:28%;padding-right:28%;}
-    &.x\~29{padding-left:29%;padding-right:29%;}
-    &.x\~30{padding-left:30%;padding-right:30%;}
-    &.x\~31{padding-left:31%;padding-right:31%;}
-    &.x\~32{padding-left:32%;padding-right:32%;}
-    &.x\~33{padding-left:33%;padding-right:33.333333%;}
-    &.x\~34{padding-left:34%;padding-right:34%;}
-    &.x\~35{padding-left:35%;padding-right:35%;}
-    &.x\~36{padding-left:36%;padding-right:36%;}
-    &.x\~37{padding-left:37%;padding-right:37%;}
-    &.x\~38{padding-left:38%;padding-right:38%;}
-    &.x\~39{padding-left:39%;padding-right:39%;}
-    &.x\~40{padding-left:40%;padding-right:40%;}
-    &.x\~41{padding-left:41%;padding-right:41%;}
-    &.x\~42{padding-left:42%;padding-right:42%;}
-    &.x\~43{padding-left:43%;padding-right:43%;}
-    &.x\~44{padding-left:44%;padding-right:44%;}
-    &.x\~45{padding-left:45%;padding-right:45%;}
-    &.x\~46{padding-left:46%;padding-right:46%;}
-    &.x\~47{padding-left:47%;padding-right:47%;}
-    &.x\~48{padding-left:48%;padding-right:48%;}
-    &.x\~49{padding-left:49%;padding-right:49%;}
-    &.x\~50{padding-left:50%;padding-right:50%;}
-}
-
-
-// Khoảng cách trong, ở bên phải
-.axis{
-    &.\+x\~0{padding-right: 0;}
-    &.\+x\~1{padding-right: 1%;}
-    &.\+x\~2{padding-right: 2%;}
-    &.\+x\~3{padding-right: 3%;}
-    &.\+x\~4{padding-right: 4%;}
-    &.\+x\~5{padding-right: 5%;}
-    &.\+x\~6{padding-right: 6%;}
-    &.\+x\~7{padding-right: 7%;}
-    &.\+x\~8{padding-right: 8%;}
-    &.\+x\~9{padding-right: 9%;}
-
-    &.\+x\~10{padding-right: 10%;}
-    &.\+x\~11{padding-right: 11%;}
-    &.\+x\~22{padding-right: 22%;}
-    &.\+x\~13{padding-right: 13%;}
-    &.\+x\~14{padding-right: 14%;}
-    &.\+x\~15{padding-right: 15%;}
-    &.\+x\~16{padding-right: 16%;}
-    &.\+x\~17{padding-right: 17%;}
-    &.\+x\~18{padding-right: 18%;}
-    &.\+x\~19{padding-right: 19%;}
-    &.\+x\~20{padding-right: 20%;}
-    &.\+x\~21{padding-right: 21%;}
-    &.\+x\~22{padding-right: 22%;}
-    &.\+x\~23{padding-right: 23%;}
-    &.\+x\~24{padding-right: 24%;}
-    &.\+x\~25{padding-right: 25%;}
-    &.\+x\~26{padding-right: 26%;}
-    &.\+x\~27{padding-right: 27%;}
-    &.\+x\~28{padding-right: 28%;}
-    &.\+x\~29{padding-right: 29%;}
-    &.\+x\~30{padding-right: 30%;}
-    &.\+x\~31{padding-right: 31%;}
-    &.\+x\~32{padding-right: 32%;}
-    &.\+x\~33{padding-right: 33.333333%;}
-    &.\+x\~34{padding-right: 34%;}
-    &.\+x\~35{padding-right: 35%;}
-    &.\+x\~36{padding-right: 36%;}
-    &.\+x\~37{padding-right: 37%;}
-    &.\+x\~38{padding-right: 38%;}
-    &.\+x\~39{padding-right: 39%;}
-    &.\+x\~40{padding-right: 40%;}
-    &.\+x\~41{padding-right: 41%;}
-    &.\+x\~42{padding-right: 42%;}
-    &.\+x\~43{padding-right: 43%;}
-    &.\+x\~44{padding-right: 44%;}
-    &.\+x\~45{padding-right: 45%;}
-    &.\+x\~46{padding-right: 46%;}
-    &.\+x\~47{padding-right: 47%;}
-    &.\+x\~48{padding-right: 48%;}
-    &.\+x\~49{padding-right: 49%;}
-    &.\+x\~50{padding-right: 50%;}
-}
-
-
-// Khoảng cách trong, ở bên trái
-.axis{
-    &.-x\~0{padding-left: 0;}
-    &.-x\~1{padding-left: 1%;}
-    &.-x\~2{padding-left: 2%;}
-    &.-x\~3{padding-left: 3%;}
-    &.-x\~4{padding-left: 4%;}
-    &.-x\~5{padding-left: 5%;}
-    &.-x\~6{padding-left: 6%;}
-    &.-x\~7{padding-left: 7%;}
-    &.-x\~8{padding-left: 8%;}
-    &.-x\~9{padding-left: 9%;}
-
-    &.-x\~10{padding-left: 10%;}
-    &.-x\~11{padding-left: 11%;}
-    &.-x\~12{padding-left: 12%;}
-    &.-x\~13{padding-left: 13%;}
-    &.-x\~14{padding-left: 14%;}
-    &.-x\~15{padding-left: 15%;}
-    &.-x\~16{padding-left: 16%;}
-    &.-x\~17{padding-left: 17%;}
-    &.-x\~18{padding-left: 18%;}
-    &.-x\~19{padding-left: 19%;}
-    &.-x\~20{padding-left: 20%;}
-    &.-x\~21{padding-left: 21%;}
-    &.-x\~22{padding-left: 22%;}
-    &.-x\~23{padding-left: 23%;}
-    &.-x\~24{padding-left: 24%;}
-    &.-x\~25{padding-left: 25%;}
-    &.-x\~26{padding-left: 26%;}
-    &.-x\~27{padding-left: 27%;}
-    &.-x\~28{padding-left: 28%;}
-    &.-x\~29{padding-left: 29%;}
-    &.-x\~30{padding-left: 30%;}
-    &.-x\~31{padding-left: 31%;}
-    &.-x\~32{padding-left: 32%;}
-    &.-x\~33{padding-left: 33.333333%;}
-    &.-x\~34{padding-left: 34%;}
-    &.-x\~35{padding-left: 35%;}
-    &.-x\~36{padding-left: 36%;}
-    &.-x\~37{padding-left: 37%;}
-    &.-x\~38{padding-left: 38%;}
-    &.-x\~39{padding-left: 39%;}
-    &.-x\~40{padding-left: 40%;}
-    &.-x\~41{padding-left: 41%;}
-    &.-x\~42{padding-left: 42%;}
-    &.-x\~43{padding-left: 43%;}
-    &.-x\~44{padding-left: 44%;}
-    &.-x\~45{padding-left: 45%;}
-    &.-x\~46{padding-left: 46%;}
-    &.-x\~47{padding-left: 47%;}
-    &.-x\~48{padding-left: 48%;}
-    &.-x\~49{padding-left: 49%;}
-    &.-x\~50{padding-left: 50%;}
-}
-
-
-
-
-// Khoảng cách trong ở bên trên và dưới
-.axis{
-    &.y\~0{padding-top:0;padding-bottom:0;}
-    &.y\~1{padding-top:1%;padding-bottom:1%;}
-    &.y\~1\.5{padding-top:5%;padding-bottom:5%;}
-    &.y\~2{padding-top:2%;padding-bottom:2%;}
-    &.y\~2\.5{padding-top:2.5%;padding-bottom:2.5%;}
-    &.y\~3{padding-top:3%;padding-bottom:3%;}
-    &.y\~3\.5{padding-top:3.5%;padding-bottom:3.5%;}
-    &.y\~4{padding-top:4%;padding-bottom:4%;}
-    &.y\~4\.5{padding-top:4.5%;padding-bottom:4.5%;}
-    &.y\~5{padding-top:5%;padding-bottom:5%;}
-    &.y\~5\.5{padding-top:5.5%;padding-bottom:5.5%;}
-    &.y\~6{padding-top:6%;padding-bottom:6%;}
-    &.y\~6\.5{padding-top:6.5%;padding-bottom:6.5%;}
-    &.y\~7{padding-top:7%;padding-bottom:7%;}
-    &.y\~7\.5{padding-top:7.5%;padding-bottom:7.5%;}
-    &.y\~8{padding-top:8%;padding-bottom:8%;}
-    &.y\~8\.5{padding-top:8.5%;padding-bottom:8.5%;}
-    &.y\~9{padding-top:9%;padding-bottom:9%;}
-    &.y\~9\.5{padding-top:9.5%;padding-bottom:9.5%;}
-
-    &.y\~10{padding-top:10%;padding-bottom:10%;}
-    &.y\~11{padding-top:11%;padding-bottom:11%;}
-    &.y\~12{padding-top:12%;padding-bottom:12%;}
-    &.y\~13{padding-top:13%;padding-bottom:13%;}
-    &.y\~14{padding-top:14%;padding-bottom:14%;}
-    &.y\~15{padding-top:15%;padding-bottom:15%;}
-    &.y\~16{padding-top:16%;padding-bottom:16%;}
-    &.y\~17{padding-top:17%;padding-bottom:17%;}
-    &.y\~18{padding-top:18%;padding-bottom:18%;}
-    &.y\~19{padding-top:19%;padding-bottom:19%;}
-    &.y\~20{padding-top:20%;padding-bottom:20%;}
-    &.y\~21{padding-top:21%;padding-bottom:21%;}
-    &.y\~22{padding-top:22%;padding-bottom:22%;}
-    &.y\~23{padding-top:23%;padding-bottom:23%;}
-    &.y\~24{padding-top:24%;padding-bottom:24%;}
-    &.y\~25{padding-top:25%;padding-bottom:25%;}
-    &.y\~26{padding-top:26%;padding-bottom:26%;}
-    &.y\~27{padding-top:27%;padding-bottom:27%;}
-    &.y\~28{padding-top:28%;padding-bottom:28%;}
-    &.y\~29{padding-top:29%;padding-bottom:29%;}
-    &.y\~30{padding-top:30%;padding-bottom:30%;}
-    &.y\~31{padding-top:31%;padding-bottom:31%;}
-    &.y\~32{padding-top:32%;padding-bottom:32%;}
-    &.y\~33{padding-top:33.333333%;padding-bottom:33.333333%;}
-    &.y\~34{padding-top:34%;padding-bottom:34%;}
-    &.y\~35{padding-top:35%;padding-bottom:35%;}
-    &.y\~36{padding-top:36%;padding-bottom:36%;}
-    &.y\~37{padding-top:37%;padding-bottom:37%;}
-    &.y\~38{padding-top:38%;padding-bottom:38%;}
-    &.y\~39{padding-top:39%;padding-bottom:39%;}
-    &.y\~40{padding-top:40%;padding-bottom:40%;}
-    &.y\~41{padding-top:41%;padding-bottom:41%;}
-    &.y\~42{padding-top:42%;padding-bottom:42%;}
-    &.y\~43{padding-top:43%;padding-bottom:43%;}
-    &.y\~44{padding-top:44%;padding-bottom:44%;}
-    &.y\~45{padding-top:45%;padding-bottom:45%;}
-    &.y\~46{padding-top:46%;padding-bottom:46%;}
-    &.y\~47{padding-top:47%;padding-bottom:47%;}
-    &.y\~48{padding-top:48%;padding-bottom:48%;}
-    &.y\~49{padding-top:49%;padding-bottom:49%;}
-    &.y\~50{padding-top:50%;padding-bottom:50%;}
-}
-
-
-// Khoảng cách trong ở dưới
-.axis{
-    &.-y\~0{padding-bottom: 0;}
-    &.-y\~1{padding-bottom: 1%;}
-    &.-y\~1\.5{padding-bottom: 1.5%;}
-    &.-y\~2{padding-bottom: 2%;}
-    &.-y\~2\.5{padding-bottom: 2.5%;}
-    &.-y\~3{padding-bottom: 3%;}
-    &.-y\~3\.5{padding-bottom: 3.5%;}
-    &.-y\~4{padding-bottom: 4%;}
-    &.-y\~4\.5{padding-bottom: 4.5%;}
-    &.-y\~5{padding-bottom: 5%;}
-    &.-y\~5\.5{padding-bottom: 5.5%;}
-    &.-y\~6{padding-bottom: 6%;}
-    &.-y\~6\.5{padding-bottom: 6.5%;}
-    &.-y\~7{padding-bottom: 7%;}
-    &.-y\~7\.5{padding-bottom: 7.5%;}
-    &.-y\~8{padding-bottom: 8%;}
-    &.-y\~8\.5{padding-bottom: 8.5%;}
-    &.-y\~9{padding-bottom: 9%;}
-    &.-y\~9\.5{padding-bottom: 9.5%;}
-
-    &.-y\~10{padding-bottom: 10%;}
-    &.-y\~11{padding-bottom: 11%;}
-    &.-y\~12{padding-bottom: 12%;}
-    &.-y\~13{padding-bottom: 13%;}
-    &.-y\~14{padding-bottom: 14%;}
-    &.-y\~15{padding-bottom: 15%;}
-    &.-y\~16{padding-bottom: 16%;}
-    &.-y\~17{padding-bottom: 17%;}
-    &.-y\~18{padding-bottom: 18%;}
-    &.-y\~19{padding-bottom: 19%;}
-    &.-y\~20{padding-bottom: 20%;}
-    &.-y\~21{padding-bottom: 21%;}
-    &.-y\~22{padding-bottom: 22%;}
-    &.-y\~23{padding-bottom: 23%;}
-    &.-y\~24{padding-bottom: 24%;}
-    &.-y\~25{padding-bottom: 25%;}
-    &.-y\~26{padding-bottom: 26%;}
-    &.-y\~27{padding-bottom: 27%;}
-    &.-y\~28{padding-bottom: 28%;}
-    &.-y\~29{padding-bottom: 29%;}
-    &.-y\~30{padding-bottom: 30%;}
-    &.-y\~31{padding-bottom: 31%;}
-    &.-y\~32{padding-bottom: 32%;}
-    &.-y\~33{padding-bottom: 33.333333%;}
-    &.-y\~34{padding-bottom: 34%;}
-    &.-y\~35{padding-bottom: 35%;}
-    &.-y\~36{padding-bottom: 36%;}
-    &.-y\~37{padding-bottom: 37%;}
-    &.-y\~38{padding-bottom: 38%;}
-    &.-y\~39{padding-bottom: 39%;}
-    &.-y\~40{padding-bottom: 40%;}
-    &.-y\~41{padding-bottom: 41%;}
-    &.-y\~42{padding-bottom: 42%;}
-    &.-y\~43{padding-bottom: 43%;}
-    &.-y\~44{padding-bottom: 44%;}
-    &.-y\~45{padding-bottom: 45%;}
-    &.-y\~46{padding-bottom: 46%;}
-    &.-y\~47{padding-bottom: 47%;}
-    &.-y\~48{padding-bottom: 48%;}
-    &.-y\~49{padding-bottom: 49%;}
-    &.-y\~50{padding-bottom: 50%;}
-}
-
-
-
-// Khoảng cách trong ở trên
-.axis{
-    &.\+y\~0{padding-top: 0;}
-    &.\+y\~1{padding-top: 1%;}
-    &.\+y\~1\.5{padding-top: 1.5%;}
-    &.\+y\~2{padding-top: 2%;}
-    &.\+y\~2\.5{padding-top: 2.5%;}
-    &.\+y\~3{padding-top: 3%;}
-    &.\+y\~3\.5{padding-top: 3.5%;}
-    &.\+y\~4{padding-top: 4%;}
-    &.\+y\~4\.5{padding-top: 4.5%;}
-    &.\+y\~5{padding-top: 5%;}
-    &.\+y\~5\.5{padding-top: 5.5%;}
-    &.\+y\~6{padding-top: 6%;}
-    &.\+y\~6\.5{padding-top: 6.5%;}
-    &.\+y\~7{padding-top: 7%;}
-    &.\+y\~7\.5{padding-top: 7.5%;}
-    &.\+y\~8{padding-top: 8%;}
-    &.\+y\~8\.5{padding-top: 8.5%;}
-    &.\+y\~9{padding-top: 9%;}
-    &.\+y\~9\.5{padding-top: 9.5%;}
-
-    &.\+y\~10{padding-top: 10%;}
-    &.\+y\~11{padding-top: 11%;}
-    &.\+y\~12{padding-top: 12%;}
-    &.\+y\~13{padding-top: 13%;}
-    &.\+y\~14{padding-top: 14%;}
-    &.\+y\~15{padding-top: 15%;}
-    &.\+y\~16{padding-top: 16%;}
-    &.\+y\~17{padding-top: 17%;}
-    &.\+y\~18{padding-top: 18%;}
-    &.\+y\~19{padding-top: 19%;}
-    &.\+y\~20{padding-top: 20%;}
-    &.\+y\~21{padding-top: 21%;}
-    &.\+y\~22{padding-top: 22%;}
-    &.\+y\~23{padding-top: 23%;}
-    &.\+y\~24{padding-top: 24%;}
-    &.\+y\~25{padding-top: 25%;}
-    &.\+y\~26{padding-top: 26%;}
-    &.\+y\~27{padding-top: 27%;}
-    &.\+y\~28{padding-top: 28%;}
-    &.\+y\~29{padding-top: 29%;}
-    &.\+y\~30{padding-top: 30%;}
-    &.\+y\~31{padding-top: 31%;}
-    &.\+y\~32{padding-top: 32%;}
-    &.\+y\~33{padding-top: 33.333333%;}
-    &.\+y\~34{padding-top: 34%;}
-    &.\+y\~35{padding-top: 35%;}
-    &.\+y\~36{padding-top: 36%;}
-    &.\+y\~37{padding-top: 37%;}
-    &.\+y\~38{padding-top: 38%;}
-    &.\+y\~39{padding-top: 39%;}
-    &.\+y\~40{padding-top: 40%;}
-    &.\+y\~41{padding-top: 41%;}
-    &.\+y\~42{padding-top: 42%;}
-    &.\+y\~43{padding-top: 43%;}
-    &.\+y\~44{padding-top: 44%;}
-    &.\+y\~45{padding-top: 45%;}
-    &.\+y\~46{padding-top: 46%;}
-    &.\+y\~47{padding-top: 47%;}
-    &.\+y\~48{padding-top: 48%;}
-    &.\+y\~49{padding-top: 49%;}
-    &.\+y\~50{padding-top: 50%;}
-}
-
-
-
-// Khoảng cách ngoài ở trên và dưới
-.axis{
-    &.oy\~0{margin-top: 0;margin-bottom: 0;}
-    &.oy\~1{margin-top: 1%;margin-bottom: 1%;}
-    &.oy\~2{margin-top: 2%;margin-bottom: 2%;}
-    &.oy\~3{margin-top: 3%;margin-bottom: 3%;}
-    &.oy\~4{margin-top: 4%;margin-bottom: 4%;}
-    &.oy\~5{margin-top: 5%;margin-bottom: 5%;}
-    &.oy\~6{margin-top: 6%;margin-bottom: 6%;}
-    &.oy\~7{margin-top: 7%;margin-bottom: 7%;}
-    &.oy\~8{margin-top: 8%;margin-bottom: 8%;}
-    &.oy\~9{margin-top: 9%;margin-bottom: 9%;}
-
-    &.oy\~10{margin-bottom: 10%;margin-top: 10%;}
-    &.oy\~11{margin-bottom: 11%;margin-top: 11%;}
-    &.oy\~12{margin-bottom: 12%;margin-top: 12%;}
-    &.oy\~13{margin-bottom: 13%;margin-top: 13%;}
-    &.oy\~14{margin-bottom: 14%;margin-top: 14%;}
-    &.oy\~15{margin-bottom: 15%;margin-top: 15%;}
-    &.oy\~16{margin-bottom: 16%;margin-top: 16%;}
-    &.oy\~17{margin-bottom: 17%;margin-top: 17%;}
-    &.oy\~18{margin-bottom: 18%;margin-top: 18%;}
-    &.oy\~19{margin-bottom: 19%;margin-top: 19%;}
-    &.oy\~20{margin-bottom: 20%;margin-top: 20%;}
-    &.oy\~21{margin-bottom: 21%;margin-top: 21%;}
-    &.oy\~22{margin-bottom: 22%;margin-top: 22%;}
-    &.oy\~23{margin-bottom: 23%;margin-top: 23%;}
-    &.oy\~24{margin-bottom: 24%;margin-top: 24%;}
-    &.oy\~25{margin-bottom: 25%;margin-top: 25%;}
-    &.oy\~26{margin-bottom: 26%;margin-top: 26%;}
-    &.oy\~27{margin-bottom: 27%;margin-top: 27%;}
-    &.oy\~28{margin-bottom: 28%;margin-top: 28%;}
-    &.oy\~29{margin-bottom: 29%;margin-top: 29%;}
-    &.oy\~30{margin-bottom: 30%;margin-top: 30%;}
-}
-
-
-
-//Khoảng cách ngoài ở trên
-.axis{
-    &.oy\+0{margin-top: 0;}
-    &.oy\+1{margin-top: 1%;}
-    &.oy\+2{margin-top: 2%;}
-    &.oy\+3{margin-top: 3%;}
-    &.oy\+4{margin-top: 4%;}
-    &.oy\+5{margin-top: 5%;}
-    &.oy\+6{margin-top: 6%;}
-    &.oy\+7{margin-top: 7%;}
-    &.oy\+8{margin-top: 8%;}
-    &.oy\+9{margin-top: 9%;}
-
-    &.oy\+10{margin-top: 10%;}
-    &.oy\+11{margin-top: 11%;}
-    &.oy\+12{margin-top: 12%;}
-    &.oy\+13{margin-top: 13%;}
-    &.oy\+14{margin-top: 14%;}
-    &.oy\+15{margin-top: 15%;}
-    &.oy\+16{margin-top: 16%;}
-    &.oy\+17{margin-top: 17%;}
-    &.oy\+18{margin-top: 18%;}
-    &.oy\+19{margin-top: 19%;}
-    &.oy\+20{margin-top: 20%;}
-    &.oy\+21{margin-top: 21%;}
-    &.oy\+22{margin-top: 22%;}
-    &.oy\+23{margin-top: 23%;}
-    &.oy\+24{margin-top: 24%;}
-    &.oy\+25{margin-top: 25%;}
-    &.oy\+26{margin-top: 26%;}
-    &.oy\+27{margin-top: 27%;}
-    &.oy\+28{margin-top: 28%;}
-    &.oy\+29{margin-top: 29%;}
-    &.oy\+30{margin-top: 30%;}
-}
-
-
-
-// Khoảng cách ngoài ở dưới
-.axis{
-    &.oy-0{margin-bottom: 0;}
-    &.oy-1{margin-bottom: 1%;}
-    &.oy-2{margin-bottom: 2%;}
-    &.oy-3{margin-bottom: 3%;}
-    &.oy-4{margin-bottom: 4%;}
-    &.oy-5{margin-bottom: 5%;}
-    &.oy-6{margin-bottom: 6%;}
-    &.oy-7{margin-bottom: 7%;}
-    &.oy-8{margin-bottom: 8%;}
-    &.oy-9{margin-bottom: 9%;}
-
-    &.oy-10{margin-bottom: 10%;}
-    &.oy-11{margin-bottom: 11%;}
-    &.oy-12{margin-bottom: 12%;}
-    &.oy-13{margin-bottom: 13%;}
-    &.oy-14{margin-bottom: 14%;}
-    &.oy-15{margin-bottom: 15%;}
-    &.oy-16{margin-bottom: 16%;}
-    &.oy-17{margin-bottom: 17%;}
-    &.oy-18{margin-bottom: 18%;}
-    &.oy-19{margin-bottom: 19%;}
-    &.oy-20{margin-bottom: 20%;}
-    &.oy-21{margin-bottom: 21%;}
-    &.oy-22{margin-bottom: 22%;}
-    &.oy-23{margin-bottom: 23%;}
-    &.oy-24{margin-bottom: 24%;}
-    &.oy-25{margin-bottom: 25%;}
-    &.oy-26{margin-bottom: 26%;}
-    &.oy-27{margin-bottom: 27%;}
-    &.oy-28{margin-bottom: 28%;}
-    &.oy-29{margin-bottom: 29%;}
-    &.oy-30{margin-bottom: 30%;}
-}
-
-
-// OX~ :Khoảng cách ngoài bên trái và phải
-.axis{
-    &.ox\~0{margin-left: 0;margin-right: 0;}
-    &.ox\~1{margin-left: 1%;margin-right: 1%;}
-    &.ox\~2{margin-left: 2%;margin-right: 2%;}
-    &.ox\~3{margin-left: 3%;margin-right: 3%;}
-    &.ox\~4{margin-left: 4%;margin-right: 4%;}
-    &.ox\~5{margin-left: 5%;margin-right: 5%;}
-    &.ox\~6{margin-left: 6%;margin-right: 6%;}
-    &.ox\~7{margin-left: 7%;margin-right: 7%;}
-    &.ox\~8{margin-left: 8%;margin-right: 8%;}
-    &.ox\~9{margin-left: 9%;margin-right: 9%;}
-}
-
-
-// OX+ :Khoảng cách ngoài bên phải
-.axis{
-    &.ox\+0{margin-right: 0;}
-    &.ox\+1{margin-right: 1%;}
-    &.ox\+2{margin-right: 2%;}
-    &.ox\+3{margin-right: 3%;}
-    &.ox\+4{margin-right: 4%;}
-    &.ox\+5{margin-right: 5%;}
-    &.ox\+6{margin-right: 6%;}
-    &.ox\+7{margin-right: 7%;}
-    &.ox\+8{margin-right: 8%;}
-    &.ox\+9{margin-right: 9%;}
-
-    &.ox\+10{margin-right: 10%;}
-    &.ox\+11{margin-right: 11%;}
-    &.ox\+12{margin-right: 12%;}
-    &.ox\+13{margin-right: 13%;}
-    &.ox\+14{margin-right: 14%;}
-    &.ox\+15{margin-right: 15%;}
-    &.ox\+16{margin-right: 16%;}
-    &.ox\+17{margin-right: 17%;}
-    &.ox\+18{margin-right: 18%;}
-    &.ox\+19{margin-right: 19%;}
-    &.ox\+20{margin-right: 20%;}
-    &.ox\+21{margin-right: 21%;}
-    &.ox\+22{margin-right: 22%;}
-    &.ox\+23{margin-right: 23%;}
-    &.ox\+24{margin-right: 24%;}
-    &.ox\+25{margin-right: 25%;}
-    &.ox\+26{margin-right: 26%;}
-    &.ox\+27{margin-right: 27%;}
-    &.ox\+28{margin-right: 28%;}
-    &.ox\+29{margin-right: 29%;}
-    &.ox\+30{margin-right: 30%;}
-    &.ox\+31{margin-right: 31%;}
-    &.ox\+32{margin-right: 32%;}
-    &.ox\+33{margin-right: 33%;}
-    &.ox\+34{margin-right: 34%;}
-    &.ox\+35{margin-right: 35%;}
-    &.ox\+36{margin-right: 36%;}
-    &.ox\+37{margin-right: 37%;}
-    &.ox\+38{margin-right: 38%;}
-    &.ox\+39{margin-right: 39%;}
-    &.ox\+30{margin-right: 30%;}
-}
-
-
-// OX- : Khoảng cách ngoài bên trái
-.axis{
-    &.ox-0{margin-left: 0;}
-    &.ox-1{margin-left: 1%;}
-    &.ox-2{margin-left: 2%;}
-    &.ox-3{margin-left: 3%;}
-    &.ox-4{margin-left: 4%;}
-    &.ox-5{margin-left: 5%;}
-    &.ox-6{margin-left: 6%;}
-    &.ox-7{margin-left: 7%;}
-    &.ox-8{margin-left: 8%;}
-    &.ox-9{margin-left: 9%;}
-
-    &.ox-10{margin-left: 10%;}
-    &.ox-11{margin-left: 11%;}
-    &.ox-12{margin-left: 12%;}
-    &.ox-13{margin-left: 13%;}
-    &.ox-14{margin-left: 14%;}
-    &.ox-15{margin-left: 15%;}
-    &.ox-16{margin-left: 16%;}
-    &.ox-17{margin-left: 17%;}
-    &.ox-18{margin-left: 18%;}
-    &.ox-19{margin-left: 19%;}
-    &.ox-20{margin-left: 20%;}
-    &.ox-21{margin-left: 21%;}
-    &.ox-22{margin-left: 22%;}
-    &.ox-23{margin-left: 23%;}
-    &.ox-24{margin-left: 24%;}
-    &.ox-25{margin-left: 25%;}
-    &.ox-26{margin-left: 26%;}
-    &.ox-27{margin-left: 27%;}
-    &.ox-28{margin-left: 28%;}
-    &.ox-29{margin-left: 29%;}
-    &.ox-30{margin-left: 30%;}
-    &.ox-31{margin-left: 31%;}
-    &.ox-32{margin-left: 32%;}
-    &.ox-33{margin-left: 33%;}
-    &.ox-34{margin-left: 34%;}
-    &.ox-35{margin-left: 35%;}
-    &.ox-36{margin-left: 36%;}
-    &.ox-37{margin-left: 37%;}
-    &.ox-38{margin-left: 38%;}
-    &.ox-39{margin-left: 39%;}
-    &.ox-30{margin-left: 30%;}
-}
-
-// Thiết đặt mặc định hình ảnh
-img[class*="fbox"], img[class*="fbox x+"], img[class*="fbox x-"], [class*="fbox"] > img
-{width: 100%;height: 100%;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 768px){
- // Thiết đặt kiểu sắp xếp nội dung cột và hàng
-.axis{
-
-    &._o-1{justify-content: flex-start}
-    &._o-2{justify-content: center;}
-    &._o-3{justify-content: flex-end;}
-    &._o-4{justify-content: space-between;}
-    &._o-5{justify-content: space-evenly;}
-    &._o-6{justify-content: space-around;}
-
-    &._o\+1{align-items: flex-start;}
-    &._o\+2{align-items: center;}
-    &._o\+3{align-items: flex-end;}
-    &._o\+4{align-items: baseline;}
-    &._o\+5{align-items: stretch;}
-
-    &._ox{margin-left: auto;margin-right: auto;}
-    &._oy{margin-top: auto;margin-bottom: auto;}
-}
-
-
-// Thiết đặt hàng và cột
-.axis{
-    &._x\+0{flex-grow: 1;}
-    &._x-0{max-width: 0;flex-shrink: 1;}
-    &._x\+0{min-width: 0;flex-grow: 1;}
-    &._x-100,
-    &._x--100{display: flex;flex-direction: row;}
-    &._x--100{flex-wrap: wrap;}
-    &._x\+100{min-width: 100%;}
-    &._y-100{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    ._axis-w0{
+        max-width: 0%;
     }
-}
-// X - chiều ngang nhỏ nhất là [1% - 50%]
-.axis{
-    &._x-1{min-width: 1%;}
-    &._x-2{min-width: 2%;}
-    &._x-3{min-width: 3%;}
-    &._x-4{min-width: 4%;}
-    &._x-5{min-width: 5%;}
-    &._x-6{min-width: 6%;}
-    &._x-7{min-width: 7%;}
-    &._x-8{min-width: 8%;}
-    &._x-9{min-width: 9%;}
-
-    &._x-10{min-width: 10%;}
-    &._x-11{min-width: 11%;}
-    &._x-12{min-width: 12%;}
-    &._x-13{min-width: 13%;}
-    &._x-14{min-width: 14%;}
-    &._x-15{min-width: 15%;}
-    &._x-16{min-width: 16%;}
-    &._x-17{min-width: 17%;}
-    &._x-18{min-width: 18%;}
-    &._x-19{min-width: 19%;}
-    &._x-20{min-width: 20%;}
-    &._x-21{min-width: 21%;}
-    &._x-22{min-width: 22%;}
-    &._x-23{min-width: 23%;}
-    &._x-24{min-width: 24%;}
-    &._x-25{min-width: 25%;}
-    &._x-26{min-width: 26%;}
-    &._x-27{min-width: 27%;}
-    &._x-28{min-width: 28%;}
-    &._x-29{min-width: 29%;}
-    &._x-30{min-width: 30%;}
-    &._x-31{min-width: 31%;}
-    &._x-32{min-width: 32%;}
-    &._x-33{min-width: 33.3333333333%;}
-    &._x-34{min-width: 34%;}
-    &._x-35{min-width: 35%;}
-    &._x-36{min-width: 36%;}
-    &._x-37{min-width: 37%;}
-    &._x-38{min-width: 38%;}
-    &._x-39{min-width: 39%;}
-    &._x-40{min-width: 40%;}
-    &._x-41{min-width: 41%;}
-    &._x-42{min-width: 42%;}
-    &._x-43{min-width: 43%;}
-    &._x-44{min-width: 44%;}
-    &._x-45{min-width: 45%;}
-    &._x-46{min-width: 46%;}
-    &._x-47{min-width: 47%;}
-    &._x-48{min-width: 48%;}
-    &._x-49{min-width: 49%;}
-    &._x-50{min-width: 50%;}
-}
-
-
-// X - chiều ngang lớn nhất là [1% - 50%]
-.axis{
-    &._x\+1{max-width: 1%;}
-    &._x\+2{max-width: 2%;}
-    &._x\+3{max-width: 3%;}
-    &._x\+4{max-width: 4%;}
-    &._x\+5{max-width: 5%;}
-    &._x\+6{max-width: 6%;}
-    &._x\+7{max-width: 7%;}
-    &._x\+8{max-width: 8%;}
-    &._x\+9{max-width: 9%;}
-
-    &._x\+10{max-width: 10%;}
-    &._x\+11{max-width: 11%;}
-    &._x\+12{max-width: 12%;}
-    &._x\+13{max-width: 13%;}
-    &._x\+14{max-width: 14%;}
-    &._x\+15{max-width: 15%;}
-    &._x\+16{max-width: 16%;}
-    &._x\+17{max-width: 17%;}
-    &._x\+18{max-width: 18%;}
-    &._x\+19{max-width: 19%;}
-    &._x\+20{max-width: 20%;}
-    &._x\+21{max-width: 21%;}
-    &._x\+22{max-width: 22%;}
-    &._x\+23{max-width: 23%;}
-    &._x\+24{max-width: 24%;}
-    &._x\+25{max-width: 25%;}
-    &._x\+26{max-width: 26%;}
-    &._x\+27{max-width: 27%;}
-    &._x\+28{max-width: 28%;}
-    &._x\+29{max-width: 29%;}
-    &._x\+30{max-width: 30%;}
-    &._x\+31{max-width: 31%;}
-    &._x\+32{max-width: 32%;}
-    &._x\+33{max-width: 33.333333%;}
-    &._x\+34{max-width: 34%;}
-    &._x\+35{max-width: 35%;}
-    &._x\+36{max-width: 36%;}
-    &._x\+37{max-width: 37%;}
-    &._x\+38{max-width: 38%;}
-    &._x\+39{max-width: 39%;}
-    &._x\+40{max-width: 40%;}
-    &._x\+41{max-width: 41%;}
-    &._x\+42{max-width: 42%;}
-    &._x\+43{max-width: 43%;}
-    &._x\+44{max-width: 44%;}
-    &._x\+45{max-width: 45%;}
-    &._x\+46{max-width: 46%;}
-    &._x\+47{max-width: 47%;}
-    &._x\+48{max-width: 48%;}
-    &._x\+49{max-width: 49%;}
-    &._x\+50{max-width: 50%;}
-}
-
-.axis{
-    &._x\~0{padding-left:0;padding-right:0;}
-    &._x\~1{padding-left:1%;padding-right:1%;}
-    &._x\~2{padding-left:2%;padding-right:2%;}
-    &._x\~3{padding-left:3%;padding-right:3%;}
-    &._x\~4{padding-left:4%;padding-right:4%;}
-    &._x\~5{padding-left:5%;padding-right:5%;}
-    &._x\~6{padding-left:6%;padding-right:6%;}
-    &._x\~7{padding-left:7%;padding-right:7%;}
-    &._x\~8{padding-left:8%;padding-right:8%;}
-    &._x\~9{padding-left:9%;padding-right:9%;}
-}
-
-
-
-// Khoảng cách trong, ở bên trái và phải
-.axis{
-    &._x\~10{padding-left:10%;padding-right:10%;}
-    &._x\~11{padding-left:11%;padding-right:11%;}
-    &._x\~12{padding-left:12%;padding-right:12%;}
-    &._x\~13{padding-left:13%;padding-right:13%;}
-    &._x\~14{padding-left:14%;padding-right:14%;}
-    &._x\~15{padding-left:15%;padding-right:15%;}
-    &._x\~16{padding-left:16%;padding-right:16%;}
-    &._x\~17{padding-left:17%;padding-right:17%;}
-    &._x\~18{padding-left:18%;padding-right:18%;}
-    &._x\~19{padding-left:19%;padding-right:19%;}
-    &._x\~20{padding-left:20%;padding-right:20%;}
-    &._x\~21{padding-left:21%;padding-right:21%;}
-    &._x\~22{padding-left:22%;padding-right:22%;}
-    &._x\~23{padding-left:23%;padding-right:23%;}
-    &._x\~24{padding-left:24%;padding-right:24%;}
-    &._x\~25{padding-left:25%;padding-right:25%;}
-    &._x\~26{padding-left:26%;padding-right:26%;}
-    &._x\~27{padding-left:27%;padding-right:27%;}
-    &._x\~28{padding-left:28%;padding-right:28%;}
-    &._x\~29{padding-left:29%;padding-right:29%;}
-    &._x\~30{padding-left:30%;padding-right:30%;}
-    &._x\~31{padding-left:31%;padding-right:31%;}
-    &._x\~32{padding-left:32%;padding-right:32%;}
-    &._x\~33{padding-left:33%;padding-right:33.333333%;}
-    &._x\~34{padding-left:34%;padding-right:34%;}
-    &._x\~35{padding-left:35%;padding-right:35%;}
-    &._x\~36{padding-left:36%;padding-right:36%;}
-    &._x\~37{padding-left:37%;padding-right:37%;}
-    &._x\~38{padding-left:38%;padding-right:38%;}
-    &._x\~39{padding-left:39%;padding-right:39%;}
-    &._x\~40{padding-left:40%;padding-right:40%;}
-    &._x\~41{padding-left:41%;padding-right:41%;}
-    &._x\~42{padding-left:42%;padding-right:42%;}
-    &._x\~43{padding-left:43%;padding-right:43%;}
-    &._x\~44{padding-left:44%;padding-right:44%;}
-    &._x\~45{padding-left:45%;padding-right:45%;}
-    &._x\~46{padding-left:46%;padding-right:46%;}
-    &._x\~47{padding-left:47%;padding-right:47%;}
-    &._x\~48{padding-left:48%;padding-right:48%;}
-    &._x\~49{padding-left:49%;padding-right:49%;}
-    &._x\~50{padding-left:50%;padding-right:50%;}
-}
-
-
-// Khoảng cách trong, ở bên phải
-.axis{
-    &._\+x\~0{padding-right: 0;}
-    &._\+x\~1{padding-right: 1%;}
-    &._\+x\~2{padding-right: 2%;}
-    &._\+x\~3{padding-right: 3%;}
-    &._\+x\~4{padding-right: 4%;}
-    &._\+x\~5{padding-right: 5%;}
-    &._\+x\~6{padding-right: 6%;}
-    &._\+x\~7{padding-right: 7%;}
-    &._\+x\~8{padding-right: 8%;}
-    &._\+x\~9{padding-right: 9%;}
-
-    &._\+x\~10{padding-right: 10%;}
-    &._\+x\~11{padding-right: 11%;}
-    &._\+x\~22{padding-right: 22%;}
-    &._\+x\~13{padding-right: 13%;}
-    &._\+x\~14{padding-right: 14%;}
-    &._\+x\~15{padding-right: 15%;}
-    &._\+x\~16{padding-right: 16%;}
-    &._\+x\~17{padding-right: 17%;}
-    &._\+x\~18{padding-right: 18%;}
-    &._\+x\~19{padding-right: 19%;}
-    &._\+x\~20{padding-right: 20%;}
-    &._\+x\~21{padding-right: 21%;}
-    &._\+x\~22{padding-right: 22%;}
-    &._\+x\~23{padding-right: 23%;}
-    &._\+x\~24{padding-right: 24%;}
-    &._\+x\~25{padding-right: 25%;}
-    &._\+x\~26{padding-right: 26%;}
-    &._\+x\~27{padding-right: 27%;}
-    &._\+x\~28{padding-right: 28%;}
-    &._\+x\~29{padding-right: 29%;}
-    &._\+x\~30{padding-right: 30%;}
-    &._\+x\~31{padding-right: 31%;}
-    &._\+x\~32{padding-right: 32%;}
-    &._\+x\~33{padding-right: 33.333333%;}
-    &._\+x\~34{padding-right: 34%;}
-    &._\+x\~35{padding-right: 35%;}
-    &._\+x\~36{padding-right: 36%;}
-    &._\+x\~37{padding-right: 37%;}
-    &._\+x\~38{padding-right: 38%;}
-    &._\+x\~39{padding-right: 39%;}
-    &._\+x\~40{padding-right: 40%;}
-    &._\+x\~41{padding-right: 41%;}
-    &._\+x\~42{padding-right: 42%;}
-    &._\+x\~43{padding-right: 43%;}
-    &._\+x\~44{padding-right: 44%;}
-    &._\+x\~45{padding-right: 45%;}
-    &._\+x\~46{padding-right: 46%;}
-    &._\+x\~47{padding-right: 47%;}
-    &._\+x\~48{padding-right: 48%;}
-    &._\+x\~49{padding-right: 49%;}
-    &._\+x\~50{padding-right: 50%;}
-}
-
-
-// Khoảng cách trong, ở bên trái
-.axis{
-    &._-x\~0{padding-left: 0;}
-    &._-x\~1{padding-left: 1%;}
-    &._-x\~2{padding-left: 2%;}
-    &._-x\~3{padding-left: 3%;}
-    &._-x\~4{padding-left: 4%;}
-    &._-x\~5{padding-left: 5%;}
-    &._-x\~6{padding-left: 6%;}
-    &._-x\~7{padding-left: 7%;}
-    &._-x\~8{padding-left: 8%;}
-    &._-x\~9{padding-left: 9%;}
-
-    &._-x\~10{padding-left: 10%;}
-    &._-x\~11{padding-left: 11%;}
-    &._-x\~12{padding-left: 12%;}
-    &._-x\~13{padding-left: 13%;}
-    &._-x\~14{padding-left: 14%;}
-    &._-x\~15{padding-left: 15%;}
-    &._-x\~16{padding-left: 16%;}
-    &._-x\~17{padding-left: 17%;}
-    &._-x\~18{padding-left: 18%;}
-    &._-x\~19{padding-left: 19%;}
-    &._-x\~20{padding-left: 20%;}
-    &._-x\~21{padding-left: 21%;}
-    &._-x\~22{padding-left: 22%;}
-    &._-x\~23{padding-left: 23%;}
-    &._-x\~24{padding-left: 24%;}
-    &._-x\~25{padding-left: 25%;}
-    &._-x\~26{padding-left: 26%;}
-    &._-x\~27{padding-left: 27%;}
-    &._-x\~28{padding-left: 28%;}
-    &._-x\~29{padding-left: 29%;}
-    &._-x\~30{padding-left: 30%;}
-    &._-x\~31{padding-left: 31%;}
-    &._-x\~32{padding-left: 32%;}
-    &._-x\~33{padding-left: 33.333333%;}
-    &._-x\~34{padding-left: 34%;}
-    &._-x\~35{padding-left: 35%;}
-    &._-x\~36{padding-left: 36%;}
-    &._-x\~37{padding-left: 37%;}
-    &._-x\~38{padding-left: 38%;}
-    &._-x\~39{padding-left: 39%;}
-    &._-x\~40{padding-left: 40%;}
-    &._-x\~41{padding-left: 41%;}
-    &._-x\~42{padding-left: 42%;}
-    &._-x\~43{padding-left: 43%;}
-    &._-x\~44{padding-left: 44%;}
-    &._-x\~45{padding-left: 45%;}
-    &._-x\~46{padding-left: 46%;}
-    &._-x\~47{padding-left: 47%;}
-    &._-x\~48{padding-left: 48%;}
-    &._-x\~49{padding-left: 49%;}
-    &._-x\~50{padding-left: 50%;}
-}
-
-
-
-
-// Khoảng cách trong ở bên trên và dưới
-.axis{
-    &._y\~0{padding-top:0;padding-bottom:0;}
-    &._y\~1{padding-top:1%;padding-bottom:1%;}
-    &._y\~1\.5{padding-top:5%;padding-bottom:5%;}
-    &._y\~2{padding-top:2%;padding-bottom:2%;}
-    &._y\~2\.5{padding-top:2.5%;padding-bottom:2.5%;}
-    &._y\~3{padding-top:3%;padding-bottom:3%;}
-    &._y\~3\.5{padding-top:3.5%;padding-bottom:3.5%;}
-    &._y\~4{padding-top:4%;padding-bottom:4%;}
-    &._y\~4\.5{padding-top:4.5%;padding-bottom:4.5%;}
-    &._y\~5{padding-top:5%;padding-bottom:5%;}
-    &._y\~5\.5{padding-top:5.5%;padding-bottom:5.5%;}
-    &._y\~6{padding-top:6%;padding-bottom:6%;}
-    &._y\~6\.5{padding-top:6.5%;padding-bottom:6.5%;}
-    &._y\~7{padding-top:7%;padding-bottom:7%;}
-    &._y\~7\.5{padding-top:7.5%;padding-bottom:7.5%;}
-    &._y\~8{padding-top:8%;padding-bottom:8%;}
-    &._y\~8\.5{padding-top:8.5%;padding-bottom:8.5%;}
-    &._y\~9{padding-top:9%;padding-bottom:9%;}
-    &._y\~9\.5{padding-top:9.5%;padding-bottom:9.5%;}
-
-    &._y\~10{padding-top:10%;padding-bottom:10%;}
-    &._y\~11{padding-top:11%;padding-bottom:11%;}
-    &._y\~12{padding-top:12%;padding-bottom:12%;}
-    &._y\~13{padding-top:13%;padding-bottom:13%;}
-    &._y\~14{padding-top:14%;padding-bottom:14%;}
-    &._y\~15{padding-top:15%;padding-bottom:15%;}
-    &._y\~16{padding-top:16%;padding-bottom:16%;}
-    &._y\~17{padding-top:17%;padding-bottom:17%;}
-    &._y\~18{padding-top:18%;padding-bottom:18%;}
-    &._y\~19{padding-top:19%;padding-bottom:19%;}
-    &._y\~20{padding-top:20%;padding-bottom:20%;}
-    &._y\~21{padding-top:21%;padding-bottom:21%;}
-    &._y\~22{padding-top:22%;padding-bottom:22%;}
-    &._y\~23{padding-top:23%;padding-bottom:23%;}
-    &._y\~24{padding-top:24%;padding-bottom:24%;}
-    &._y\~25{padding-top:25%;padding-bottom:25%;}
-    &._y\~26{padding-top:26%;padding-bottom:26%;}
-    &._y\~27{padding-top:27%;padding-bottom:27%;}
-    &._y\~28{padding-top:28%;padding-bottom:28%;}
-    &._y\~29{padding-top:29%;padding-bottom:29%;}
-    &._y\~30{padding-top:30%;padding-bottom:30%;}
-    &._y\~31{padding-top:31%;padding-bottom:31%;}
-    &._y\~32{padding-top:32%;padding-bottom:32%;}
-    &._y\~33{padding-top:33.333333%;padding-bottom:33.333333%;}
-    &._y\~34{padding-top:34%;padding-bottom:34%;}
-    &._y\~35{padding-top:35%;padding-bottom:35%;}
-    &._y\~36{padding-top:36%;padding-bottom:36%;}
-    &._y\~37{padding-top:37%;padding-bottom:37%;}
-    &._y\~38{padding-top:38%;padding-bottom:38%;}
-    &._y\~39{padding-top:39%;padding-bottom:39%;}
-    &._y\~40{padding-top:40%;padding-bottom:40%;}
-    &._y\~41{padding-top:41%;padding-bottom:41%;}
-    &._y\~42{padding-top:42%;padding-bottom:42%;}
-    &._y\~43{padding-top:43%;padding-bottom:43%;}
-    &._y\~44{padding-top:44%;padding-bottom:44%;}
-    &._y\~45{padding-top:45%;padding-bottom:45%;}
-    &._y\~46{padding-top:46%;padding-bottom:46%;}
-    &._y\~47{padding-top:47%;padding-bottom:47%;}
-    &._y\~48{padding-top:48%;padding-bottom:48%;}
-    &._y\~49{padding-top:49%;padding-bottom:49%;}
-    &._y\~50{padding-top:50%;padding-bottom:50%;}
-}
-
-
-// Khoảng cách trong ở dưới
-.axis{
-    &._-y\~0{padding-bottom: 0;}
-    &._-y\~1{padding-bottom: 1%;}
-    &._-y\~1\.5{padding-bottom: 1.5%;}
-    &._-y\~2{padding-bottom: 2%;}
-    &._-y\~2\.5{padding-bottom: 2.5%;}
-    &._-y\~3{padding-bottom: 3%;}
-    &._-y\~3\.5{padding-bottom: 3.5%;}
-    &._-y\~4{padding-bottom: 4%;}
-    &._-y\~4\.5{padding-bottom: 4.5%;}
-    &._-y\~5{padding-bottom: 5%;}
-    &._-y\~5\.5{padding-bottom: 5.5%;}
-    &._-y\~6{padding-bottom: 6%;}
-    &._-y\~6\.5{padding-bottom: 6.5%;}
-    &._-y\~7{padding-bottom: 7%;}
-    &._-y\~7\.5{padding-bottom: 7.5%;}
-    &._-y\~8{padding-bottom: 8%;}
-    &._-y\~8\.5{padding-bottom: 8.5%;}
-    &._-y\~9{padding-bottom: 9%;}
-    &._-y\~9\.5{padding-bottom: 9.5%;}
-
-    &._-y\~10{padding-bottom: 10%;}
-    &._-y\~11{padding-bottom: 11%;}
-    &._-y\~12{padding-bottom: 12%;}
-    &._-y\~13{padding-bottom: 13%;}
-    &._-y\~14{padding-bottom: 14%;}
-    &._-y\~15{padding-bottom: 15%;}
-    &._-y\~16{padding-bottom: 16%;}
-    &._-y\~17{padding-bottom: 17%;}
-    &._-y\~18{padding-bottom: 18%;}
-    &._-y\~19{padding-bottom: 19%;}
-    &._-y\~20{padding-bottom: 20%;}
-    &._-y\~21{padding-bottom: 21%;}
-    &._-y\~22{padding-bottom: 22%;}
-    &._-y\~23{padding-bottom: 23%;}
-    &._-y\~24{padding-bottom: 24%;}
-    &._-y\~25{padding-bottom: 25%;}
-    &._-y\~26{padding-bottom: 26%;}
-    &._-y\~27{padding-bottom: 27%;}
-    &._-y\~28{padding-bottom: 28%;}
-    &._-y\~29{padding-bottom: 29%;}
-    &._-y\~30{padding-bottom: 30%;}
-    &._-y\~31{padding-bottom: 31%;}
-    &._-y\~32{padding-bottom: 32%;}
-    &._-y\~33{padding-bottom: 33.333333%;}
-    &._-y\~34{padding-bottom: 34%;}
-    &._-y\~35{padding-bottom: 35%;}
-    &._-y\~36{padding-bottom: 36%;}
-    &._-y\~37{padding-bottom: 37%;}
-    &._-y\~38{padding-bottom: 38%;}
-    &._-y\~39{padding-bottom: 39%;}
-    &._-y\~40{padding-bottom: 40%;}
-    &._-y\~41{padding-bottom: 41%;}
-    &._-y\~42{padding-bottom: 42%;}
-    &._-y\~43{padding-bottom: 43%;}
-    &._-y\~44{padding-bottom: 44%;}
-    &._-y\~45{padding-bottom: 45%;}
-    &._-y\~46{padding-bottom: 46%;}
-    &._-y\~47{padding-bottom: 47%;}
-    &._-y\~48{padding-bottom: 48%;}
-    &._-y\~49{padding-bottom: 49%;}
-    &._-y\~50{padding-bottom: 50%;}
-}
-
-
-
-// Khoảng cách trong ở trên
-.axis{
-    &._\+y\~0{padding-top: 0;}
-    &._\+y\~1{padding-top: 1%;}
-    &._\+y\~1\.5{padding-top: 1.5%;}
-    &._\+y\~2{padding-top: 2%;}
-    &._\+y\~2\.5{padding-top: 2.5%;}
-    &._\+y\~3{padding-top: 3%;}
-    &._\+y\~3\.5{padding-top: 3.5%;}
-    &._\+y\~4{padding-top: 4%;}
-    &._\+y\~4\.5{padding-top: 4.5%;}
-    &._\+y\~5{padding-top: 5%;}
-    &._\+y\~5\.5{padding-top: 5.5%;}
-    &._\+y\~6{padding-top: 6%;}
-    &._\+y\~6\.5{padding-top: 6.5%;}
-    &._\+y\~7{padding-top: 7%;}
-    &._\+y\~7\.5{padding-top: 7.5%;}
-    &._\+y\~8{padding-top: 8%;}
-    &._\+y\~8\.5{padding-top: 8.5%;}
-    &._\+y\~9{padding-top: 9%;}
-    &._\+y\~9\.5{padding-top: 9.5%;}
-
-    &._\+y\~10{padding-top: 10%;}
-    &._\+y\~11{padding-top: 11%;}
-    &._\+y\~12{padding-top: 12%;}
-    &._\+y\~13{padding-top: 13%;}
-    &._\+y\~14{padding-top: 14%;}
-    &._\+y\~15{padding-top: 15%;}
-    &._\+y\~16{padding-top: 16%;}
-    &._\+y\~17{padding-top: 17%;}
-    &._\+y\~18{padding-top: 18%;}
-    &._\+y\~19{padding-top: 19%;}
-    &._\+y\~20{padding-top: 20%;}
-    &._\+y\~21{padding-top: 21%;}
-    &._\+y\~22{padding-top: 22%;}
-    &._\+y\~23{padding-top: 23%;}
-    &._\+y\~24{padding-top: 24%;}
-    &._\+y\~25{padding-top: 25%;}
-    &._\+y\~26{padding-top: 26%;}
-    &._\+y\~27{padding-top: 27%;}
-    &._\+y\~28{padding-top: 28%;}
-    &._\+y\~29{padding-top: 29%;}
-    &._\+y\~30{padding-top: 30%;}
-    &._\+y\~31{padding-top: 31%;}
-    &._\+y\~32{padding-top: 32%;}
-    &._\+y\~33{padding-top: 33.333333%;}
-    &._\+y\~34{padding-top: 34%;}
-    &._\+y\~35{padding-top: 35%;}
-    &._\+y\~36{padding-top: 36%;}
-    &._\+y\~37{padding-top: 37%;}
-    &._\+y\~38{padding-top: 38%;}
-    &._\+y\~39{padding-top: 39%;}
-    &._\+y\~40{padding-top: 40%;}
-    &._\+y\~41{padding-top: 41%;}
-    &._\+y\~42{padding-top: 42%;}
-    &._\+y\~43{padding-top: 43%;}
-    &._\+y\~44{padding-top: 44%;}
-    &._\+y\~45{padding-top: 45%;}
-    &._\+y\~46{padding-top: 46%;}
-    &._\+y\~47{padding-top: 47%;}
-    &._\+y\~48{padding-top: 48%;}
-    &._\+y\~49{padding-top: 49%;}
-    &._\+y\~50{padding-top: 50%;}
-}
-
-
-
-// Khoảng cách ngoài ở trên và dưới
-.axis{
-    &._oy\~0{margin-top: 0;margin-bottom: 0;}
-    &._oy\~1{margin-top: 1%;margin-bottom: 1%;}
-    &._oy\~2{margin-top: 2%;margin-bottom: 2%;}
-    &._oy\~3{margin-top: 3%;margin-bottom: 3%;}
-    &._oy\~4{margin-top: 4%;margin-bottom: 4%;}
-    &._oy\~5{margin-top: 5%;margin-bottom: 5%;}
-    &._oy\~6{margin-top: 6%;margin-bottom: 6%;}
-    &._oy\~7{margin-top: 7%;margin-bottom: 7%;}
-    &._oy\~8{margin-top: 8%;margin-bottom: 8%;}
-    &._oy\~9{margin-top: 9%;margin-bottom: 9%;}
-
-    &._oy\~10{margin-bottom: 10%;margin-top: 10%;}
-    &._oy\~11{margin-bottom: 11%;margin-top: 11%;}
-    &._oy\~12{margin-bottom: 12%;margin-top: 12%;}
-    &._oy\~13{margin-bottom: 13%;margin-top: 13%;}
-    &._oy\~14{margin-bottom: 14%;margin-top: 14%;}
-    &._oy\~15{margin-bottom: 15%;margin-top: 15%;}
-    &._oy\~16{margin-bottom: 16%;margin-top: 16%;}
-    &._oy\~17{margin-bottom: 17%;margin-top: 17%;}
-    &._oy\~18{margin-bottom: 18%;margin-top: 18%;}
-    &._oy\~19{margin-bottom: 19%;margin-top: 19%;}
-    &._oy\~20{margin-bottom: 20%;margin-top: 20%;}
-    &._oy\~21{margin-bottom: 21%;margin-top: 21%;}
-    &._oy\~22{margin-bottom: 22%;margin-top: 22%;}
-    &._oy\~23{margin-bottom: 23%;margin-top: 23%;}
-    &._oy\~24{margin-bottom: 24%;margin-top: 24%;}
-    &._oy\~25{margin-bottom: 25%;margin-top: 25%;}
-    &._oy\~26{margin-bottom: 26%;margin-top: 26%;}
-    &._oy\~27{margin-bottom: 27%;margin-top: 27%;}
-    &._oy\~28{margin-bottom: 28%;margin-top: 28%;}
-    &._oy\~29{margin-bottom: 29%;margin-top: 29%;}
-    &._oy\~30{margin-bottom: 30%;margin-top: 30%;}
-}
-
-
-
-//Khoảng cách ngoài ở trên
-.axis{
-    &.oy\+0{margin-top: 0;}
-    &.oy\+1{margin-top: 1%;}
-    &.oy\+2{margin-top: 2%;}
-    &.oy\+3{margin-top: 3%;}
-    &.oy\+4{margin-top: 4%;}
-    &.oy\+5{margin-top: 5%;}
-    &.oy\+6{margin-top: 6%;}
-    &.oy\+7{margin-top: 7%;}
-    &.oy\+8{margin-top: 8%;}
-    &.oy\+9{margin-top: 9%;}
-
-    &.oy\+10{margin-top: 10%;}
-    &.oy\+11{margin-top: 11%;}
-    &.oy\+12{margin-top: 12%;}
-    &.oy\+13{margin-top: 13%;}
-    &.oy\+14{margin-top: 14%;}
-    &.oy\+15{margin-top: 15%;}
-    &.oy\+16{margin-top: 16%;}
-    &.oy\+17{margin-top: 17%;}
-    &.oy\+18{margin-top: 18%;}
-    &.oy\+19{margin-top: 19%;}
-    &.oy\+20{margin-top: 20%;}
-    &.oy\+21{margin-top: 21%;}
-    &.oy\+22{margin-top: 22%;}
-    &.oy\+23{margin-top: 23%;}
-    &.oy\+24{margin-top: 24%;}
-    &.oy\+25{margin-top: 25%;}
-    &.oy\+26{margin-top: 26%;}
-    &.oy\+27{margin-top: 27%;}
-    &.oy\+28{margin-top: 28%;}
-    &.oy\+29{margin-top: 29%;}
-    &.oy\+30{margin-top: 30%;}
-}
-
-
-
-// Khoảng cách ngoài ở dưới
-.axis{
-    &.oy-0{margin-bottom: 0;}
-    &.oy-1{margin-bottom: 1%;}
-    &.oy-2{margin-bottom: 2%;}
-    &.oy-3{margin-bottom: 3%;}
-    &.oy-4{margin-bottom: 4%;}
-    &.oy-5{margin-bottom: 5%;}
-    &.oy-6{margin-bottom: 6%;}
-    &.oy-7{margin-bottom: 7%;}
-    &.oy-8{margin-bottom: 8%;}
-    &.oy-9{margin-bottom: 9%;}
-
-    &.oy-10{margin-bottom: 10%;}
-    &.oy-11{margin-bottom: 11%;}
-    &.oy-12{margin-bottom: 12%;}
-    &.oy-13{margin-bottom: 13%;}
-    &.oy-14{margin-bottom: 14%;}
-    &.oy-15{margin-bottom: 15%;}
-    &.oy-16{margin-bottom: 16%;}
-    &.oy-17{margin-bottom: 17%;}
-    &.oy-18{margin-bottom: 18%;}
-    &.oy-19{margin-bottom: 19%;}
-    &.oy-20{margin-bottom: 20%;}
-    &.oy-21{margin-bottom: 21%;}
-    &.oy-22{margin-bottom: 22%;}
-    &.oy-23{margin-bottom: 23%;}
-    &.oy-24{margin-bottom: 24%;}
-    &.oy-25{margin-bottom: 25%;}
-    &.oy-26{margin-bottom: 26%;}
-    &.oy-27{margin-bottom: 27%;}
-    &.oy-28{margin-bottom: 28%;}
-    &.oy-29{margin-bottom: 29%;}
-    &.oy-30{margin-bottom: 30%;}
-}
-
-
-// OX~ :Khoảng cách ngoài bên trái và phải
-.axis{
-    &.ox\~0{margin-left: 0;margin-right: 0;}
-    &.ox\~1{margin-left: 1%;margin-right: 1%;}
-    &.ox\~2{margin-left: 2%;margin-right: 2%;}
-    &.ox\~3{margin-left: 3%;margin-right: 3%;}
-    &.ox\~4{margin-left: 4%;margin-right: 4%;}
-    &.ox\~5{margin-left: 5%;margin-right: 5%;}
-    &.ox\~6{margin-left: 6%;margin-right: 6%;}
-    &.ox\~7{margin-left: 7%;margin-right: 7%;}
-    &.ox\~8{margin-left: 8%;margin-right: 8%;}
-    &.ox\~9{margin-left: 9%;margin-right: 9%;}
-}
-
-
-// OX+ :Khoảng cách ngoài bên phải
-.axis{
-    &.ox\+0{margin-right: 0;}
-    &.ox\+1{margin-right: 1%;}
-    &.ox\+2{margin-right: 2%;}
-    &.ox\+3{margin-right: 3%;}
-    &.ox\+4{margin-right: 4%;}
-    &.ox\+5{margin-right: 5%;}
-    &.ox\+6{margin-right: 6%;}
-    &.ox\+7{margin-right: 7%;}
-    &.ox\+8{margin-right: 8%;}
-    &.ox\+9{margin-right: 9%;}
-
-    &.ox\+10{margin-right: 10%;}
-    &.ox\+11{margin-right: 11%;}
-    &.ox\+12{margin-right: 12%;}
-    &.ox\+13{margin-right: 13%;}
-    &.ox\+14{margin-right: 14%;}
-    &.ox\+15{margin-right: 15%;}
-    &.ox\+16{margin-right: 16%;}
-    &.ox\+17{margin-right: 17%;}
-    &.ox\+18{margin-right: 18%;}
-    &.ox\+19{margin-right: 19%;}
-    &.ox\+20{margin-right: 20%;}
-    &.ox\+21{margin-right: 21%;}
-    &.ox\+22{margin-right: 22%;}
-    &.ox\+23{margin-right: 23%;}
-    &.ox\+24{margin-right: 24%;}
-    &.ox\+25{margin-right: 25%;}
-    &.ox\+26{margin-right: 26%;}
-    &.ox\+27{margin-right: 27%;}
-    &.ox\+28{margin-right: 28%;}
-    &.ox\+29{margin-right: 29%;}
-    &.ox\+30{margin-right: 30%;}
-    &.ox\+31{margin-right: 31%;}
-    &.ox\+32{margin-right: 32%;}
-    &.ox\+33{margin-right: 33%;}
-    &.ox\+34{margin-right: 34%;}
-    &.ox\+35{margin-right: 35%;}
-    &.ox\+36{margin-right: 36%;}
-    &.ox\+37{margin-right: 37%;}
-    &.ox\+38{margin-right: 38%;}
-    &.ox\+39{margin-right: 39%;}
-    &.ox\+30{margin-right: 30%;}
-}
-
-
-// OX- : Khoảng cách ngoài bên trái
-.axis{
-    &.ox-0{margin-left: 0;}
-    &.ox-1{margin-left: 1%;}
-    &.ox-2{margin-left: 2%;}
-    &.ox-3{margin-left: 3%;}
-    &.ox-4{margin-left: 4%;}
-    &.ox-5{margin-left: 5%;}
-    &.ox-6{margin-left: 6%;}
-    &.ox-7{margin-left: 7%;}
-    &.ox-8{margin-left: 8%;}
-    &.ox-9{margin-left: 9%;}
-
-    &.ox-10{margin-left: 10%;}
-    &.ox-11{margin-left: 11%;}
-    &.ox-12{margin-left: 12%;}
-    &.ox-13{margin-left: 13%;}
-    &.ox-14{margin-left: 14%;}
-    &.ox-15{margin-left: 15%;}
-    &.ox-16{margin-left: 16%;}
-    &.ox-17{margin-left: 17%;}
-    &.ox-18{margin-left: 18%;}
-    &.ox-19{margin-left: 19%;}
-    &.ox-20{margin-left: 20%;}
-    &.ox-21{margin-left: 21%;}
-    &.ox-22{margin-left: 22%;}
-    &.ox-23{margin-left: 23%;}
-    &.ox-24{margin-left: 24%;}
-    &.ox-25{margin-left: 25%;}
-    &.ox-26{margin-left: 26%;}
-    &.ox-27{margin-left: 27%;}
-    &.ox-28{margin-left: 28%;}
-    &.ox-29{margin-left: 29%;}
-    &.ox-30{margin-left: 30%;}
-    &.ox-31{margin-left: 31%;}
-    &.ox-32{margin-left: 32%;}
-    &.ox-33{margin-left: 33%;}
-    &.ox-34{margin-left: 34%;}
-    &.ox-35{margin-left: 35%;}
-    &.ox-36{margin-left: 36%;}
-    &.ox-37{margin-left: 37%;}
-    &.ox-38{margin-left: 38%;}
-    &.ox-39{margin-left: 39%;}
-    &.ox-30{margin-left: 30%;}
-}
-
-    
+    ._axis-w10{
+        max-width: 10%;
+    }
+    ._axis-w10\.2 {
+        max-width: 10.2%;
+    }
+    ._axis-w10\.4 {
+        max-width: 10.4%;
+    }
+    ._axis-w10\.6 {
+        max-width: 10.6%;
+    }
+    ._axis-w10\.8 {
+        max-width: 10.8%;
+    }
+    ._axis-w11{
+        max-width: 11%;
+    }
+    ._axis-w11\.2 {
+        max-width: 11.2%;
+    }
+    ._axis-w11\.4 {
+        max-width: 11.4%;
+    }
+    ._axis-w11\.6 {
+        max-width: 11.6%;
+    }
+    ._axis-w11\.8 {
+        max-width: 11.8%;
+    }
+    ._axis-w12{
+        max-width: 12%;
+    }
+    ._axis-w12\.2 {
+        max-width: 12.2%;
+    }
+    ._axis-w12\.4 {
+        max-width: 12.4%;
+    }
+    ._axis-w12\.6 {
+        max-width: 12.6%;
+    }
+    ._axis-w12\.8 {
+        max-width: 12.8%;
+    }
+    ._axis-w13{
+        max-width: 13%;
+    }
+    ._axis-w13\.2 {
+        max-width: 13.2%;
+    }
+    ._axis-w13\.4 {
+        max-width: 13.4%;
+    }
+    ._axis-w13\.6 {
+        max-width: 13.6%;
+    }
+    ._axis-w13\.8 {
+        max-width: 13.8%;
+    }
+    ._axis-w14{
+        max-width: 14%;
+    }
+    ._axis-w14\.2 {
+        max-width: 14.2%;
+    }
+    ._axis-w14\.4 {
+        max-width: 14.4%;
+    }
+    ._axis-w14\.6 {
+        max-width: 14.6%;
+    }
+    ._axis-w14\.8 {
+        max-width: 14.8%;
+    }
+    ._axis-w15{
+        max-width: 15%;
+    }
+    ._axis-w15\.2 {
+        max-width: 15.2%;
+    }
+    ._axis-w15\.4 {
+        max-width: 15.4%;
+    }
+    ._axis-w15\.6 {
+        max-width: 15.6%;
+    }
+    ._axis-w15\.8 {
+        max-width: 15.8%;
+    }
+    ._axis-w16{
+        max-width: 16%;
+    }
+    ._axis-w16\.2 {
+        max-width: 16.2%;
+    }
+    ._axis-w16\.4 {
+        max-width: 16.4%;
+    }
+    ._axis-w16\.6 {
+        max-width: 16.6%;
+    }
+    ._axis-w16\.8 {
+        max-width: 16.8%;
+    }
+    ._axis-w17{
+        max-width: 17%;
+    }
+    ._axis-w17\.2 {
+        max-width: 17.2%;
+    }
+    ._axis-w17\.4 {
+        max-width: 17.4%;
+    }
+    ._axis-w17\.6 {
+        max-width: 17.6%;
+    }
+    ._axis-w17\.8 {
+        max-width: 17.8%;
+    }
+    ._axis-w18{
+        max-width: 18%;
+    }
+    ._axis-w18\.2 {
+        max-width: 18.2%;
+    }
+    ._axis-w18\.4 {
+        max-width: 18.4%;
+    }
+    ._axis-w18\.6 {
+        max-width: 18.6%;
+    }
+    ._axis-w18\.8 {
+        max-width: 18.8%;
+    }
+    ._axis-w19{
+        max-width: 19%;
+    }
+    ._axis-w19\.2 {
+        max-width: 19.2%;
+    }
+    ._axis-w19\.4 {
+        max-width: 19.4%;
+    }
+    ._axis-w19\.6 {
+        max-width: 19.6%;
+    }
+    ._axis-w19\.8 {
+        max-width: 19.8%;
+    }
+    ._axis-w20{
+        max-width: 20%;
+    }
+    ._axis-w20\.2 {
+        max-width: 20.2%;
+    }
+    ._axis-w20\.4 {
+        max-width: 20.4%;
+    }
+    ._axis-w20\.6 {
+        max-width: 20.6%;
+    }
+    ._axis-w20\.8 {
+        max-width: 20.8%;
+    }
+    ._axis-w21{
+        max-width: 21%;
+    }
+    ._axis-w21\.2 {
+        max-width: 21.2%;
+    }
+    ._axis-w21\.4 {
+        max-width: 21.4%;
+    }
+    ._axis-w21\.6 {
+        max-width: 21.6%;
+    }
+    ._axis-w21\.8 {
+        max-width: 21.8%;
+    }
+    ._axis-w22{
+        max-width: 22%;
+    }
+    ._axis-w22\.2 {
+        max-width: 22.2%;
+    }
+    ._axis-w22\.4 {
+        max-width: 22.4%;
+    }
+    ._axis-w22\.6 {
+        max-width: 22.6%;
+    }
+    ._axis-w22\.8 {
+        max-width: 22.8%;
+    }
+    ._axis-w23{
+        max-width: 23%;
+    }
+    ._axis-w23\.2 {
+        max-width: 23.2%;
+    }
+    ._axis-w23\.4 {
+        max-width: 23.4%;
+    }
+    ._axis-w23\.6 {
+        max-width: 23.6%;
+    }
+    ._axis-w23\.8 {
+        max-width: 23.8%;
+    }
+    ._axis-w24{
+        max-width: 24%;
+    }
+    ._axis-w24\.2 {
+        max-width: 24.2%;
+    }
+    ._axis-w24\.4 {
+        max-width: 24.4%;
+    }
+    ._axis-w24\.6 {
+        max-width: 24.6%;
+    }
+    ._axis-w24\.8 {
+        max-width: 24.8%;
+    }
+    ._axis-w25{
+        max-width: 25%;
+    }
+    ._axis-w25\.2 {
+        max-width: 25.2%;
+    }
+    ._axis-w25\.4 {
+        max-width: 25.4%;
+    }
+    ._axis-w25\.6 {
+        max-width: 25.6%;
+    }
+    ._axis-w25\.8 {
+        max-width: 25.8%;
+    }
+    ._axis-w26{
+        max-width: 26%;
+    }
+    ._axis-w26\.2 {
+        max-width: 26.2%;
+    }
+    ._axis-w26\.4 {
+        max-width: 26.4%;
+    }
+    ._axis-w26\.6 {
+        max-width: 26.6%;
+    }
+    ._axis-w26\.8 {
+        max-width: 26.8%;
+    }
+    ._axis-w27{
+        max-width: 27%;
+    }
+    ._axis-w27\.2 {
+        max-width: 27.2%;
+    }
+    ._axis-w27\.4 {
+        max-width: 27.4%;
+    }
+    ._axis-w27\.6 {
+        max-width: 27.6%;
+    }
+    ._axis-w27\.8 {
+        max-width: 27.8%;
+    }
+    ._axis-w28{
+        max-width: 28%;
+    }
+    ._axis-w28\.2 {
+        max-width: 28.2%;
+    }
+    ._axis-w28\.4 {
+        max-width: 28.4%;
+    }
+    ._axis-w28\.6 {
+        max-width: 28.6%;
+    }
+    ._axis-w28\.8 {
+        max-width: 28.8%;
+    }
+    ._axis-w29{
+        max-width: 29%;
+    }
+    ._axis-w29\.2 {
+        max-width: 29.2%;
+    }
+    ._axis-w29\.4 {
+        max-width: 29.4%;
+    }
+    ._axis-w29\.6 {
+        max-width: 29.6%;
+    }
+    ._axis-w29\.8 {
+        max-width: 29.8%;
+    }
+    ._axis-w30{
+        max-width: 30%;
+    }
+    ._axis-w30\.2 {
+        max-width: 30.2%;
+    }
+    ._axis-w30\.4 {
+        max-width: 30.4%;
+    }
+    ._axis-w30\.6 {
+        max-width: 30.6%;
+    }
+    ._axis-w30\.8 {
+        max-width: 30.8%;
+    }
+    ._axis-w31{
+        max-width: 31%;
+    }
+    ._axis-w31\.2 {
+        max-width: 31.2%;
+    }
+    ._axis-w31\.4 {
+        max-width: 31.4%;
+    }
+    ._axis-w31\.6 {
+        max-width: 31.6%;
+    }
+    ._axis-w31\.8 {
+        max-width: 31.8%;
+    }
+    ._axis-w32{
+        max-width: 32%;
+    }
+    ._axis-w32\.2 {
+        max-width: 32.2%;
+    }
+    ._axis-w32\.4 {
+        max-width: 32.4%;
+    }
+    ._axis-w32\.6 {
+        max-width: 32.6%;
+    }
+    ._axis-w32\.8 {
+        max-width: 32.8%;
+    }
+    ._axis-w33{
+        max-width: 33%;
+    }
+    ._axis-w33\.2 {
+        max-width: 33.2%;
+    }
+    ._axis-w33\.4 {
+        max-width: 33.4%;
+    }
+    ._axis-w33\.6 {
+        max-width: 33.6%;
+    }
+    ._axis-w33\.8 {
+        max-width: 33.8%;
+    }
+    ._axis-w34{
+        max-width: 34%;
+    }
+    ._axis-w34\.2 {
+        max-width: 34.2%;
+    }
+    ._axis-w34\.4 {
+        max-width: 34.4%;
+    }
+    ._axis-w34\.6 {
+        max-width: 34.6%;
+    }
+    ._axis-w34\.8 {
+        max-width: 34.8%;
+    }
+    ._axis-w35{
+        max-width: 35%;
+    }
+    ._axis-w35\.2 {
+        max-width: 35.2%;
+    }
+    ._axis-w35\.4 {
+        max-width: 35.4%;
+    }
+    ._axis-w35\.6 {
+        max-width: 35.6%;
+    }
+    ._axis-w35\.8 {
+        max-width: 35.8%;
+    }
+    ._axis-w36{
+        max-width: 36%;
+    }
+    ._axis-w36\.2 {
+        max-width: 36.2%;
+    }
+    ._axis-w36\.4 {
+        max-width: 36.4%;
+    }
+    ._axis-w36\.6 {
+        max-width: 36.6%;
+    }
+    ._axis-w36\.8 {
+        max-width: 36.8%;
+    }
+    ._axis-w37{
+        max-width: 37%;
+    }
+    ._axis-w37\.2 {
+        max-width: 37.2%;
+    }
+    ._axis-w37\.4 {
+        max-width: 37.4%;
+    }
+    ._axis-w37\.6 {
+        max-width: 37.6%;
+    }
+    ._axis-w37\.8 {
+        max-width: 37.8%;
+    }
+    ._axis-w38{
+        max-width: 38%;
+    }
+    ._axis-w38\.2 {
+        max-width: 38.2%;
+    }
+    ._axis-w38\.4 {
+        max-width: 38.4%;
+    }
+    ._axis-w38\.6 {
+        max-width: 38.6%;
+    }
+    ._axis-w38\.8 {
+        max-width: 38.8%;
+    }
+    ._axis-w39{
+        max-width: 39%;
+    }
+    ._axis-w39\.2 {
+        max-width: 39.2%;
+    }
+    ._axis-w39\.4 {
+        max-width: 39.4%;
+    }
+    ._axis-w39\.6 {
+        max-width: 39.6%;
+    }
+    ._axis-w39\.8 {
+        max-width: 39.8%;
+    }
+    ._axis-w40{
+        max-width: 40%;
+    }
+    ._axis-w40\.2 {
+        max-width: 40.2%;
+    }
+    ._axis-w40\.4 {
+        max-width: 40.4%;
+    }
+    ._axis-w40\.6 {
+        max-width: 40.6%;
+    }
+    ._axis-w40\.8 {
+        max-width: 40.8%;
+    }
+    ._axis-w41{
+        max-width: 41%;
+    }
+    ._axis-w41\.2 {
+        max-width: 41.2%;
+    }
+    ._axis-w41\.4 {
+        max-width: 41.4%;
+    }
+    ._axis-w41\.6 {
+        max-width: 41.6%;
+    }
+    ._axis-w41\.8 {
+        max-width: 41.8%;
+    }
+    ._axis-w42{
+        max-width: 42%;
+    }
+    ._axis-w42\.2 {
+        max-width: 42.2%;
+    }
+    ._axis-w42\.4 {
+        max-width: 42.4%;
+    }
+    ._axis-w42\.6 {
+        max-width: 42.6%;
+    }
+    ._axis-w42\.8 {
+        max-width: 42.8%;
+    }
+    ._axis-w43{
+        max-width: 43%;
+    }
+    ._axis-w43\.2 {
+        max-width: 43.2%;
+    }
+    ._axis-w43\.4 {
+        max-width: 43.4%;
+    }
+    ._axis-w43\.6 {
+        max-width: 43.6%;
+    }
+    ._axis-w43\.8 {
+        max-width: 43.8%;
+    }
+    ._axis-w44{
+        max-width: 44%;
+    }
+    ._axis-w44\.2 {
+        max-width: 44.2%;
+    }
+    ._axis-w44\.4 {
+        max-width: 44.4%;
+    }
+    ._axis-w44\.6 {
+        max-width: 44.6%;
+    }
+    ._axis-w44\.8 {
+        max-width: 44.8%;
+    }
+    ._axis-w45{
+        max-width: 45%;
+    }
+    ._axis-w45\.2 {
+        max-width: 45.2%;
+    }
+    ._axis-w45\.4 {
+        max-width: 45.4%;
+    }
+    ._axis-w45\.6 {
+        max-width: 45.6%;
+    }
+    ._axis-w45\.8 {
+        max-width: 45.8%;
+    }
+    ._axis-w46{
+        max-width: 46%;
+    }
+    ._axis-w46\.2 {
+        max-width: 46.2%;
+    }
+    ._axis-w46\.4 {
+        max-width: 46.4%;
+    }
+    ._axis-w46\.6 {
+        max-width: 46.6%;
+    }
+    ._axis-w46\.8 {
+        max-width: 46.8%;
+    }
+    ._axis-w47{
+        max-width: 47%;
+    }
+    ._axis-w47\.2 {
+        max-width: 47.2%;
+    }
+    ._axis-w47\.4 {
+        max-width: 47.4%;
+    }
+    ._axis-w47\.6 {
+        max-width: 47.6%;
+    }
+    ._axis-w47\.8 {
+        max-width: 47.8%;
+    }
+    ._axis-w48{
+        max-width: 48%;
+    }
+    ._axis-w48\.2 {
+        max-width: 48.2%;
+    }
+    ._axis-w48\.4 {
+        max-width: 48.4%;
+    }
+    ._axis-w48\.6 {
+        max-width: 48.6%;
+    }
+    ._axis-w48\.8 {
+        max-width: 48.8%;
+    }
+    ._axis-w49{
+        max-width: 49%;
+    }
+    ._axis-w49\.2 {
+        max-width: 49.2%;
+    }
+    ._axis-w49\.4 {
+        max-width: 49.4%;
+    }
+    ._axis-w49\.6 {
+        max-width: 49.6%;
+    }
+    ._axis-w49\.8 {
+        max-width: 49.8%;
+    }
+    ._axis-w50 {
+        max-width: 50%;
+    }
 }
