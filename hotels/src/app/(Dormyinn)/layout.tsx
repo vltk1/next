@@ -1,32 +1,24 @@
-import type { Metadata } from 'next'
-
+import type { Metadata } from "next";
+import { Header } from '@components/Headers/Header'
 
 export const metadata: Metadata = {
-  title: 'Dormyinn',
-  keywords: 'Dormyinn',
-  description: 'Dormyinn page all'
-}
+  title: "Dormyinn",
+  keywords: "Dormyinn",
+  description: "Dormyinn page all",
+};
 
 export default function DromyinnLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body>
-        <header>
-         <menu>
-           <li className="flex">HOME</li>
-              <li>SHOP</li>
-              <li>PRODUCT</li>
-              <li>PAGES</li>
-              <li>BLOG</li>
-         </menu>
-        </header>
-        {children}
-        <footer></footer>
+          <Header />
+          {children}
+          <footer></footer>
       </body>
     </html>
-  )
+  );
 }

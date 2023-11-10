@@ -6,7 +6,23 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+  --dark: #000;
+  --light: #fff;
+  --red: #ff0000;
+  --redOrange: #ff4d00;
+  --orange: #DF6951;
+  --yellowOrange:#F1A501;
+  --yellow: #fff600;
+  --yellowGreen: #a2ff00;
+  --green: #48d02d;
+  --blueGreen: #2dc6d0;
+  --blue: #181E4B;
+  --blueViolet: #5E6282;
+  --violet: #d311e4;
+  --redViolet: #e41152;
+  }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -15,6 +31,8 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+
 
 div{
   outline: 1px dotted red;

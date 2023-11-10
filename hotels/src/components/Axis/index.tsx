@@ -8,18 +8,20 @@ interface Axis{
 function Axis(props: Axis) {
     const {xs, md, children, variant = ""} = props
     //XS
-    const widthContainer: string = "w-["+ xs[0][0] +"px]"
-    const minHeightItem: string = "min-h-["+ xs[1][1] +"px]"
+    let widthContainerMD: string = ""
+
+    const minHeightItem: string = "" //"min-h-["+ xs[0][1] +"px]"
     let justify: string = "justify-normal"
-    let widthItem: number = Math.floor((((xs[1][0] / xs[0][0]) * 100) * 10))
+    let items: string = "items-start"
+    let widthItem: number = Math.floor((((xs[0][0] / 768) * 100) * 10))
     let widthItemFix: number =  (widthItem % 2)? widthItem = (widthItem - 1) / 10: widthItem / 10
-    if((xs[1][0] === 1) || (widthItemFix > 50)) widthItemFix = 100
+    if((xs[0][0] === 1) || (widthItemFix > 50)) widthItemFix = 100
     const axisWidth: string = "axis-w" + widthItemFix
     let numberCol: number = xs[0][1]
 
     // console.log(">>>>>>", numberCol)
 
-    switch(xs[2][0]){
+    switch(xs[1][0]){
         case 0:
             justify = " justify-normal"
             break
@@ -53,8 +55,8 @@ function Axis(props: Axis) {
     if(md){
         numberCol= md[0][1]
         //MD
-        const widthContainerMD: string = "w-["+ md[0][0] +"px]"
-        const minHeightItemMD: string = "min-h-["+ md[1][1]+"px]"
+        widthContainerMD = "md:max-w-container"
+        const minHeightItemMD: string = "" //min-h-["+ md[1][1]+"px]"
         let justifyMD: string = "justify-normal"
         let widthItemMD: number = Math.floor((((md[1][0] / md[0][0]) * 100) * 10))
         let widthItemFixMD: number =  (widthItemMD % 2)? widthItemMD = (widthItemMD - 1) / 10: widthItemMD / 10
@@ -88,8 +90,31 @@ function Axis(props: Axis) {
             default:
                 justify = " justify-normal"
         }
+        switch(md[2][1]){
+            case 0:
+                items = ""
+                break
+            case 1:
+                items = " items-start"
+                break
+            case 2:
+                items = " items-end"
+                break
+            case 3:
+                items = " items-center"
+                break
+            case 4:
+                items = " items-baseline"
+                break
+            case 5:
+                items = " items-stretch"
+                break
+            default:
+                items = ""
+        }
         axisWidthMD = " _axis-w" + widthItemFixMD
     }
+
 
 
     const renderCol = (): any => {
@@ -100,7 +125,7 @@ function Axis(props: Axis) {
             for(let j = m; j < i; j++){
                 if(j < props.children.length){
                     // let inert = <div className={"w-full " + axisWidth + " " + minHeightItem + axisWidthMD}>{props.children[j].props.children}</div>
-                    let inert = <div className={"w-full " + axisWidth + " " + minHeightItem + axisWidthMD}>{props.children[j].props.children}</div>
+                    let inert = <div className={"w-full " + axisWidth + axisWidthMD}>{props.children[j].props.children}</div>
                     e.push(inert)
                 }
             }
@@ -121,14 +146,13 @@ function Axis(props: Axis) {
             })}
             </>
         )
-        console.log(axiosRender)
     }
     return (
         <>
         <div className=
             {
                 "flex flex-wrap mx-auto "
-                + widthContainer + justify + " " + variant
+                + widthContainerMD + justify + " " + items + " " + variant
             }>
             {renderCol()}
         </div>
