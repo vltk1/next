@@ -67,4 +67,45 @@ h1.logo{
   }
 }
 
+.wrap  {
+  font-size: 0;
+  height: 1px;
+  background-color: blue;
+}
 
+
+.button {
+  background-color: gray;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.button .txt {
+  position: relative;
+  z-index: 999;
+}
+.btn-active{
+  outline: 0 solid transparent;
+  animation: btnActive 240ms;
+  opacity: 1;
+}
+@keyframes btnActive {
+  0%{
+    outline: 0 solid transparent;
+  }
+  50%{
+    outline: 2px solid rgba(#000, 0.6);
+    opacity: 0.88;
+  }
+  100% {
+    outline: 0 solid transparent;
+    opacity: 1;
+  }
+}

@@ -1,117 +1,139 @@
-import "../../../styles/axis.scss"
-
 interface Axis{
-    el?: string;
-    attr?: string;
-    xs?: number[];
-    md?: number[];
+    xs: number[][];
+    md?: number[][];
+    variant?: string;
     children: any;
 }
 
-
 function Axis(props: Axis) {
-    let {el = "div", attr, xs, md} = props
-    let arrs: any = props.children
-    console.log(arrs)
+    const {xs, md, children, variant = ""} = props
+    //XS
+    const widthContainer: string = "w-["+ xs[0][0] +"px]"
+    const minHeightItem: string = "min-h-["+ xs[1][1] +"px]"
+    let justify: string = "justify-normal"
+    let widthItem: number = Math.floor((((xs[1][0] / xs[0][0]) * 100) * 10))
+    let widthItemFix: number =  (widthItem % 2)? widthItem = (widthItem - 1) / 10: widthItem / 10
+    if((xs[1][0] === 1) || (widthItemFix > 50)) widthItemFix = 100
+    const axisWidth: string = "axis-w" + widthItemFix
+    let numberCol: number = xs[0][1]
+
+    // console.log(">>>>>>", numberCol)
+
+    switch(xs[2][0]){
+        case 0:
+            justify = " justify-normal"
+            break
+        case 1:
+            justify = " justify-start"
+            break
+        case 2:
+            justify = " justify-end"
+            break
+        case 3:
+            justify = " justify-center"
+            break
+        case 4:
+            justify = " justify-between"
+            break
+        case 5:
+            justify = " justify-around"
+            break
+        case 6:
+            justify = " justify-evenly"
+            break
+        case 7:
+            justify = " justify-stretch"
+            break
+        default:
+            justify = " justify-normal"
+    }
+
    
-    const els = (elVal: string) => {///
-        const elClass = "axis x-100" + (attr ? " " + attr: "")
-        switch(elVal){
-            case "section":
-                return <section className={elClass}>{box()}</section>
-            case "article":
-                return <article className={elClass}>{box()}</article>
-            case "nav":
-                return <nav className={elClass}>{box()}</nav>
-            case "menu":
-                return <menu className="axis x+100">{box()}</menu>
-            case "aside":
-                return <aside className={elClass}>{box()}</aside>
+    let axisWidthMD = ""
+    if(md){
+        numberCol= md[0][1]
+        //MD
+        const widthContainerMD: string = "w-["+ md[0][0] +"px]"
+        const minHeightItemMD: string = "min-h-["+ md[1][1]+"px]"
+        let justifyMD: string = "justify-normal"
+        let widthItemMD: number = Math.floor((((md[1][0] / md[0][0]) * 100) * 10))
+        let widthItemFixMD: number =  (widthItemMD % 2)? widthItemMD = (widthItemMD - 1) / 10: widthItemMD / 10
+        if((md[1][0] === 1) || (widthItemFixMD > 50)) widthItemFixMD = 100
+
+        switch(md[2][0]){
+            case 0:
+                justify = " justify-normal"
+                break
+            case 1:
+                justify = " justify-start"
+                break
+            case 2:
+                justify = " justify-end"
+                break
+            case 3:
+                justify = " justify-center"
+                break
+            case 4:
+                justify = " justify-between"
+                break
+            case 5:
+                justify = " justify-around"
+                break
+            case 6:
+                justify = " justify-evenly"
+                break
+            case 7:
+                justify = " justify-stretch"
+                break
             default:
-                return <div className={elClass}>{box()}</div>
+                justify = " justify-normal"
         }
+        axisWidthMD = " _axis-w" + widthItemFixMD
     }
-    
-    // [mobile]
-    let [xsCol, xsSpace, xsAlignX, xsAlignY, xsWrap = 0] = xs ? xs : [0, 0, 0, 0, 0]
-    let xsWraps = (xsWrap === 0) ? "" : " o" // Căn nội dung trái phải
-    let xsAlignXs = (xsAlignX === 0) ? "" : " o-" + xsAlignX // Căn nội dung trái phải
-    let xsAlignYs = (xsAlignY === 0) ? "" : " o+" + xsAlignY // Căn nội dung trên dưới
-    let xsCols = (xsCol === 0) ? "" : " x+" + ((100 - (xsSpace * (xsCol - 1))) / xsCol).toFixed() // chia cột
-    
-    // [desktop]
-    let [mdCol, mdSpace, mdAlignX, mdAlignY, mdWrap = 0] = md ? md : [0, 0, 0, 0, 0]
-    let mdWraps = (mdWrap === 0) ? "" : " _o" // Căn nội dung trái phải
-    let mdAlignXs = (mdAlignX === 0) ? "" : " _o-" + mdAlignX
-    let mdAlignYs = (mdAlignY === 0) ? "" : " _o+" + mdAlignY
-    let mdCols = (mdCol === 0) ? "" : " _x+" + ((100 - (mdSpace * (mdCol - 1) )) / mdCol).toFixed()
 
-    //console.log(arrs[1].type)
-   
-    const box = () => {
-        if((Array.isArray(arrs)) && (Array.isArray(xs))){// Check  nội dung truyền vào có phải là mảng không
-            
-            // console.log(arrs)
 
-            return arrs.map((e, index) => {
-                
-                let arrChild = e.props.children
-               
-
-                if(typeof e.type === 'function'){ // Kiểm tra element truyền vào có phải hàm không
-                    
-                     // XS - MD: Số cột, Kích thước cột và căn nội dung theo trên dưới, trái phải
-                     let [xsIICol, xsIISpace, xsIIAlignX, xsIIAlignY, xsIIWrap = 0] = e.props.xs ? e.props.xs : [0, 0, 0, 0]
-                     let xsIIWraps = (xsIIWrap === 0) ? "" : " o" // Căn nội dung trái phải
-                     let xsIIAlignXs = (xsIIAlignX === 0) ? "" : " o-" + xsIIAlignX // Căn nội dung trái phải
-                     let xsIIAlignYs = (xsIIAlignY === 0) ? "" : " o+" + xsIIAlignY // Căn nội dung trên dưới
-                     let xsIICols = (xsIICol === 0) ? "" : " x+" + ((100 - (xsIISpace * (xsIICol - 1))) / xsIICol).toFixed()
-                     
-                     let [mdIICol, mdIISpace, mdIIAlignX, mdIIAlignY, mdIIWrap = 0] = e.props.md ? e.props.md : [0, 0, 0, 0]
-                     let mdIIWraps = (mdIIWrap === 0) ? "" : " _o" // Căn nội dung trái phải
-                     let mdIIAlignXs = (mdIIAlignX === 0) ? "" : " _o-" + mdIIAlignX
-                     let mdIIAlignYs = (mdIIAlignY === 0) ? "" : " _o+" + mdIIAlignY
-                     let mdIICols = (mdIICol === 0) ? "" : " _x+" + ((100 - (mdIISpace * (mdIICol - 1))) / mdIICol).toFixed()
-
-                    if((Array.isArray(arrChild)) && (Array.isArray(e.props.xs))){ // Check  nội dung truyền vào có phải là mảng không
-                        
-                        return (// thêm class ở phần tử con
-                            <div key={index} className={
-                                "axis" + xsCols + mdCols
-                                }>
-                                {arrChild.map((e3, index)=> {// duyệt phần tử cháu
-
-                                    if(typeof e3.type === 'function'){ // kiểm tra phần tử cháu có phải axis hay element
-                                        return <div key={index} className={
-                                            "axis" 
-                                            + xsIICols + xsIIAlignXs + xsIIAlignYs + xsIIWraps
-                                            + mdIICols + mdIIAlignXs + mdIIAlignYs + mdIIWraps
-                                        
-                                        }>{e3.props.children}</div>
-                                    }else{// hiển thị phần tử chau không có con
-                                        return <>{e3}</>
-                                    }
-                                })}
-                            </div>
-                        )
-                    }else{// hiển thị phần tử cháu
-                        return <div key={index} className={
-                            "axis" 
-                            + xsCols+ xsAlignXs + xsAlignYs + xsWraps
-                            + mdCols + mdAlignXs + mdAlignYs + mdWraps
-                        }>{e.props.children}</div>
-                    }
-                }else{// hiển thị phần tử cha không có con
-                    return <>{e}</>
+    const renderCol = (): any => {
+        const axiosRender: number[][] = []
+        let m: number = 0, e: any = []
+        for(let i = numberCol, s = props.children.length + 2; i <= s; i += numberCol){
+            axiosRender.push(e)
+            for(let j = m; j < i; j++){
+                if(j < props.children.length){
+                    // let inert = <div className={"w-full " + axisWidth + " " + minHeightItem + axisWidthMD}>{props.children[j].props.children}</div>
+                    let inert = <div className={"w-full " + axisWidth + " " + minHeightItem + axisWidthMD}>{props.children[j].props.children}</div>
+                    e.push(inert)
                 }
-            })
-        }else {
-            return <>{props.children}</> // Phần tử đầu tiên
+            }
+            e = []
+            m = i
         }
+        return (
+            <>
+            {axiosRender.map((row, index) =>{
+                return(
+                    <>
+                    {row}<hr className="w-full hidden md:block"/>
+                    </>
+                    // <div key={index} className={"flex flex-wrap w-full" + justify}>
+                        
+                    // </div>
+                )
+            })}
+            </>
+        )
+        console.log(axiosRender)
     }
-    return (// Phần tử ông có con
-        els(el)
-    )
+    return (
+        <>
+        <div className=
+            {
+                "flex flex-wrap mx-auto "
+                + widthContainer + justify + " " + variant
+            }>
+            {renderCol()}
+        </div>
+        </>
+    );
 }
 
 export default Axis;
