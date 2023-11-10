@@ -1,6 +1,6 @@
-import "../../../styles/axis.scss"
+import "../../../styles/Axis_.scss"
 
-interface Axis{
+interface Axis_{
     el?: string;
     attr?: string;
     xs?: number[];
@@ -9,13 +9,13 @@ interface Axis{
 }
 
 
-function Axis(props: Axis) {
+function Axis_(props: Axis_) {
     let {el = "div", attr, xs, md} = props
     let arrs: any = props.children
     console.log(arrs)
    
     const els = (elVal: string) => {///
-        const elClass = "axis x-100" + (attr ? " " + attr: "")
+        const elClass = "Axis_ x-100" + (attr ? " " + attr: "")
         switch(elVal){
             case "section":
                 return <section className={elClass}>{box()}</section>
@@ -24,7 +24,7 @@ function Axis(props: Axis) {
             case "nav":
                 return <nav className={elClass}>{box()}</nav>
             case "menu":
-                return <menu className="axis x+100">{box()}</menu>
+                return <menu className="Axis_ x+100">{box()}</menu>
             case "aside":
                 return <aside className={elClass}>{box()}</aside>
             default:
@@ -77,13 +77,13 @@ function Axis(props: Axis) {
                         
                         return (// thêm class ở phần tử con
                             <div key={index} className={
-                                "axis" + xsCols + mdCols
+                                "Axis_" + xsCols + mdCols
                                 }>
                                 {arrChild.map((e3, index)=> {// duyệt phần tử cháu
 
-                                    if(typeof e3.type === 'function'){ // kiểm tra phần tử cháu có phải axis hay element
+                                    if(typeof e3.type === 'function'){ // kiểm tra phần tử cháu có phải Axis_ hay element
                                         return <div key={index} className={
-                                            "axis" 
+                                            "Axis_" 
                                             + xsIICols + xsIIAlignXs + xsIIAlignYs + xsIIWraps
                                             + mdIICols + mdIIAlignXs + mdIIAlignYs + mdIIWraps
                                         
@@ -96,7 +96,7 @@ function Axis(props: Axis) {
                         )
                     }else{// hiển thị phần tử cháu
                         return <div key={index} className={
-                            "axis" 
+                            "Axis_" 
                             + xsCols+ xsAlignXs + xsAlignYs + xsWraps
                             + mdCols + mdAlignXs + mdAlignYs + mdWraps
                         }>{e.props.children}</div>
@@ -114,4 +114,4 @@ function Axis(props: Axis) {
     )
 }
 
-export default Axis;
+export default Axis_;

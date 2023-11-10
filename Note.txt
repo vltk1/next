@@ -2,3 +2,4 @@
 https://medium.com/@pablo.delvalle.cr/an-opinionated-basic-next-js-files-and-directories-structure-88fefa2aa759
 https://www.rutenisraila.com/blog/next-js-app-directory-vs-pages-for-large-projects
 https://alukas.presslayouts.com/home-v2/?layout=v2
+https://www.figma.com/file/EqEZOLICcOTbXdrvnZ8eeo/Travel-Website-Landing-Page-(Community)?node-id=108%3A84&mode=dev
