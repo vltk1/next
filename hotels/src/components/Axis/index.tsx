@@ -1,12 +1,13 @@
 interface Axis{
     xs: number[][];
     md?: number[][];
+    className?: string;
     variant?: string;
     children: any;
 }
 
 function Axis(props: Axis) {
-    const {xs, md, children, variant = ""} = props
+    const {xs, md, children, className = "", variant = ""} = props
     //XS
     let widthContainerMD: string = ""
 
@@ -52,114 +53,128 @@ function Axis(props: Axis) {
 
    
     let axisWidthMD = ""
+
+    let justifyMD: any =  "",
+    justifyChildrenMD: any =  "",
+    itemMD: any =  "",
+    itemChildrenMD: any =  ""
+
     if(md){
         numberCol= md[0][1]
         //MD
         widthContainerMD = "md:max-w-container"
         const minHeightItemMD: string = "" //min-h-["+ md[1][1]+"px]"
-        let justifyMD: string = "justify-normal"
+   
         let widthItemMD: number = Math.floor((((md[1][0] / md[0][0]) * 100) * 10))
         let widthItemFixMD: number =  (widthItemMD % 2)? widthItemMD = (widthItemMD - 1) / 10: widthItemMD / 10
         if((md[1][0] === 1) || (widthItemFixMD > 50)) widthItemFixMD = 100
+        
+        justifyMD = md[0][2], 
+        justifyChildrenMD =[1][2]
 
-        switch(md[2][0]){
+        switch( justifyMD || justifyChildrenMD){
             case 0:
                 justify = " justify-normal"
+                justifyMD = justify
+                justifyChildrenMD = justify
                 break
             case 1:
                 justify = " justify-start"
+                justifyMD = justify
+                justifyChildrenMD = justify
                 break
             case 2:
                 justify = " justify-center"
+                justifyMD = justify
+                justifyChildrenMD = justify
                 break
             case 3:
                 justify = " justify-end"
+                justifyMD = justify
+                justifyChildrenMD = justify
                 break
             case 4:
                 justify = " justify-between"
+                justifyMD = justify
+                justifyChildrenMD = justify
                 break
             case 5:
                 justify = " justify-around"
+                justifyMD = justify
+                justifyChildrenMD = justify
                 break
             case 6:
                 justify = " justify-evenly"
+                justifyMD = justify
+                justifyChildrenMD = justify
                 break
             case 7:
                 justify = " justify-stretch"
+                justifyMD = justify
+                justifyChildrenMD = justify
                 break
             default:
                 justify = " justify-normal"
+                justifyMD = justify
+                justifyChildrenMD = justify
         }
-        switch(md[2][1]){
+
+        itemMD = md[0][2], 
+        itemChildrenMD =[1][2]
+        switch(itemMD || itemChildrenMD){
             case 0:
                 items = ""
+                itemMD = items
+                itemChildrenMD = items
                 break
             case 1:
                 items = " items-start"
+                itemMD = items
+                itemChildrenMD = items
                 break
             case 2:
                 items = " items-center"
+                itemMD = items
+                itemChildrenMD = items
                 break
             case 3:
                 items = " items-end"
+                itemMD = items
+                itemChildrenMD = items
                 break
             case 4:
                 items = " items-baseline"
+                itemMD = items
+                itemChildrenMD = items
                 break
             case 5:
                 items = " items-stretch"
+                itemMD = items
+                itemChildrenMD = items
                 break
             default:
                 items = ""
+                itemMD = items
+                itemChildrenMD = items
         }
         axisWidthMD = " _axis-w" + widthItemFixMD
     }
 
-
-
-    // const renderCol = (): any => {
-    //     const axiosRender: number[][] = []
-    //     let m: number = 0, e: any = []
-    //     for(let i = numberCol, s = props.children.length + 2; i <= s; i += numberCol){
-    //         axiosRender.push(e)
-    //         for(let j = m; j < i; j++){
-    //             if(j < props.children.length){
-    //                 // let inert = <div className={"w-full " + axisWidth + " " + minHeightItem + axisWidthMD}>{props.children[j].props.children}</div>
-    //                 let inert = <div className={"w-full " + axisWidth + axisWidthMD}>{props.children[j].props.children}</div>
-    //                 e.push(inert)
-    //             }
-    //         }
-    //         e = []
-    //         m = i
-    //     }
-    //     return (
-    //         <>
-    //         {axiosRender.map((row, index) =>{
-    //             return(
-    //                 <>
-    //                 {row}<hr key={index} className="w-full hidden md:block"/>
-    //                 </>
-    //             )
-    //         })}
-    //         </>
-    //     )
-    // }
-    console.log()
     return (
         <>
         <div className=
             {
                 "flex flex-wrap mx-auto "
-                + widthContainerMD + justify + " " + items + " " + variant
+                + widthContainerMD + justifyMD + " "  + " " + itemMD + " " + variant
             }>
                 {
                     props.children.map((el: any, index: number) =>{
                         return (
                             <>
-                                <div key={index} className={"w-full " + axisWidth + " " + axisWidthMD}>
-                                    {el.props.children}
+                                <div key={index} className={"flex flex-wrap w-full " + justifyChildrenMD + " " + itemChildrenMD + " " + axisWidth + " " + axisWidthMD + " " + className}>
+                                {el.props.children}
                                 </div>
-                                {numberCol === index && <hr key={index} className="w-full hidden md:block"/>}
+                                {numberCol === (index + 1) && <hr key={index} className="w-full hidden md:block"/>}
                             </>
                         )
                     })

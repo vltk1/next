@@ -8,11 +8,11 @@ import Button from "@components/Button";
 function Hero() {
     return (
         <article className="hero">
-            <Axis xs={[[100, 0], [3, 1]]} md={[[1160, 2], [420, 0], [2, 2]]}>
+            <Axis xs={[[100, 0], [3, 1]]} md={[[1160, 2, 2, 2], [420, 0, 2, 2]]}>
                <div>
                     <hgroup>
-                        <Font el="p" xs={[20, 4, 7]} color="orange">Best Destinations around the world</Font>
-                        <Font el="h2" xs={[72, 1, 7]} color="blue" variant="w-[500px]">
+                        <Font el="p" xs={[20, 4, 7, 1]} color="orange">Best Destinations around the world</Font>
+                        <Font el="h2" xs={[72, 1, 7]} color="blue" className="w-[500px]">
                             Travel, enjoy
                             and live a new
                             and full life
