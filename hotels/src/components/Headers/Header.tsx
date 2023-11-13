@@ -9,7 +9,7 @@ export function Header(props: Header) {
         <header className='flex md:max-w-container w-full justify-between items-center mx-auto'>
             <Logo width={120} />
             <menu className='flex grow w-full justify-end pr-[4%]'>
-                {travel.menus.map((menu,index):any => {
+                {travel.menus.map((menu, index):any => {
                     return (
                         <li className='min-w-[18%] text-center' key={index}>
                             <a href={menu.link}>{menu.text}</a>

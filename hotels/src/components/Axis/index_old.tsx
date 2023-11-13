@@ -70,10 +70,10 @@ function Axis(props: Axis) {
                 justify = " justify-start"
                 break
             case 2:
-                justify = " justify-center"
+                justify = " justify-end"
                 break
             case 3:
-                justify = " justify-end"
+                justify = " justify-center"
                 break
             case 4:
                 justify = " justify-between"
@@ -98,10 +98,10 @@ function Axis(props: Axis) {
                 items = " items-start"
                 break
             case 2:
-                items = " items-center"
+                items = " items-end"
                 break
             case 3:
-                items = " items-end"
+                items = " items-center"
                 break
             case 4:
                 items = " items-baseline"
@@ -117,34 +117,36 @@ function Axis(props: Axis) {
 
 
 
-    // const renderCol = (): any => {
-    //     const axiosRender: number[][] = []
-    //     let m: number = 0, e: any = []
-    //     for(let i = numberCol, s = props.children.length + 2; i <= s; i += numberCol){
-    //         axiosRender.push(e)
-    //         for(let j = m; j < i; j++){
-    //             if(j < props.children.length){
-    //                 // let inert = <div className={"w-full " + axisWidth + " " + minHeightItem + axisWidthMD}>{props.children[j].props.children}</div>
-    //                 let inert = <div className={"w-full " + axisWidth + axisWidthMD}>{props.children[j].props.children}</div>
-    //                 e.push(inert)
-    //             }
-    //         }
-    //         e = []
-    //         m = i
-    //     }
-    //     return (
-    //         <>
-    //         {axiosRender.map((row, index) =>{
-    //             return(
-    //                 <>
-    //                 {row}<hr key={index} className="w-full hidden md:block"/>
-    //                 </>
-    //             )
-    //         })}
-    //         </>
-    //     )
-    // }
-    console.log()
+    const renderCol = (): any => {
+        const axiosRender: number[][] = []
+        let m: number = 0, e: any = []
+        for(let i = numberCol, s = props.children.length + 2; i <= s; i += numberCol){
+            axiosRender.push(e)
+            for(let j = m; j < i; j++){
+                if(j < props.children.length){
+                    // let inert = <div className={"w-full " + axisWidth + " " + minHeightItem + axisWidthMD}>{props.children[j].props.children}</div>
+                    let inert = <div className={"w-full " + axisWidth + axisWidthMD}>{props.children[j].props.children}</div>
+                    e.push(inert)
+                }
+            }
+            e = []
+            m = i
+        }
+        return (
+            <>
+            {axiosRender.map((row, index) =>{
+                return(
+                    <>
+                    {row}<hr key={index} className="w-full hidden md:block"/>
+                    </>
+                    // <div key={index} className={"flex flex-wrap w-full" + justify}>
+                        
+                    // </div>
+                )
+            })}
+            </>
+        )
+    }
     return (
         <>
         <div className=
@@ -152,18 +154,7 @@ function Axis(props: Axis) {
                 "flex flex-wrap mx-auto "
                 + widthContainerMD + justify + " " + items + " " + variant
             }>
-                {
-                    props.children.map((el: any, index: number) =>{
-                        return (
-                            <>
-                                <div key={index} className={"w-full " + axisWidth + " " + axisWidthMD}>
-                                    {el.props.children}
-                                </div>
-                                {numberCol === index && <hr key={index} className="w-full hidden md:block"/>}
-                            </>
-                        )
-                    })
-                }
+            {renderCol()}
         </div>
         </>
     );

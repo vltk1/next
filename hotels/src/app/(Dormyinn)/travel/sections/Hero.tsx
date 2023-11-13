@@ -8,7 +8,7 @@ import Button from "@components/Button";
 function Hero() {
     return (
         <article className="hero">
-            <Axis xs={[[100, 0], [3, 1]]} md={[[1160, 2], [420, 0], [3, 3]]}>
+            <Axis xs={[[100, 0], [3, 1]]} md={[[1160, 2], [420, 0], [2, 2]]}>
                <div>
                     <hgroup>
                         <Font el="p" xs={[20, 4, 7]} color="orange">Best Destinations around the world</Font>
