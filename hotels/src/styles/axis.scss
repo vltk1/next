@@ -608,6 +608,18 @@
     max-width: 100%;
 }
 
+.axis-align1{
+    text-align: left;
+}
+.axis-align2{
+    text-align: center;
+}
+.axis-align3{
+    text-align: right;
+}
+.axis-align4{
+    text-align: justify;
+}
 
 .axis-f0 {
     line-height: 2;
@@ -941,6 +953,20 @@
 }
 
 @media (min-width:768px){
+    
+    ._axis-align1{
+        text-align: left;
+    }
+    ._axis-align2{
+        text-align: center;
+    }
+    ._axis-align3{
+        text-align: right;
+    }
+    ._axis-align4{
+        text-align: justify;
+    }
+
     ._axis-w0{
         max-width: 0%;
     }

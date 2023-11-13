@@ -16,8 +16,8 @@ function Font(props: Font) {
     const axisFont = "axis-f" + font + " axis-f1." + line  + " axis-f" + weight + " axis-align" + align
     let axisFontMD = ""
     if(md){
-        let [fontMD, lineMD, weightMD] = md
-        axisFontMD = " _axis-f" + fontMD + " _axis-f1." + lineMD + " _axis-f" + weightMD
+        let [sizeMD, lineMD, weightMD, alignMD = ""] = md
+        axisFontMD = " _axis-f" + sizeMD + " _axis-f1." + lineMD + " _axis-f" + weightMD + " _axis-align" + alignMD
     }
 
     switch(el){
