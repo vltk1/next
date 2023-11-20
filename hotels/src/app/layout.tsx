@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import HeaderDormyinn from '@components/Headers/HeaderDormyinn'
 import '@styles/globals.scss'
 import "@styles/axis.scss"
 
@@ -17,7 +16,6 @@ export default function DromyinnLayout({
   return (
     <html lang="en">
       <body>
-          <HeaderDormyinn />
           {children}
       </body>
     </html>
