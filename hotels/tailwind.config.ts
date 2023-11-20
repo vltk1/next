@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       maxWidth: {
-        'container': '1160px',
+        'container': '1440px',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -35,7 +35,7 @@ const config: Config = {
       xl: '1440px',
     },
     colors: {
-      'blue': '#1fb6ff',
+      'blue': '#6bcdec',
       'purple': '#7e5bef',
       'pink': '#ff49db',
       'orange': '#ff7849',

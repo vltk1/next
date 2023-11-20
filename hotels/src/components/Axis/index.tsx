@@ -74,47 +74,47 @@ function Axis(props: Axis) {
 
         switch( justifyMD || justifyChildrenMD){
             case 0:
-                justify = " justify-normal"
+                justify = " md:justify-normal"
                 justifyMD = justify
                 justifyChildrenMD = justify
                 break
             case 1:
-                justify = " justify-start"
+                justify = " md:justify-start"
                 justifyMD = justify
                 justifyChildrenMD = justify
                 break
             case 2:
-                justify = " justify-center"
+                justify = " md:justify-center"
                 justifyMD = justify
                 justifyChildrenMD = justify
                 break
             case 3:
-                justify = " justify-end"
+                justify = " md:justify-end"
                 justifyMD = justify
                 justifyChildrenMD = justify
                 break
             case 4:
-                justify = " justify-between"
+                justify = " md:justify-between"
                 justifyMD = justify
                 justifyChildrenMD = justify
                 break
             case 5:
-                justify = " justify-around"
+                justify = " md:justify-around"
                 justifyMD = justify
                 justifyChildrenMD = justify
                 break
             case 6:
-                justify = " justify-evenly"
+                justify = " md:justify-evenly"
                 justifyMD = justify
                 justifyChildrenMD = justify
                 break
             case 7:
-                justify = " justify-stretch"
+                justify = " md:justify-stretch"
                 justifyMD = justify
                 justifyChildrenMD = justify
                 break
             default:
-                justify = " justify-normal"
+                justify = " md:justify-normal"
                 justifyMD = justify
                 justifyChildrenMD = justify
         }
@@ -128,27 +128,27 @@ function Axis(props: Axis) {
                 itemChildrenMD = items
                 break
             case 1:
-                items = " items-start"
+                items = " md:items-start"
                 itemMD = items
                 itemChildrenMD = items
                 break
             case 2:
-                items = " items-center"
+                items = " md:items-center"
                 itemMD = items
                 itemChildrenMD = items
                 break
             case 3:
-                items = " items-end"
+                items = " md:items-end"
                 itemMD = items
                 itemChildrenMD = items
                 break
             case 4:
-                items = " items-baseline"
+                items = " md:items-baseline"
                 itemMD = items
                 itemChildrenMD = items
                 break
             case 5:
-                items = " items-stretch"
+                items = " md:items-stretch"
                 itemMD = items
                 itemChildrenMD = items
                 break
@@ -164,8 +164,8 @@ function Axis(props: Axis) {
         <>
         <div className=
             {
-                "flex flex-wrap mx-auto "
-                + widthContainerMD + justifyMD + " "  + " " + itemMD + " " + variant
+                "flex flex-wrap mx-auto justify-between "
+                + widthContainerMD + justifyMD + " "  + " " + itemMD + " " + justify + " " + variant
             }>
                 {
                     props.children.map((el: any, index: number) =>{

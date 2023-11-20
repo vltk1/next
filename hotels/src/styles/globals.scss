@@ -1,8 +1,11 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
+  --gothic: "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, メイリオ, Meiryo, sans-serif;
+  --mincho: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", sans-serif;
+  --meiryo: "Meiryo", "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Helvetica, Arial, Sans-Serif;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -15,115 +18,86 @@
   --yellow: #fff600;
   --yellowGreen: #a2ff00;
   --green: #48d02d;
-  --blueGreen: #2dc6d0;
+  --blueGreen: #2fc3e9;
   --blue: #181E4B;
   --blueViolet: #5E6282;
   --violet: #d311e4;
   --redViolet: #e41152;
+}
+body {
+  font-family: var(--gothic);
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  background-color: #67cdee;
+}
+// * {
+//   outline: 1px dotted #ff4d00;
+// }
+.tracking2 {
+  letter-spacing: -0.1em;
+  display: inline !important;
+}
+.txt-min {
+  font-size: 13.2px;
+}
+.mainvisual {
+  background-color: var(--blueGreen);
+}
+.font-meiryo {
+  font-family: var(--meiryo);
+}
+
+
+@media screen and (max-width: 1170px) {
+  .txt-min {
+    font-size: 13px;
   }
-
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .tracking2 {
+    letter-spacing: 0;
   }
-}
-
-
-
-div{
-  outline: 1px dotted red;
-}
-ul, ol {
-  list-style-type: none;
-}
-* {
-  padding: 0;
-  margin: 0;
-}
-img {
-  max-width: 100%;
-  vertical-align: top;
-}
-:root{
-  --dark: #000000;
-  --light: #FFFFFF;
-  --bgPrimary: #003A9A;
-  --wlg: 980px;
-}
-.light\#{
-  background-color: #fff;
-}
-.light\#6{
-  background-color: #F6F6F6;
-}
-.dark\#{
-  background-color: #000;
-}
-.blue\#{
-  background-color: #003A9A;
-}
-h1.logo{
-  line-height: 0;
-  padding: 4% 4%;
-  max-width: 72%;
-}
-.screen_footer .footer__backtop-container, .screen_footer .footer__backtop{
-  background-color: #f6f6f6 !important;
-}
-@media (min-width:768px){
-  h1.logo{
-      max-width: 431px;
-      padding: 1.8% 0;
-  }
-  ._x980{
-      width: var(--wlg);
-      margin: 0 auto;
+  .before-title{
+    position: relative;
+    vertical-align: middle;
+    &::after{
+      content: "";
+      width: 0;
+      height: 1rem;
+      background-color: blue;
+      display: inline-block;
+      vertical-align: middle;
+      left: 0;
+    }
+    .before-middle {
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 }
-
-.wrap  {
-  font-size: 0;
-  height: 1px;
-  background-color: blue;
-}
-
-
-.button {
-  background-color: gray;
-  width: 200px;
-  text-align: center;
-  font-weight: bold;
-  color: #fff;
-  height: 50px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.button .txt {
-  position: relative;
-  z-index: 999;
-}
-.btn-active{
-  outline: 0 solid transparent;
-  animation: btnActive 240ms;
-  opacity: 1;
-}
-@keyframes btnActive {
-  0%{
-    outline: 0 solid transparent;
+@media screen and (max-width: 1430px) {
+  html {
+      font-size: 1.6vw;
   }
-  50%{
-    outline: 2px solid rgba(#000, 0.6);
-    opacity: 0.88;
+}
+@media screen and (min-width: 768px) {
+  .enters{
+    display: none;
   }
-  100% {
-    outline: 0 solid transparent;
-    opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 3.7vw;
+  }
+  .enter{
+    display: none;
+  }
+  .before-middle .txtmin {
+    min-height: 1.9rem;
+    line-height: 1.9rem;
+    display: block;
+  }
+  .txt-min {
+      font-size: .8rem;
   }
 }
