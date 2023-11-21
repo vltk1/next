@@ -1,25 +1,19 @@
-import { font } from '../Font';
+import { Font } from '../Font';
 
-interface Typography{
-    title: string;
-    setting: number[];
-    color?: string;
-}
-
-
-export function Typography({title, setting, color }:Typography) {
+export function Typography({title, size, line, bold, color, className="", customs, tag="" }:Typography) {
+    console.log(customs)
     return (
         <>
-            <font.h3 xs={setting} >
-                <b>
+            <Font xs={[size, line, bold]} tag={tag}>
+               <h3 className={className}>
                     {title}
                     <style jsx>{`
-                        b{
+                        h3{
                             color: ${color};
                         }
                     `}</style>
-                </b>
-            </font.h3>
+               </h3>
+            </Font>
         </>
     );
 }

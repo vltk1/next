@@ -1,15 +1,5 @@
 import { motion, useAnimate, useInView } from "framer-motion";
 import React, { ReactElement, useEffect, useState } from "react";
-interface Button {
-  label: string;
-  active?: boolean;
-  width: number;
-  height: number;
-  radius?: number;
-  color: string;
-  border?: string;
-  bgcolor: string;
-}
 export function Button({ label, active, width, height, radius, color, bgcolor, border }: Button) {
   const [scope, animate] = useAnimate()
   useEffect(() => {
