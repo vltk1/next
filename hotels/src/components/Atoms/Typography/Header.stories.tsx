@@ -28,14 +28,27 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 
-export const HeaderHeader: Story = {
+export const varient: Story = {
   args: {
-    label: "",
-    size: 1,
-    line: 1,
-    bold: 1,
-    color: "red",
-    className: "",
+    tag: "h3",
+    label: "varient"
+  },
+};
+export const h2: Story = {
+  args: {
     tag: "h2",
+    label: "Header 2"
+  },
+};
+
+export const h3: Story = {
+  args: {
+    bold:7,
+    className:"",
+    color:"#371b8b",
+    label:"1212121212",
+    line:3,
+    size:32,
+    tag:"h2",
   },
 };
