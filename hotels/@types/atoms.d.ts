@@ -8,7 +8,7 @@ interface Font {
     className?: string;
 }
 interface Typography{
-    title: string;
+    label: string;
     size: number;
     line: number;
     bold: number;
