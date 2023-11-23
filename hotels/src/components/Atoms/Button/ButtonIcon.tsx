@@ -1,6 +1,8 @@
 import { motion, useAnimate, useInView } from "framer-motion";
 import React, { ReactElement, useEffect, useState } from "react";
-export function Button({ label, active, width, height, radius, color, bgcolor, border }: Button) {
+
+
+export function ButtonIcon({ label, active, width, height, radius, color, bgcolor, border, className="" }: Button) {
   const [scope, animate] = useAnimate()
   useEffect(() => {
      if (active) {
@@ -18,7 +20,7 @@ export function Button({ label, active, width, height, radius, color, bgcolor, b
       whileTap={{ scale: 0.96 }}
       transition={{ duration: .32, times: [0, 1] }}
     >
-      <button className="p-2 inline-flex justify-center items-center" ref={scope}>
+       <button className={`p-2 inline-flex justify-center items-center ${className}`} ref={scope}>
         <span>{label}</span>
       </button>
       <style jsx>

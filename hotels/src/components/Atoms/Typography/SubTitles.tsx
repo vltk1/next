@@ -1,6 +1,6 @@
 import { Font } from '../Font';
 
-export function Lead({label, size, line, bold, color, className="", customs, tag="" }:Typography) {
+export function SubTitles({label, size, line, bold, color, className="", customs, tag="" }:Typography) {
     return (
         <>
             <Font xs={[size, line, bold]} tag={tag}>

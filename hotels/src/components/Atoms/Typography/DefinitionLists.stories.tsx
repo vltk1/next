@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Lead } from './Lead';
+import { DefinitionLists } from './DefinitionLists';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'Atoms/Typography/Lead',
-  component: Lead,
+  title: 'Atoms/Typography/DefinitionLists',
+  component: DefinitionLists,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'centered',
@@ -21,16 +21,16 @@ const meta = {
     bold: {control: 'number'},
     className: {control: 'text'},
   },
-} satisfies Meta<typeof Lead>;
+} satisfies Meta<typeof DefinitionLists>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 
-export const HeaderLead: Story = {
+export const varient: Story = {
   args: {
-    label: "",
+    label: "A definition list (<dl>) is used to display name-value pairs, like metadata or a dictionary definition. Each term (<dt>) is paired with one or more definitions (<dd>)",
     size: 1,
     line: 1,
     bold: 1,
@@ -39,3 +39,15 @@ export const HeaderLead: Story = {
     tag: "h2",
   },
 };
+export const index: Story = {
+  args: {
+    label: "12",
+    size: 1,
+    line: 1,
+    bold: 1,
+    color: "red",
+    className: "",
+    tag: "h2",
+  },
+};
+

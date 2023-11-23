@@ -2,6 +2,8 @@ import { Dividers } from "../../Atoms/Dividers/Dividers";
 import { Button } from "../../Atoms/Button/Button";
 import { Font } from "../../Atoms/Font";
 import { ReactNode } from "react";
+import { Titles } from "../../Atoms/Typography/Titles";
+import { Paragraphs } from "../../Atoms/Typography/Paragraphs";
 
 interface Card {
   src: string;
@@ -13,13 +15,29 @@ interface Card {
   button: ReactNode;
 }
 
-export function SectionHeadings({ title, description, button="" }: Card) {
+export function SectionHeadings({ title, description, button = "" }: Card) {
   return (
     <>
       <div>
         <section className="flex justify-start items-center">
           <hgroup className="text-xl grow">
-            <p>{description}</p>
+            <Titles
+              bold={7}
+              color="#097eeb"
+              label="Data to enrich your online business"
+              line={4}
+              size={38}
+              tag="h2"
+            />
+            <Paragraphs
+              bold={4}
+              className=""
+              color="#405fb0"
+              label="Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
+              line={2}
+              size={18}
+              tag="p"
+            />
           </hgroup>
           {button}
         </section>

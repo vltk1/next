@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
-import { Image } from './Image';
+import { SubTitles } from './SubTitles';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'Atoms/Image',
-  component: Image,
+  title: 'Atoms/Typography/SubTitle',
+  component: SubTitles,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'centered',
@@ -14,24 +13,29 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    bgcolor: { control: { type: 'color', presetColors: ['red', 'green']} },
-    active: { control: 'boolean' },
-    check: { control: 'multi-select', options: ['USA', 'Canada', 'Mexico'] },
-    object: { control: { type: 'file', accept: '.png' } },
-    width: {control: 'number'},
-    height: {control: 'number'},
-    radius: {control: 'number'},
-    color: {control: 'color'},
-    border: {control: 'color'},
+    tag: { control: 'select', options: ['h2', 'h3', 'h4', 'h5','h6','p'] },
+    label: {control: 'text'},
+    color: { control: { type: 'color', presetColors: ['red', 'green']} },
+    size: {control: 'number'},
+    line: {control: 'number'},
+    bold: {control: 'number'},
+    className: {control: 'text'},
   },
-} satisfies Meta<typeof Image>;
+} satisfies Meta<typeof SubTitles>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const Primary = {
+
+export const HeaderSubHeader: Story = {
   args: {
+    label: "Qui officia ullamco cupidatat laboris Lorem.",
+    size: 1,
+    line: 1,
+    bold: 1,
+    color: "red",
+    className: "",
+    tag: "h2",
   },
 };
-

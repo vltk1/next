@@ -1,10 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Header } from './Header';
+
+import { ButtonBasic } from './ButtonBasic';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'Atoms/Typography/Header',
-  component: Header,
+  title: 'Atoms/Button/Button Basic',
+  component: ButtonBasic,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'centered',
@@ -13,42 +14,41 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    tag: { control: 'select', options: ['h2', 'h3', 'h4', 'h5','h6','p'] },
-    label: {control: 'text'},
-    color: { control: { type: 'color', presetColors: ['red', 'green']} },
-    size: {control: 'number'},
-    line: {control: 'number'},
-    bold: {control: 'number'},
-    className: {control: 'text'},
+    bgcolor: { control: { type: 'color', presetColors: ['red', 'green']} },
+    active: { control: 'boolean' },
+    check: { control: 'multi-select', options: ['USA', 'Canada', 'Mexico'] },
+    object: { control: { type: 'file', accept: '.png' } },
+    width: {control: 'number'},
+    height: {control: 'number'},
+    radius: {control: 'number'},
+    color: {control: 'color'},
+    border: {control: 'color'},
   },
-} satisfies Meta<typeof Header>;
+} satisfies Meta<typeof ButtonBasic>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-
-export const varient: Story = {
+export const varient = {
   args: {
-    tag: "h3",
-    label: "varient"
-  },
-};
-export const h2: Story = {
-  args: {
-    tag: "h2",
-    label: "Header 2"
+    label: 'Hile trang'
   },
 };
 
-export const h3: Story = {
+export const normal = {
   args: {
-    bold:7,
-    className:"",
-    color:"#371b8b",
-    label:"1212121212",
-    line:3,
-    size:32,
-    tag:"h2",
+    bgcolor:"",
+    color:"#253498",
+    label:"Learn more →",
   },
 };
+
+export const emphasis = {
+  args: {
+    bgcolor: "#1e41fa",
+    color: "#ebedfa",
+    label: "Learn more →",
+  },
+};
+
