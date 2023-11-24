@@ -13,34 +13,16 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    bgcolor: { control: { type: 'color', presetColors: ['red', 'green']} },
-    active: { control: 'boolean' },
-    check: { control: 'multi-select', options: ['USA', 'Canada', 'Mexico'] },
-    object: { control: { type: 'file', accept: '.png' } },
     width: {control: 'number'},
-    height: {control: 'number'},
-    radius: {control: 'number'},
-    color: {control: 'color'},
-    border: {control: 'color'},
-    description:  {control: 'text'},
   },
 } satisfies Meta<typeof HeroSimple>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const Simple: Story  = {
-  args: {
-    title: 'Job Postings',
-    description: '',
-  }
-};
 
-
-export const Double: Story = {
+export const Simple: Story = {
   args: {
-    title: 'Job Postings',
-    description: '',
+    width: 1000,
   }
 };

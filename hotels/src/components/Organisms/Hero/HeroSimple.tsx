@@ -6,10 +6,10 @@ import { Titles } from "../../Atoms/Typography/Titles";
 import { Paragraphs } from "../../Atoms/Typography/Paragraphs";
 import { ButtonBasic } from "../../Atoms/Button/ButtonBasic";
 
-export function HeroSimple() {
+export function HeroSimple({width}:any) {
   return (
     <>
-      <article className="flex justify-center items-center min-h-full flex-wrap">
+      <div className={`hero flex justify-center items-center min-h-full flex-wrap w-full mx-auto`}>
         <Titles
           bold={7}
           color="#23586b"
@@ -46,7 +46,12 @@ export function HeroSimple() {
             className="mx-[20px]"
           />
         </div>
-      </article>
+        <style jsx>{`
+          .hero {
+            max-width: ${width}px;
+          }
+        `}</style>
+      </div>
     </>
   );
 }
