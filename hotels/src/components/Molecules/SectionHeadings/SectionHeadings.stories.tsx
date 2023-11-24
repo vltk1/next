@@ -14,15 +14,6 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    bgcolor: { control: { type: 'color', presetColors: ['red', 'green']} },
-    active: { control: 'boolean' },
-    check: { control: 'multi-select', options: ['USA', 'Canada', 'Mexico'] },
-    object: { control: { type: 'file', accept: '.png' } },
-    width: {control: 'number'},
-    height: {control: 'number'},
-    radius: {control: 'number'},
-    color: {control: 'color'},
-    border: {control: 'color'},
   },
 } satisfies Meta<typeof SectionHeadings>;
 
@@ -30,19 +21,18 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const Simple: Story  = {
+export const Simple  = {
   args: {
-    title: 'Job Postings',
+    label: 'Job Postings',
   }
 };
 
-export const description: Story  = {
+export const description  = {
   args: {
-    title: 'Job Postings',
-    description: 'Workcation is a property rental website. Etiam ullamcorper massa viverra consequat, consectetur id nulla tempus. Fringilla egestas justo massa purus sagittis malesuada.',
+    label: 'Job Postings',
   }
 };
-export const action: Story  = {
+export const action  = {
   args: {
     title: 'Job Postings',
     description: 'Workcation is a property rental website. Etiam ullamcorper massa viverra consequat, consectetur id nulla tempus. Fringilla egestas justo massa purus sagittis malesuada.',

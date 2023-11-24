@@ -1,6 +1,6 @@
 import { Font } from '../Font';
 
-export function Paragraphs({label, size, line, bold, color, className="", customs, tag="" }:Typography) {
+export function Paragraphs({label, size, line, bold, color, className="", tag="" }:Typography) {
     return (
         <>
             <Font xs={[size, line, bold]} tag={tag}>

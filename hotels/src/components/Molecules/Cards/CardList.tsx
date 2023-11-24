@@ -2,13 +2,7 @@ import { Children } from "react";
 import { Font } from "../../Atoms/Font";
 import { Card } from "./Card";
 
-interface Card {
-  src: string;
-  title: string;
-  text: string;
-  title_font: number[];
-  text_font: number[];
-}
+
 
 export function CardList({children, className}: any) {
   return (

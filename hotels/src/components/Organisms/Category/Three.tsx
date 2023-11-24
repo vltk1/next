@@ -23,7 +23,6 @@ export function Three({classList, className }: any) {
           tag="h2"
         />
         <CardList className={`w-[800px] ${classList}`} >
-          <React.Fragment key=".0">
             <Card
               currency="UC"
               description="With image backgrounds"
@@ -51,7 +50,6 @@ export function Three({classList, className }: any) {
               width={200}
               className="float-left w-[600px] h-[200px] border overflow-hidden"
             />
-          </React.Fragment>
         </CardList>
       </article>
     </>

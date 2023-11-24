@@ -6,7 +6,7 @@ import { Titles } from "../../Atoms/Typography/Titles";
 import { Paragraphs } from "../../Atoms/Typography/Paragraphs";
 import { ButtonBasic } from "../../Atoms/Button/ButtonBasic";
 
-export function HeroSimple({ title, description, button = "" }: Hero) {
+export function HeroSimple() {
   return (
     <>
       <article className="flex justify-center items-center min-h-full flex-wrap">
@@ -30,12 +30,16 @@ export function HeroSimple({ title, description, button = "" }: Hero) {
         />
         <div className="flex">
           <ButtonBasic
+          width={100}
+          height={80}
             bgcolor="#1e41fa"
             color="#ebedfa"
             label="Get started"
             className="mx-[20px]"
           />
           <ButtonBasic
+           width={100}
+           height={80}
             bgcolor=""
             color="#253498"
             label="Learn more →"

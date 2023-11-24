@@ -1,6 +1,6 @@
 import { Font } from '../Font';
 
-export function UnorderedLists({label, size, line, bold, color, className="", customs, tag="" }:Typography) {
+export function UnorderedLists({label, size, line, bold, color, className="", tag="" }:Typography) {
     return (
         <>
             <ul>

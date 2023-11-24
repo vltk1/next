@@ -28,18 +28,7 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 
-export const varient: Story = {
-  args: {
-    tag: "h3",
-    label: "Excepteur quis deserunt do excepteur culpa amet."
-  },
-};
-export const h2: Story = {
-  args: {
-    tag: "h2",
-    label: "Excepteur quis deserunt do excepteur culpa amet."
-  },
-};
+
 
 export const h3: Story = {
   args: {

@@ -1,5 +1,4 @@
 import { Dividers } from "../../Atoms/Dividers/Dividers";
-import { Button } from "../../Atoms/Button/Button";
 import { Font } from "../../Atoms/Font";
 import { ReactNode } from "react";
 import { Titles } from "../../Atoms/Typography/Titles";

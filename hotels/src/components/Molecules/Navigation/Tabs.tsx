@@ -16,7 +16,7 @@ export function Tabs({align}: any) {
   const Tab1 = (): any => (
     <section className="chapter">
       <h2>My First Chapter</h2>
-      <p>This is the first of my chapters. It doesn't say much.</p>
+      <p>This is the first of my chapters. It doesnt say much.</p>
       <p>But it has two paragraphs!</p>
     </section>
   );

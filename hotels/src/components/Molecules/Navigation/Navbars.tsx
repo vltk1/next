@@ -5,7 +5,7 @@ import Link from "next/link";
 export function Navbars({}: any) {
   return (
     <>
-      <nav className="border-2 flex w-[100vw] max-w-[980px] justify-between items-center">
+      <nav className="border-2 flex w-[100vw] max-w-[980px] justify-between items-center mx-auto">
         <Figure src="https://demo.sirv.com/chair.jpg" width={60} />
         <menu className="flex grow">
           <li>

@@ -14,7 +14,6 @@ interface Typography {
   bold: number;
   color?: string;
   className?: string;
-  customs: any;
   tag: any;
 }
 interface Button {

@@ -1,20 +1,18 @@
-"use client";
-import Axis from '@components/Atoms/Axis';
-import { Dividers } from "@components/Atoms/Dividers/Dividers";
-import { Font } from "@components/Atoms/Font";
+import { Dividers } from "../../Atoms/Dividers/Dividers";
+import { Font } from "../../Atoms/Font";
 
 import { ReactNode } from "react";
-import { Titles } from "@components/Atoms/Typography/Titles";
-import { Paragraphs } from "@components/Atoms/Typography/Paragraphs";
-import { ButtonBasic } from "@components/Atoms/Button/ButtonBasic";
-import { Navbars } from "@components/Molecules/Navigation/Navbars";
-import { HeroSimple } from "@components/Organisms/Hero/HeroSimple";
-import { Three } from "@components/Organisms/Category/Three";
-import { CardList } from "@components/Molecules/Cards/CardList";
-import { Card } from "@components/Molecules/Cards/Card";
-import { CarouselBasic } from "@components/Molecules/Carousels/CarouselBasic";
+import { Titles } from "../../Atoms/Typography/Titles";
+import { Paragraphs } from "../../Atoms/Typography/Paragraphs";
+import { ButtonBasic } from "../../Atoms/Button/ButtonBasic";
+import { Navbars } from "../../Molecules/Navigation/Navbars";
+import { HeroSimple } from "../../Organisms/Hero/HeroSimple";
+import { Three } from "../../Organisms/Category/Three";
+import { CardList } from "../../Molecules/Cards/CardList";
+import { Card } from "../../Molecules/Cards/Card";
+import { CarouselBasic } from "../../Molecules/Carousels/CarouselBasic";
 
-export default function Inko_channel() {
+export function Storefront({ title, description, button = "" }: any) {
   return (
     <>
       <main>

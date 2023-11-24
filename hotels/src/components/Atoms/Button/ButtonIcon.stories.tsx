@@ -12,12 +12,9 @@ const meta = {
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     bgcolor: { control: { type: 'color', presetColors: ['red', 'green']} },
     active: { control: 'boolean' },
-    check: { control: 'multi-select', options: ['USA', 'Canada', 'Mexico'] },
-    object: { control: { type: 'file', accept: '.png' } },
     width: {control: 'number'},
     height: {control: 'number'},
     radius: {control: 'number'},
