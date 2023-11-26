@@ -1,5 +1,5 @@
 import { ButtonBasic } from "../../Atoms/Button/ButtonBasic";
-import { Figure } from "../../Atoms/Figure/Figure";
+import { Figure } from "../../Atoms/Thumbnails/ThumbnailSimlpe";
 import Link from "next/link";
 import { useState } from "react";
 import { createPortal } from "react-dom";

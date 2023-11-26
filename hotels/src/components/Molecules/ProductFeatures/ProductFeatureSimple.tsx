@@ -1,0 +1,133 @@
+import { ThumbnailSimlpe } from "../../Atoms/Thumbnails/ThumbnailSimlpe";
+import { Column, Columns } from "../../Atoms/Columns";
+import { Titles } from "../../Atoms/Typography/Titles";
+
+export function ProductFeatureSimple({ }: any) {
+  return (
+    <>
+      <div>
+        <Columns
+          columns={3}
+          spaceX={20}
+          spaceY={20}
+          width={`100%`}
+        >
+          <Column className="">
+            <ThumbnailSimlpe
+              alt=""
+              caption=""
+              height={200}
+              src="/images/Birds-of-Paradise-Pendant-2.jpg"
+              width={640}
+            />
+            <div>
+              <Titles
+                bold={4}
+                className=""
+                color="#242424"
+                label="EARNINGS"
+                line={4}
+                size={13}
+                tag="p"
+              />
+              <Titles
+                bold={4}
+                className=""
+                color="#242424"
+                label="Blue Stripes & Stone Earrings"
+                line={6}
+                size={18}
+                tag="h3"
+              />
+              <Titles
+                bold={4}
+                className=""
+                color="#242424"
+                label="$159.00"
+                line={6}
+                size={16}
+                tag="p"
+              />
+            </div>
+          </Column>
+          <Column className="Hello">
+            <ThumbnailSimlpe
+              alt=""
+              caption=""
+              height={200}
+              src="/images/Birds-of-Paradise-Pendant-2.jpg"
+              width={640}
+            />
+            <div>
+              <Titles
+                bold={4}
+                className=""
+                color="#242424"
+                label="EARNINGS"
+                line={4}
+                size={13}
+                tag="p"
+              />
+              <Titles
+                bold={4}
+                className=""
+                color="#242424"
+                label="Blue Stripes & Stone Earrings"
+                line={6}
+                size={18}
+                tag="h3"
+              />
+              <Titles
+                bold={4}
+                className=""
+                color="#242424"
+                label="$159.00"
+                line={6}
+                size={16}
+                tag="p"
+              />
+            </div>
+          </Column>
+          <Column className="Hello">
+            <ThumbnailSimlpe
+              alt=""
+              caption=""
+              height={200}
+              src="/images/Birds-of-Paradise-Pendant-2.jpg"
+              width={640}
+            />
+            <div>
+              <Titles
+                bold={4}
+                className=""
+                color="#242424"
+                label="EARNINGS"
+                line={4}
+                size={13}
+                tag="p"
+              />
+              <Titles
+                bold={4}
+                className=""
+                color="#242424"
+                label="Blue Stripes & Stone Earrings"
+                line={6}
+                size={18}
+                tag="h3"
+              />
+              <Titles
+                bold={4}
+                className=""
+                color="#242424"
+                label="$159.00"
+                line={6}
+                size={16}
+                tag="p"
+              />
+            </div>
+          </Column>
+        </Columns>
+      </div>
+    </>
+  );
+}

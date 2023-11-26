@@ -6,18 +6,19 @@ import { Titles } from "../../Atoms/Typography/Titles";
 import { Paragraphs } from "../../Atoms/Typography/Paragraphs";
 import { ButtonBasic } from "../../Atoms/Button/ButtonBasic";
 import { Navbars } from "../../Molecules/Navigation/Navbars";
-import { HeroSimple } from "../../Organisms/Hero/HeroSimple";
-import { Three } from "../../Organisms/Category/Three";
+import { HeroSimple } from "../../Organisms/HeroSections/HeroSectionSimple";
+import { Three } from "../../Organisms/CategorySections/ContactSectionSimple";
 import { CardList } from "../../Molecules/Cards/CardList";
 import { Card } from "../../Molecules/Cards/Card";
 import { CarouselBasic } from "../../Molecules/Carousels/CarouselBasic";
 
-export function Storefront({ title, description, button = "" }: any) {
+export function Storefront() {
   return (
     <>
+      <header className="flex bg-[gray]">
+        <Navbars />
+      </header>
       <main>
-        <Navbars title="Job Postings" />
-
         <section>
           <CarouselBasic title="Job Postings" />
           <CardList className="flex border-2">

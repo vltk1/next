@@ -6,6 +6,8 @@ import { Paragraphs } from "../../Atoms/Typography/Paragraphs";
 import { transform } from "next/dist/build/swc";
 import { motion, useAnimate, useInView } from "framer-motion";
 
+import Image from "next-image-export-optimizer";
+
 interface Card {
   src: string;
   description: string;
@@ -15,11 +17,11 @@ interface Card {
   text_font: number[];
   button: ReactNode;
 }
-export function CarouselBasic({}: any) {
+export function CarouselBasic({ }: any) {
   const slides: string[] = [
-    "https://demo.sirv.com/chair.jpg?hue=10",
-    "https://demo.sirv.com/chair.jpg?hue=30",
-    "https://demo.sirv.com/chair.jpg?hue=50",
+    "images/summer_212_01.jpg",
+    "images/summer_4.jpg",
+    "images/summer_242_01.jpg",
   ];
   const [carousel, setCarousel] = useState(0);
   const [auto, setAuto] = useState(0);
@@ -45,15 +47,20 @@ export function CarouselBasic({}: any) {
   return (
     <>
       <div className="relative">
-        <figure className="flex border w-[400px] overflow-hidden">
+        <figure className="flex border w-full overflow-hidden">
           {slides.map((slide, index): any => (
-            <motion.img
+            <motion.div className="min-w-full"
               animate={{ x: `calc(-${carousel}00%)` }}
-              src={slide}
               key={index}
-              width={400}
-              alt=""
-            />
+            >
+              <Image
+                src={slide}
+                alt="Large Image"
+                width={1500}
+                height={500}
+                className="w-full"
+              />
+            </motion.div>
           ))}
         </figure>
         <button

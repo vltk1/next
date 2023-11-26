@@ -8,7 +8,7 @@ interface Font {
   className?: string;
 }
 interface Typography {
-  label: string;
+  label: ReactElement;
   size: number;
   line: number;
   bold: number;
@@ -17,23 +17,17 @@ interface Typography {
   tag: any;
 }
 interface Button {
-  label: string;
+  label: ReactElement;
   active?: boolean;
-  width: number;
-  height: number;
+  fontSize: number;
+  weight?: string | number;
+  width: number | string;
+  height: number | string;
   radius?: number;
   color: string;
   border?: string;
   bgcolor: string;
   className?: string;
-}
-interface Figure {
-    src: string;
-    alt?: string;
-    width: number;
-    height?: number;
-    caption?: string;
-    className?: string;
 }
 interface Card {
   src: string;
@@ -42,5 +36,13 @@ interface Card {
   name: string;
   currency?: string;
   description?: string;
+  className?: string;
+}
+interface Thumbnail{
+  src: string;
+  width: number;
+  height: number;
+  alt?: string;
+  caption?: string | ReactElement;
   className?: string;
 }

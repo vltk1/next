@@ -9,6 +9,10 @@ export function Titles({label, size, line, bold, color, className="", tag="" }:T
                     <style jsx>{`
                         ${tag}{
                             color: ${color};
+                            font-size: ${size}rem;
+                            line-height: ${line};
+                            font-weight: ${bold}00;
+                            white-space: pre-wrap;
                         }
                     `}</style>
                </h3>
@@ -16,3 +20,8 @@ export function Titles({label, size, line, bold, color, className="", tag="" }:T
         </>
     );
 }
+
+// Break Line: CSS: white-space: pre-wrap;
+// Break Line: JS
+// {label.split('\n\n').map(paragraph => <p>{
+//     paragraph.split('\n').reduce((total, line):any=>[total, <br />, line])}</p>)}

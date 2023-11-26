@@ -9,6 +9,7 @@ export function Paragraphs({label, size, line, bold, color, className="", tag=""
                     <style jsx>{`
                         ${tag}{
                             color: ${color};
+                            white-space: pre-wrap;
                         }
                     `}</style>
                </h3>

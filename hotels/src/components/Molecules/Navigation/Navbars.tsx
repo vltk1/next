@@ -1,5 +1,5 @@
 import { ButtonBasic } from "../../Atoms/Button/ButtonBasic";
-import { Figure } from "../../Atoms/Figure/Figure";
+import { Figure } from "../../Atoms/Thumbnails/ThumbnailSimlpe";
 import Link from "next/link";
 
 export function Navbars({}: any) {

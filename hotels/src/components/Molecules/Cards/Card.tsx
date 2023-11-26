@@ -1,4 +1,4 @@
-import { Figure } from "../../Atoms/Figure/Figure";
+import { Figure } from "../../Atoms/Thumbnails/ThumbnailSimlpe";
 import { Font } from "../../Atoms/Font";
 
 export function Card({

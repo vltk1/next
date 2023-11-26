@@ -1,23 +1,22 @@
 import { motion, useAnimate, useInView } from "framer-motion";
 import React, { ReactElement, useEffect, useState } from "react";
 
-
-
-export function ButtonBasic({ label, active, width, height, radius, color, bgcolor, border , className=""}: Button) {
+// Flick khi bị giật lúc mới vào
+export function ButtonBasic({ label, fontSize, weight, active, width, height, radius, color, bgcolor, border, className = "" }: Button) {
   const [scope, animate] = useAnimate()
   useEffect(() => {
-     if (active) {
-      animate(scope.current, { backgroundColor: `red`})
-     }else {
-      animate(scope.current, { backgroundColor: `revert-layer`})
-     }
+    if (active) {
+      animate(scope.current, { backgroundColor: `red` })
+    } else {
+      animate(scope.current, { backgroundColor: `revert-layer` })
+    }
   }, [active])
 
   return (
     <motion.div
-      initial={{ opacity: 0}}
+      initial={{ opacity: 0 }}
       whileHover={{ opacity: 0.8 }}
-      whileInView={{ opacity: 1}}
+      whileInView={{ opacity: 1 }}
       whileTap={{ scale: 0.96 }}
       transition={{ duration: .32, times: [0, 1] }}
     >
@@ -30,6 +29,9 @@ export function ButtonBasic({ label, active, width, height, radius, color, bgcol
             min-width: ${width}px;
             min-height: ${height}px;
             color: ${color};
+            font-size: ${fontSize}rem;
+            line-height: 1.4;
+            font-weight: ${weight}rem;
             border-radius: ${radius}px;
             background-color: ${bgcolor};
             border: 1px solid ${border};

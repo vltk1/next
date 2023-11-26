@@ -16,6 +16,8 @@ const meta = {
   argTypes: {
     bgcolor: { control: { type: 'color', presetColors: ['red', 'green']} },
     active: { control: 'boolean' },
+    fontSize: {control: 'number'},
+    weight:{control: 'number'},
     width: {control: 'number'},
     height: {control: 'number'},
     radius: {control: 'number'},
