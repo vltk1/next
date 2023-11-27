@@ -1,6 +1,6 @@
 
 import { ReactElement } from "react";
-import { ThumbnailSimlpe } from "../Thumbnails/ThumbnailSimlpe";
+import { ThumbnailSimlpe } from "../Thumbnail";
 
 export function Columns({ width = "100%", columns, spaceY, spaceX, className, children }: any) {
   const columnNull: ReactElement[] = []

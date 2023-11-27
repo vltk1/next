@@ -13,9 +13,11 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    tag: { control: 'select', options: ['h2', 'h3', 'h4', 'h5','h6','p'] },
-    label: {control: 'text'},
+    tag: { control: 'select', options: ['h2', 'h3', 'h4', 'h5','h6'] },
+    children: {control: 'text'},
     color: { control: { type: 'color', presetColors: ['red', 'green']} },
+    bgcolor: { control: { type: 'color'} },
+    align: { control: 'multi-select', options: ['Left', 'Center', 'Right'] },
     size: {control: 'number'},
     line: {control: 'number'},
     bold: {control: 'number'},
@@ -30,12 +32,14 @@ type Story = StoryObj<typeof meta>;
 
 export const HeaderSubHeader: Story = {
   args: {
-    label: "Qui officia ullamco cupidatat laboris Lorem.",
+    children: "Qui officia ullamco cupidatat laboris Lorem.",
     size: 1,
+    align: ['left'],
     line: 1,
     bold: 1,
     color: "red",
     className: "",
+    bgcolor: '',
     tag: "h2",
   },
 };

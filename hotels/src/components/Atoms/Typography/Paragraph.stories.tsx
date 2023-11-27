@@ -9,10 +9,10 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    tag: { control: 'select', options: ['h2', 'h3', 'h4', 'h5','h6','p'] },
-    label: {control: 'text'},
+    children: {control: 'text'},
     color: { control: { type: 'color', presetColors: ['red', 'green']} },
-    size: {control: 'number'},
+    align: { control: 'multi-select', options: ['Left', 'Center', 'Right'] },
+    size:  {control: 'text'},
     line: {control: 'number'},
     bold: {control: 'number'},
     className: {control: 'text'},
@@ -26,11 +26,12 @@ type Story = StoryObj<typeof meta>;
 
 export const LeadParagraph: Story = {
   args: {
-    label: "12312",
+    children: "Lorem ipium",
     size: 1,
-    line: 1,
-    bold: 1,
+    line: 1.4,
+    bold: 7,
     color: "red",
+    align: ["left"],
     className: "",
     tag: "h2",
   },

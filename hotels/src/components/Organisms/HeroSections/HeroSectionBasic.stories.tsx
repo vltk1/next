@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { CTASectionSimple } from './CTASectionSimple';
+import { HeroSectionBasic } from './HeroSectionBasic';
 
 const meta = {
-  title: 'Organisms/CTA Sections/CTA sections simple',
-  component: CTASectionSimple,
+  title: 'Organisms/Hero Sections/Hero section basic',
+  component: HeroSectionBasic,
   parameters: {
     layout: 'centered',
   },
@@ -11,13 +11,13 @@ const meta = {
   argTypes: {
     width: {control: 'number'},
   },
-} satisfies Meta<typeof CTASectionSimple>;
+} satisfies Meta<typeof HeroSectionBasic>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Simple: Story = {
+
+export const add: Story = {
   args: {
-    width: 1000,
   }
 };

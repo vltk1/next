@@ -8,13 +8,19 @@ interface Font {
   className?: string;
 }
 interface Typography {
-  label: ReactElement;
+  children: any;
   size: number;
   line: number;
   bold: number;
+  align: string[];
   color?: string;
   className?: string;
+  bgcolor?: string;
   tag: any;
+}
+interface TitleChildren {
+  children: any;
+  tag: string;
 }
 interface Button {
   label: ReactElement;

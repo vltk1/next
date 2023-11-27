@@ -10,6 +10,10 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     width: {control: 'number'},
+    top: {control: 'number'},
+    right: {control: 'number'},
+    bottom: {control: 'number'},
+    left: {control: 'number'},
   },
 } satisfies Meta<typeof HeaderSectionSimple>;
 
@@ -18,6 +22,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Simple: Story = {
   args: {
-    width: 1000,
+    top: 20, 
+    right: 20, 
+    bottom: 20,
+    left: 20,
   }
 };

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Column, Columns } from '.';
 
-import { ThumbnailSimlpe } from '../Thumbnails/ThumbnailSimlpe';
+import { ThumbnailSimlpe } from '../Thumbnail';
 import { Title } from '../Typography/Title';
 
 const meta = {

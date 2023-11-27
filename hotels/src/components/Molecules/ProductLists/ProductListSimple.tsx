@@ -1,6 +1,6 @@
 
-import { Title } from "@components/Atoms/Typography/Title";
-import { ThumbnailSimlpe } from "../../Atoms/Thumbnails/ThumbnailSimlpe";
+import { Title } from "../../Atoms/Typography/Title";
+import { Thumbnail } from "../../Atoms/Thumbnail";
 import { ReactElement } from "react";
 
 export function ProductListSimple({width = "100%", columns, spaceY, spaceX, className }: any) {
@@ -9,7 +9,7 @@ export function ProductListSimple({width = "100%", columns, spaceY, spaceX, clas
 
   for(let i = 0; i <= 10; i++){
     td.push(<div className="col">
-    <ThumbnailSimlpe
+    <Thumbnail
       alt=""
       caption=""
       height={200}
