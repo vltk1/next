@@ -1,10 +1,10 @@
-import { Titles } from "../../Atoms/Typography/Titles";
+import { Title } from "@components/Atoms/Typography/Title";
 
 export function HeaderSectionSimple({ width }: any) {
   return (
     <>
       <div className="relative flex">
-      <Titles
+      <Title
   bold={4}
   className=""
   color="#222"

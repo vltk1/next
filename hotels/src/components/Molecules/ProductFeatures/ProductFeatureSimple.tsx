@@ -1,6 +1,7 @@
 import { ThumbnailSimlpe } from "../../Atoms/Thumbnails/ThumbnailSimlpe";
 import { Column, Columns } from "../../Atoms/Columns";
-import { Titles } from "../../Atoms/Typography/Titles";
+import { Title } from "@components/Atoms/Typography/Title";
+
 
 export function ProductFeatureSimple({ }: any) {
   return (
@@ -21,7 +22,7 @@ export function ProductFeatureSimple({ }: any) {
               width={640}
             />
             <div>
-              <Titles
+              <Title
                 bold={4}
                 className=""
                 color="#242424"
@@ -30,7 +31,7 @@ export function ProductFeatureSimple({ }: any) {
                 size={13}
                 tag="p"
               />
-              <Titles
+              <Title
                 bold={4}
                 className=""
                 color="#242424"
@@ -39,7 +40,7 @@ export function ProductFeatureSimple({ }: any) {
                 size={18}
                 tag="h3"
               />
-              <Titles
+              <Title
                 bold={4}
                 className=""
                 color="#242424"
@@ -59,7 +60,7 @@ export function ProductFeatureSimple({ }: any) {
               width={640}
             />
             <div>
-              <Titles
+              <Title
                 bold={4}
                 className=""
                 color="#242424"
@@ -68,7 +69,7 @@ export function ProductFeatureSimple({ }: any) {
                 size={13}
                 tag="p"
               />
-              <Titles
+              <Title
                 bold={4}
                 className=""
                 color="#242424"
@@ -77,7 +78,7 @@ export function ProductFeatureSimple({ }: any) {
                 size={18}
                 tag="h3"
               />
-              <Titles
+              <Title
                 bold={4}
                 className=""
                 color="#242424"
@@ -97,7 +98,7 @@ export function ProductFeatureSimple({ }: any) {
               width={640}
             />
             <div>
-              <Titles
+              <Title
                 bold={4}
                 className=""
                 color="#242424"
@@ -106,7 +107,7 @@ export function ProductFeatureSimple({ }: any) {
                 size={13}
                 tag="p"
               />
-              <Titles
+              <Title
                 bold={4}
                 className=""
                 color="#242424"
@@ -115,7 +116,7 @@ export function ProductFeatureSimple({ }: any) {
                 size={18}
                 tag="h3"
               />
-              <Titles
+              <Title
                 bold={4}
                 className=""
                 color="#242424"

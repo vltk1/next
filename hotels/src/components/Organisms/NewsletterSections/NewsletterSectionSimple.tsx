@@ -2,10 +2,11 @@ import { Dividers } from "../../Atoms/Dividers/Dividers";
 import { Font } from "../../Atoms/Font";
 
 import { ReactNode } from "react";
-import { Titles } from "../../Atoms/Typography/Titles";
-import { Paragraphs } from "../../Atoms/Typography/Paragraphs";
+
 import { ButtonBasic } from "../../Atoms/Button/ButtonBasic";
 import Img from "next-image-export-optimizer";
+import { Paragraph } from "@components/Atoms/Typography/Paragraph";
+import { Title } from "@components/Atoms/Typography/Title";
 
 export function NewsletterSectionSimple({ width }: any) {
   return (
@@ -17,7 +18,7 @@ export function NewsletterSectionSimple({ width }: any) {
         <div className={`relative min-w-full right-[100%] z-10 px-[15px]`}>
           <div className="conatiner flex justify-center flex-wrap min-h-full items-center max-w-[860rem] mx-auto">
             <div className="text-left">
-              <Paragraphs
+              <Paragraph
                 bold={4}
                 color="#1e4a6e"
                 label={<>A Unique, Intangible Qual ity.</>}
@@ -26,7 +27,7 @@ export function NewsletterSectionSimple({ width }: any) {
                 tag="p"
                 className="mb-[20px] space"
               />
-              <Titles
+              <Title
                 bold={4}
                 color="#23586b"
                 label={"Perfect Match for\n Elegant \nImpression"}

@@ -1,8 +1,8 @@
 import { Dividers } from "../../Atoms/Dividers/Dividers";
 import { Font } from "../../Atoms/Font";
 import { ReactNode, useState, useEffect } from "react";
-import { Titles } from "../../Atoms/Typography/Titles";
-import { Paragraphs } from "../../Atoms/Typography/Paragraphs";
+import { Titles } from "../../Atoms/Typography";
+import { Paragraphs } from "../../Atoms/Typography/Paragraph";
 import { transform } from "next/dist/build/swc";
 import { motion, useAnimate, useInView } from "framer-motion";
 

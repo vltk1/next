@@ -2,8 +2,8 @@ import { Dividers } from "../../Atoms/Dividers/Dividers";
 import { Font } from "../../Atoms/Font";
 
 import { ReactNode } from "react";
-import { Titles } from "../../Atoms/Typography/Titles";
-import { Paragraphs } from "../../Atoms/Typography/Paragraphs";
+import { Titles } from "../../Atoms/Typography";
+import { Paragraphs } from "../../Atoms/Typography/Paragraph";
 import { ButtonBasic } from "../../Atoms/Button/ButtonBasic";
 import { Navbars } from "../../Molecules/Navigation/Navbars";
 import { HeroSimple } from "../../Organisms/HeroSections/HeroSectionSimple";

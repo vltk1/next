@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Column, Columns } from '.';
-import { Titles } from '../Typography/Titles';
+
 import { ThumbnailSimlpe } from '../Thumbnails/ThumbnailSimlpe';
+import { Title } from '../Typography/Title';
 
 const meta = {
   title: 'Atoms/Columns',
@@ -32,7 +33,7 @@ export const add:Story  = {
         width={640}
       />
       <div>
-        <Titles
+        <Title
           bold={4}
           className=""
           color="#242424"
@@ -41,7 +42,7 @@ export const add:Story  = {
           size={13}
           tag="p"
         />
-        <Titles
+        <Title
           bold={4}
           className=""
           color="#242424"
@@ -50,7 +51,7 @@ export const add:Story  = {
           size={18}
           tag="h3"
         />
-        <Titles
+        <Title
           bold={4}
           className=""
           color="#242424"
@@ -69,7 +70,7 @@ export const add:Story  = {
         width={640}
       />
       <div>
-        <Titles
+        <Title
           bold={4}
           className=""
           color="#242424"
@@ -78,7 +79,7 @@ export const add:Story  = {
           size={13}
           tag="p"
         />
-        <Titles
+        <Title
           bold={4}
           className=""
           color="#242424"
@@ -87,7 +88,7 @@ export const add:Story  = {
           size={18}
           tag="h3"
         />
-        <Titles
+        <Title
           bold={4}
           className=""
           color="#242424"
@@ -106,7 +107,7 @@ export const add:Story  = {
         width={640}
       />
       <div>
-        <Titles
+        <Title
           bold={4}
           className=""
           color="#242424"
@@ -115,7 +116,7 @@ export const add:Story  = {
           size={13}
           tag="p"
         />
-        <Titles
+        <Title
           bold={4}
           className=""
           color="#242424"
@@ -124,7 +125,7 @@ export const add:Story  = {
           size={18}
           tag="h3"
         />
-        <Titles
+        <Title
           bold={4}
           className=""
           color="#242424"

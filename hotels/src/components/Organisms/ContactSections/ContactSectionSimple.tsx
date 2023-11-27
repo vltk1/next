@@ -2,10 +2,10 @@ import { Dividers } from "../../Atoms/Dividers/Dividers";
 import { Font } from "../../Atoms/Font";
 
 import { ReactNode } from "react";
-import { Titles } from "../../Atoms/Typography/Titles";
-import { Paragraphs } from "../../Atoms/Typography/Paragraphs";
+
 import { ButtonBasic } from "../../Atoms/Button/ButtonBasic";
 import Img from "next-image-export-optimizer";
+import { Paragraph } from "@components/Atoms/Typography/Paragraph";
 
 export function ContactSectionSimple({ width }: any) {
   return (
@@ -17,7 +17,7 @@ export function ContactSectionSimple({ width }: any) {
         <div className={`relative min-w-full right-[100%] z-10 px-[15px]`}>
           <div className="conatiner flex justify-center flex-wrap min-h-full items-center max-w-[860rem] mx-auto">
             <div className="text-left">
-              <Paragraphs
+              <Paragraph
                 bold={4}
                 color="#1e4a6e"
                 label={<>A Unique, Intangible Qual ity.</>}
@@ -26,7 +26,7 @@ export function ContactSectionSimple({ width }: any) {
                 tag="p"
                 className="mb-[20px] space"
               />
-              <Titles
+              {/* <Titles
                 bold={4}
                 color="#23586b"
                 label={"Perfect Match for\n Elegant \nImpression"}
@@ -34,7 +34,7 @@ export function ContactSectionSimple({ width }: any) {
                 size={66}
                 tag="h2"
                 className="mb-[40rem]"
-              />
+              /> */}
               <div className="inline-flex">
                 <ButtonBasic
                   bgcolor="#ffffff"

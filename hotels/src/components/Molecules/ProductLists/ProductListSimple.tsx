@@ -1,4 +1,5 @@
-import { Titles } from "../../Atoms/Typography/Titles";
+
+import { Title } from "@components/Atoms/Typography/Title";
 import { ThumbnailSimlpe } from "../../Atoms/Thumbnails/ThumbnailSimlpe";
 import { ReactElement } from "react";
 
@@ -16,7 +17,7 @@ export function ProductListSimple({width = "100%", columns, spaceY, spaceX, clas
       width={640}
     />
     <div>
-      <Titles
+      <Title
         bold={4}
         className=""
         color="#242424"
@@ -25,7 +26,7 @@ export function ProductListSimple({width = "100%", columns, spaceY, spaceX, clas
         size={13}
         tag="p"
       />
-      <Titles
+      <Title
         bold={4}
         className=""
         color="#242424"
@@ -34,7 +35,7 @@ export function ProductListSimple({width = "100%", columns, spaceY, spaceX, clas
         size={18}
         tag="h3"
       />
-      <Titles
+      <Title
         bold={4}
         className=""
         color="#242424"
