@@ -17,33 +17,7 @@ export function ProductListSimple({width = "100%", columns, spaceY, spaceX, clas
       width={640}
     />
     <div>
-      <Title
-        bold={4}
-        className=""
-        color="#242424"
-        label="EARNINGS"
-        line={4}
-        size={13}
-        tag="p"
-      />
-      <Title
-        bold={4}
-        className=""
-        color="#242424"
-        label="Blue Stripes & Stone Earrings"
-        line={6}
-        size={18}
-        tag="h3"
-      />
-      <Title
-        bold={4}
-        className=""
-        color="#242424"
-        label="$159.00"
-        line={6}
-        size={16}
-        tag="p"
-      />
+      34242424234
     </div>
     <style jsx>{`
       .col {

@@ -1,5 +1,5 @@
 
-export function ContactSectionSimple({ width }: any) {
+export function ContactSectionSimple() {
   return (
     <>
       <div className="relative flex">

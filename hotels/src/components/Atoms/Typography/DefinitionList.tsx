@@ -1,6 +1,5 @@
-import { Font } from '../Font';
 
-export function DefinitionList({label, size, line, bold, color, className="", tag="" }:Typography) {
+export function DefinitionList() {
     return (
         <>
            <dl>

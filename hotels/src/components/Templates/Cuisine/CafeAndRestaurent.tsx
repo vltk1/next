@@ -6,6 +6,7 @@ import { ContentSectionBasic } from "../../Organisms/ContentSections/ContentSect
 import { ContentSectionDouble } from "../../Organisms/ContentSections/ContentSectionDouble";
 import { HeaderSectionSimple } from "../../Organisms/HeaderSections/HeaderSectionSimple";
 import { HeroSectionBasic } from "../../Organisms/HeroSections/HeroSectionBasic";
+import { Tabs } from "../../Molecules/Navigation/Tabs";
 
 export function CafeAndRestaurent() {
   return (
@@ -16,6 +17,7 @@ export function CafeAndRestaurent() {
         <ContentSectionBasic />
         <ContentSectionDouble />
       </ContentSections>
+      <Tabs />
       <CategorySections>
         <CategorySectionSimple />
       </CategorySections>

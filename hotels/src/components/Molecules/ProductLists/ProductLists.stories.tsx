@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ProductLists } from '.';
-import { ProductListItems } from './ProductListItems';
+import { ProductListTab1, ProductListTab2, ProductListTab3 } from './ProductListItems';
 
 const meta = {
   title: 'Molecules/Product lists',
@@ -16,10 +16,21 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Simple  = {
+export const Tab1  = {
   args: {
-    children:(<ProductListItems />),
+    children:(<ProductListTab1 />),
   }
 };
 
+export const Tab2  = {
+  args: {
+    children:(<ProductListTab2 />),
+  }
+};
+
+export const Tab3  = {
+  args: {
+    children:(<ProductListTab3 />),
+  }
+};
 

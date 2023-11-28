@@ -1,10 +1,16 @@
+import { motion } from "framer-motion";
 import { Thumbnail } from "../../Atoms/Thumbnail";
 import { Paragraph } from "../../Atoms/Typography/Paragraph";
 
 export function HeaderSectionSimple({ width, top, right, left, bottom }: any) {
   return (
     <>
-      <div className="text-center HeaderSectionSimple">
+    
+      <motion.div 
+      initial={{opacity: 0}}
+      whileInView={{ opacity: 1}}
+
+      className="text-center HeaderSectionSimple">
         <Thumbnail
           height={362}
           src="/oasislunch/header-title.svg"
@@ -28,7 +34,7 @@ export function HeaderSectionSimple({ width, top, right, left, bottom }: any) {
             ドーミーイン・野乃で人気のご当地料理をLUNCHでご提供します。<br />
           </Paragraph>
         </div>
-      </div>
+      </motion.div>
       <style jsx>{`
         .HeaderSectionSimple {
           max-width: ${width ? "100%" : width + "rem"};

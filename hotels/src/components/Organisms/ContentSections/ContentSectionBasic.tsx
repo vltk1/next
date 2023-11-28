@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 
 export function ContentSectionBasic() {
   return (
     <>
       <div className="relative flex bg-[#fff9ee]">
-        <div className="w-[90%] pb-[5%]">
+        <motion.div 
+        initial={{opacity: 0, x: -20, y: -20}}
+        whileInView={{ opacity: 1, x:0, y:0}}
+        transition={{ duration: .8}}
+
+        className="w-[90%] pb-[5%]">
         <picture>
             <source media="(max-width: 375px)" srcSet="/oasislunch/content/sm/1x/dish.jpg" />
             <source media="(max-width: 768px)" srcSet="/oasislunch/content/sm/2x/dish.jpg" />
@@ -16,14 +22,17 @@ export function ContentSectionBasic() {
 
             <img src="/oasislunch/content/sm/1x/dish.jpg" width={3430} height={2070} alt="" />
         </picture>
-        </div>
+        </motion.div>
         <div className="absolute right-0 bottom-0 w-full">
-        <div className="max-w-[50%] ml-auto">
+        <motion.div initial={{opacity: 0, y: 20, x: 20}}
+        whileInView={{ opacity: 1, y:0, x:0}}
+        transition={{ duration: 1.1}}
+         className="max-w-[50%] ml-auto">
         <picture>
           <source media="(min-width: 768px)" srcSet="/oasislunch/content/title.svg" />
           <img src="/oasislunch/content/sm/title.svg" alt="" width={1000}/>
         </picture>
-        </div>
+        </motion.div>
         </div>
       </div>
     </>

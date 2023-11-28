@@ -13,13 +13,7 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    tag: { control: 'select', options: ['h2', 'h3', 'h4', 'h5','h6','p'] },
     label: {control: 'text'},
-    color: { control: { type: 'color', presetColors: ['red', 'green']} },
-    size: {control: 'number'},
-    line: {control: 'number'},
-    bold: {control: 'number'},
-    className: {control: 'text'},
   },
 } satisfies Meta<typeof DefinitionList>;
 
@@ -31,23 +25,5 @@ type Story = StoryObj<typeof meta>;
 export const varient: Story = {
   args: {
     label: "A definition list (<dl>) is used to display name-value pairs, like metadata or a dictionary definition. Each term (<dt>) is paired with one or more definitions (<dd>)",
-    size: 1,
-    line: 1,
-    bold: 1,
-    color: "red",
-    className: "",
-    tag: "h2",
   },
 };
-export const index: Story = {
-  args: {
-    label: "12",
-    size: 1,
-    line: 1,
-    bold: 1,
-    color: "red",
-    className: "",
-    tag: "h2",
-  },
-};
-

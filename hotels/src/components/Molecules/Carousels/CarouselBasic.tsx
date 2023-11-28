@@ -1,22 +1,7 @@
-import { Dividers } from "../../Atoms/Dividers/Dividers";
-import { Font } from "../../Atoms/Font";
 import { ReactNode, useState, useEffect } from "react";
-import { Titles } from "../../Atoms/Typography";
-import { Paragraphs } from "../../Atoms/Typography/Paragraph";
-import { transform } from "next/dist/build/swc";
 import { motion, useAnimate, useInView } from "framer-motion";
-
 import Image from "next-image-export-optimizer";
 
-interface Card {
-  src: string;
-  description: string;
-  title: string;
-  text: string;
-  title_font: number[];
-  text_font: number[];
-  button: ReactNode;
-}
 export function CarouselBasic({ }: any) {
   const slides: string[] = [
     "images/summer_212_01.jpg",

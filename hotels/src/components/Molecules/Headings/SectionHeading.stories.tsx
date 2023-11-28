@@ -36,12 +36,6 @@ export const action  = {
   args: {
     title: 'Job Postings',
     description: 'Workcation is a property rental website. Etiam ullamcorper massa viverra consequat, consectetur id nulla tempus. Fringilla egestas justo massa purus sagittis malesuada.',
-    button: (<ButtonBasic
-      bgcolor="#d84747"
-      color="#ffffff"
-      height={10}
-      label="Hile trang"
-      width={250}
-    />),
+    button: '',
   }
 };
