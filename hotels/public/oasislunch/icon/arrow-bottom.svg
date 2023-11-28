@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 11.5">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .8;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #65b7ec;
+        stroke-miterlimit: 10;
+        stroke-width: 1.42px;
+      }
+    </style>
+  </defs>
+  <g id="_文字" data-name="文字">
+    <g class="cls-1">
+      <polyline class="cls-2" points="20.5 .5 10.5 10.5 .5 .5"/>
+    </g>
+  </g>
+</svg>

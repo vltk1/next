@@ -4,46 +4,39 @@ import { Thumbnail } from "../../Atoms/Thumbnail";
 export function ContentSectionDouble() {
   return (
     <>
-      <div className="relative flex max-w-[980rem] bg-[gray] px-[10px] py-[40rem]">
-        <div className="flex bg-[white]">
-          <div className="min-w-[150rem] max-w-[150rem] relative top-[-20rem] mb-[-50rem] px-[20rem]">
+      <div className="relative flex bg-[#fff9ee] px-[10px] pt-[150rem] pb-[200rem]">
+        <div className="flex bg-[white] max-w-[1510rem] mx-auto">
+          <div className="min-w-[22.3841059602649%] max-w-[338rem] relative top-[-52rem] mb-[-114rem] ml-[130rem] mr-[90rem]">
             <Thumbnail
               height={200}
               src="/oasislunch/conent-double.svg"
-              width={300}
+              width={338}
             />
           </div>
-          <div className="grow py-[40rem] pr-[40rem]">
+          <div className="grow pt-[92rem] pb-[50rem] pr-[100rem]">
             <Paragraph
-              align={[
-                'left'
-              ]}
-              bold={4}
+              align={["left"]}
+              bold={5}
               className=""
-              color="#141414"
-              line={1.8}
-              size="12"
+              color="#666666"
+              line={2}
+              size="22"
               tag="p"
             >
-              金沢発祥のハントンライスとはケチャップライスにとろとろ卵とエビフライや白身魚
-                フライがのり、ケチャップとタルタルソースがかけられた料理です。
-                聞 き馴 染 み の な い「 ハントン」とは 、ハンガリー によく似 た 料 理 が あることから、
-                ハ ンガリー の「 ハン」とフランス 語で マグ ロを 意 味 する「トン」をあ わ せ た 造 語と
-                い わ れていて、キッチンスタッフが 短 い 時 間でも一 皿で いろん な 料 理を楽しめる
-                ように考えられた「まかない料理」がルーツとか？！
-                大人のお子様ランチのようでワクワク感があります！
-                ￥1,200（税込）
-                「ハントンライス」（ドリンクバー付き）
+              金沢発祥のハントンライスとはケチャップライスにとろとろ卵とエビフライや白身魚フライがのり、ケチャップとタルタルソースがかけられた料理です。
+              <br />
+              聞き馴染みのない「ハントン」とは、ハンガリーによく似た料理があることから、ハンガリーの「ハン」とフランス語でマグロを意味する「トン」をあわせた造語といわれていて、キッチンスタッフが短い時間でも一皿でいろんな料理を楽しめるように考えられた「まかない料理」がルーツとか？！
+              <br />
+              大人のお子様ランチのようでワクワク感があります！
+              <br />
+              <span className="block text-[30rem] font-bold text-right mt-[32rem]">
+              「ハントンライス」<small className="text-[25rem]">（ドリンクバー付き）</small>
+              </span>
+              <strong className="block text-[40rem] text-right leading-[1.4]">￥1,200（税込）</strong>
             </Paragraph>
           </div>
         </div>
       </div>
-      <style jsx>{`
-          .conatiner .space{
-            white-space: pre-wrap;
-          }
-      `}</style>
     </>
-  )
+  );
 }
-

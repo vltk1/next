@@ -38,6 +38,7 @@ interface Button {
 interface Card {
   src: string;
   width: number;
+  height: number;
   price?: number;
   name: string;
   currency?: string;

@@ -1,87 +1,23 @@
 "use client";
-import Axis from '@components/Atoms/Axis';
-import { Dividers } from "@components/Atoms/Dividers/Dividers";
-import { Font } from "@components/Atoms/Font";
 
-import { ReactNode } from "react";
-import { Titles } from "@components/Atoms/Typography";
-import { Paragraphs } from "@components/Atoms/Typography/Paragraph";
-import { ButtonBasic } from "@components/Atoms/Button/ButtonBasic";
-import { Navbars } from "@components/Molecules/Navigation/Navbars";
-import { HeroSimple } from "@components/Organisms/HeroSections/HeroSectionSimple";
-import { Three } from "@components/Organisms/CategorySections/ContactSectionSimple";
-import { CardList } from "@components/Molecules/Cards/CardList";
-import { Card } from "@components/Molecules/Cards/Card";
-import { CarouselBasic } from "@components/Molecules/Carousels/CarouselBasic";
-// With dynamic import
-import ExportedImage from "next-image-export-optimizer";
-
+import { ContactSectionSimple } from "@components/Organisms/CategorySections/CategorySectionSimple";
+import { ContentSections } from "@components/Organisms/ContentSections";
+import { ContentSectionBasic } from "@components/Organisms/ContentSections/ContentSectionBasic";
+import { ContentSectionDouble } from "@components/Organisms/ContentSections/ContentSectionDouble";
+import { HeaderSectionSimple } from "@components/Organisms/HeaderSections/HeaderSectionSimple";
+import { HeroSectionBasic } from "@components/Organisms/HeroSections/HeroSectionBasic";
 
 export default function Inko_channel() {
   return (
     <>
       <main>
-      
-
-        <Navbars title="Job Postings" />
-
-        <section>
-          <CarouselBasic title="Job Postings" />
-          <CardList className="flex border-2">
-              <Card
-                currency="UC"
-                description="With image backgrounds"
-                name="Desk and Office"
-                price={25}
-                src="https://demo.sirv.com/chair.jpg?scale.width=283&hue=43"
-                width={200}
-              />
-              <Card
-                currency="UC"
-                description="With image backgrounds"
-                name="Desk and Office"
-                price={25}
-                src="https://demo.sirv.com/chair.jpg?scale.width=283&hue=43"
-                width={200}
-              />
-              <Card
-                currency="UC"
-                description="With image backgrounds"
-                name="Desk and Office"
-                price={25}
-                src="https://demo.sirv.com/chair.jpg?scale.width=283&hue=43"
-                width={200}
-              />
-              <Card
-                currency="UC"
-                description="With image backgrounds"
-                name="Desk and Office"
-                price={25}
-                src="https://demo.sirv.com/chair.jpg?scale.width=283&hue=43"
-                width={200}
-              />
-              <Card
-                currency="UC"
-                description="With image backgrounds"
-                name="Desk and Office"
-                price={25}
-                src="https://demo.sirv.com/chair.jpg?scale.width=283&hue=43"
-                width={200}
-              />
-              <Card
-                currency="UC"
-                description="With image backgrounds"
-                name="Desk and Office"
-                price={25}
-                src="https://demo.sirv.com/chair.jpg?scale.width=283&hue=43"
-                width={200}
-              />
-          </CardList>
-        </section>
-        <HeroSimple />
-
-        <Three description="" title="Job Postings" />
-        <HeroSimple />
+        <HeroSectionBasic />
+        <HeaderSectionSimple bottom={78} left={20} right={20} top={78} />
+        <ContentSections>
+          <ContentSectionBasic />
+          <ContentSectionDouble />
+        </ContentSections>
+        <ContactSectionSimple />
       </main>
     </>
   );

@@ -6,34 +6,34 @@ export function ButtonBasic({ label, fontSize, weight, active, width, height, ra
   const [scope, animate] = useAnimate()
   useEffect(() => {
     if (active) {
-      animate(scope.current, { backgroundColor: `red` })
-    } else {
-      animate(scope.current, { backgroundColor: `revert-layer` })
-    }
+      animate(scope.current, { backgroundColor: `#533b2b`, color: '#ffffff' })
+    } 
+    // else {
+    //   animate(scope.current, { backgroundColor: `revert-layer`, color: color})
+    // }
   }, [active])
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileHover={{ opacity: 0.8 }}
+      initial={{ opacity: 0, backgroundColor: '#ffffff', color: '#533b2b' }}
+      whileHover={{ backgroundColor: '#8f8075', color: '#ffffff'}}
       whileInView={{ opacity: 1 }}
       whileTap={{ scale: 0.96 }}
       transition={{ duration: .32, times: [0, 1] }}
     >
       <button className={`p-2 inline-flex justify-center items-center ${className}`} ref={scope}>
-        <span>{label}</span>
+        <span className="grow ml-[24rem]">{label}</span>
+        <i className="w-0 h-0 border-t-[13rem] border-b-[13rem] border-l-[24rem] border-t-[transparent] border-b-[transparent]"></i>
       </button>
       <style jsx>
         {`
           button {
             min-width: ${width}px;
             min-height: ${height}px;
-            color: ${color};
             font-size: ${fontSize}rem;
             line-height: 1.4;
             font-weight: ${weight}rem;
             border-radius: ${radius}px;
-            background-color: ${bgcolor};
             border: 1px solid ${border};
             transition: all .35s;
           }

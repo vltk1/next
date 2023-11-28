@@ -1,18 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { Cards, Card } from '.';
 
-import { Card } from './Card';
-
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'Molecules/Cards/Card',
-  component: Card,
+  title: 'Molecules/Cards',
+  component: Cards,
   parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'centered',
   },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     src: {control: 'text'},
     width: {control: 'number'},
@@ -21,15 +16,29 @@ const meta = {
     price: {control: 'number'},
     currency:{control: 'text'}
   },
-} satisfies Meta<typeof Card>;
+} satisfies Meta<typeof Cards>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const varient = {
+export const add = {
   args: {
-    src: 'https://demo.sirv.com/chair.jpg?scale.width=283&hue=43',
+    children: (<Card name='Hello' thumb={['/oasislunch/card/photo1.png','null']} button='Nut lo' className="w-100" />),
   },
 };
 
+
+
+
+{/* <div itemScope itemType="http://schema.org/Product" className={className}>
+  <Thumbnail src={src} width={width} height={height} alt="" />
+  <div itemProp="name">{name}</div>
+  {price && (
+    <div itemProp="offers" itemScope itemType="http://schema.org/Offer">
+      <span itemProp="price">{price}</span>
+      <data itemProp="priceCurrency" value="EUR">
+        {currency}
+      </data>
+    </div>
+  )}
+  <p itemProp="description">{description}</p>
+</div> */}
