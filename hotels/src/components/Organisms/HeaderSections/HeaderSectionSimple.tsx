@@ -7,9 +7,9 @@ export function HeaderSectionSimple({ width, top, right, left, bottom }: any) {
   return (
     <div className="pt-[38rem] md:pt-[76rem] pb-[48rem] md:pb-[100rem] px-[14px]">
       <motion.div 
-       initial={{y: 12, opacity: 0}}
-       whileInView={{y:0, opacity: 1}}
-       transition={{ duration: .48, delay: 0.12}}
+      initial={{ opacity: 0}}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.32, times: [0, 1] }}
       className="text-center HeaderSectionSimple">
         <div className="w-[42%] max-w-[290rem] md:w-full md:max-w-[362rem] mx-auto">
          <Thumbnail

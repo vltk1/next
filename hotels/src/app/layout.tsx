@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import '@styles/globals.scss'
 import Head from "next/head";
+import HeaderDormyinn from "./Headers/HeaderDormyinn";
 
 export default function DromyinnLayout({
   children,
@@ -14,6 +15,7 @@ export default function DromyinnLayout({
         <meta property="og:title" content="My page title" key="title" />
       </Head>
       <body>
+        <HeaderDormyinn />
           {children}
       </body>
     </html>

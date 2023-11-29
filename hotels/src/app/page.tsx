@@ -12,9 +12,12 @@ import { HeroSectionBasic } from "@components/Organisms/HeroSections/HeroSection
 
 
 
+
 export default function index() {
   return (
     <main>
+      
+
     <HeroSectionBasic />
     <HeaderSectionSimple bottom={78} left={20} right={20} top={78} />
     <ContentSections>

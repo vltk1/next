@@ -57,9 +57,9 @@ export function Tabs() {
             </ul>
           </div>
           <motion.div
-            initial={{ y: 12, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.48 }}
+            initial={{ opacity: 0}}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.32, times: [0, 1] }}
             className="flex"
           >
             <AnimatePresence mode="wait">
@@ -93,6 +93,7 @@ export function Tabs() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
                   className="overflow-hidden relative w-full"
                 >
                   <ProductListTab3 />

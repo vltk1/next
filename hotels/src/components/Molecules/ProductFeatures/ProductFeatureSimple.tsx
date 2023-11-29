@@ -8,9 +8,9 @@ export function ProductFeatureSimple({}: any) {
     <>
       <section className="bg-[#ffffff] ">
         <motion.div 
-        initial={{y: 12, opacity: 0}}
-        whileInView={{y:0, opacity: 1}}
-        transition={{ duration: .48, delay: .12}}
+        initial={{ opacity: 0}}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.32, times: [0, 1] }}
         
         className="py-[40rem] md:py-[102rem] w-full max-w-[1174rem] mx-auto">
           <div className="flex flex-col md:flex-row">

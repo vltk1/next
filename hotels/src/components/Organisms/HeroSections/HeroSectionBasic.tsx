@@ -7,15 +7,15 @@ export function HeroSectionBasic() {
       <div className="relative flex justify-center items-center">
         <div className="relative z-0">
         <picture>
-            <source media="(max-width: 375px)" srcSet="/oasislunch/hero/small/0.5x/bg.jpg" />
-            <source media="(max-width: 768px)" srcSet="/oasislunch/hero/small/1x/bg.jpg" />
+            <source media="(max-width: 375px)" srcSet="/oasislunch/hero/small/0.5x/bg.webp" />
+            <source media="(max-width: 768px)" srcSet="/oasislunch/hero/small/1x/bg.webp" />
 
-            <source media="(max-width: 960px)"  srcSet="/oasislunch/hero/0.5x/bg.jpg" />
-            <source media="(max-width: 1140px)" srcSet="/oasislunch/hero/0.75x/bg.jpg" />
-            <source media="(max-width: 1920px)" srcSet="/oasislunch/hero/1x/bg.jpg" />
-            <source media="(max-width: 2880px)" srcSet="/oasislunch/hero/1.5x/bg.jpg" />
-            <source media="(max-width: 3840px)" srcSet="/oasislunch/hero/2x/bg.jpg" />
-            <source media="(max-width: 5760px)" srcSet="/oasislunch/hero/3x/bg.jpg" />
+            <source media="(max-width: 960px)"  srcSet="/oasislunch/hero/0.5x/bg.webp" />
+            <source media="(max-width: 1140px)" srcSet="/oasislunch/hero/0.75x/bg.webp" />
+            <source media="(max-width: 1920px)" srcSet="/oasislunch/hero/1x/bg.webp" />
+            <source media="(max-width: 2880px)" srcSet="/oasislunch/hero/1.5x/bg.webp" />
+            <source media="(max-width: 3840px)" srcSet="/oasislunch/hero/2x/bg.webp" />
+            <source media="(max-width: 5760px)" srcSet="/oasislunch/hero/3x/bg.webp" />
 
             <img src="/oasislunch/hero/small/1x/bg.jpg" alt="" width={5760} height={2880}/>
         </picture>

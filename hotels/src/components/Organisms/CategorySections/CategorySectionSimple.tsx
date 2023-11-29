@@ -6,9 +6,9 @@ export function CategorySectionSimple() {
     <>
       <section className="pb-[60rem] md:pb-[110rem] pt-[68rem] md:pt-[115rem] bg-[#fff9ee] ">
         <motion.div
-          initial={{ y: 12, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.48, delay: 0.15 }}
+          initial={{ opacity: 0}}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.32, times: [0, 1] }}
           className="max-w-[1510rem] mx-auto"
         >
           <div className="flex items-center justify-between md:pt-[10rem] mb-[46rem] md:mb-[72rem] mx-auto md:mx-[20px]">

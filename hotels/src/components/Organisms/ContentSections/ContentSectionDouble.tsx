@@ -11,17 +11,17 @@ export function ContentSectionDouble() {
             <picture>
               <source media="(min-width: 768px)" srcSet="/oasislunch/content/conent-double.svg" />
               <motion.img 
-              initial={{y: 12, opacity: 0}}
-              whileInView={{y:0, opacity: 1}}
-              transition={{ duration: .46, delay: 0.12}}
+              initial={{ opacity: 0}}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.32, times: [0, 1] }}
               
               src="/oasislunch/content/sm/conent-double.svg" alt="" width={338} className="w-full"/>
             </picture>
           </div>
           <motion.div
-           initial={{y: 12, opacity: 0}}
-           whileInView={{y:0, opacity: 1}}
-           transition={{ duration: .48, delay: 0.2}}
+           initial={{ opacity: 0}}
+           whileInView={{ opacity: 1 }}
+           transition={{ duration: 0.32, times: [0, 1] }}
           className="grow pt-[25rem] md:pt-[35rem] md:pt-[85rem] md:pb-[50rem] md:pr-[96rem]">
             <Paragraph
               align={["left"]}
