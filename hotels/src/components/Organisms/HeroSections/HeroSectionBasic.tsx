@@ -20,8 +20,12 @@ export function HeroSectionBasic() {
             <img src="/oasislunch/hero/small/1x/bg.jpg" alt="" width={5760} height={2880}/>
         </picture>
         </div>
-        <motion.div initial={{opacity:0, scale:0}} animate={{opacity:1, scale: 1}} className="absolute z-10 w-[58.5%] mt-[1.68%] md:w-[31.5%] md:mt-[-2.4%]">
-          <img src="/oasislunch/logo.svg" alt="" />
+        <motion.div 
+        initial={{opacity:0.7}} 
+        animate={{opacity: 1}}
+        transition={{duration: 0.7}}
+        className="absolute z-10 w-[58.5%] mt-[1.68%] md:w-[31.5%] md:mt-[-3.2%]">
+          <img src="/oasislunch/hero/logo.svg" alt="" />
         </motion.div>
       </div>
       <style jsx>{`

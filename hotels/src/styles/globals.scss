@@ -1,7 +1,7 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap');
 :root {
   --gothic: "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, メイリオ, Meiryo, sans-serif;
   --mincho: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", sans-serif;
@@ -24,80 +24,22 @@
   --violet: #d311e4;
   --redViolet: #e41152;
 }
+html {
+  font-size: 6.25%;
+}
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  html {
+    font-size: 4.3%;
+  }
+}
+
 body {
-  font-family: var(--gothic);
-  font-size: 14px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16rem;
   line-height: 1.6;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
-  background-color: #67cdee;
-}
-// * {
-//   outline: 1px dotted #ff4d00;
-// }
-.tracking2 {
-  letter-spacing: -0.1em;
-  display: inline !important;
-}
-.txt-min {
-  font-size: 13.2px;
-}
-.mainvisual {
-  background-color: var(--blueGreen);
 }
 .font-meiryo {
   font-family: var(--meiryo);
-}
-
-
-@media screen and (max-width: 1170px) {
-  .txt-min {
-    font-size: 13px;
-  }
-  .tracking2 {
-    letter-spacing: 0;
-  }
-  .before-title{
-    position: relative;
-    vertical-align: middle;
-    &::after{
-      content: "";
-      width: 0;
-      height: 1rem;
-      background-color: blue;
-      display: inline-block;
-      vertical-align: middle;
-      left: 0;
-    }
-    .before-middle {
-      display: inline-block;
-      vertical-align: middle;
-    }
-  }
-}
-@media screen and (max-width: 1430px) {
-  html {
-      font-size: 1.6vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .enters{
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 3.7vw;
-  }
-  .enter{
-    display: none;
-  }
-  .before-middle .txtmin {
-    min-height: 1.9rem;
-    line-height: 1.9rem;
-    display: block;
-  }
-  .txt-min {
-      font-size: .8rem;
-  }
 }

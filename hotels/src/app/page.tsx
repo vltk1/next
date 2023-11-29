@@ -12,22 +12,20 @@ import { HeroSectionBasic } from "@components/Organisms/HeroSections/HeroSection
 
 
 
-export default function Inko_channel() {
+export default function index() {
   return (
-    <>
-          <main>
-      <HeroSectionBasic />
-      <HeaderSectionSimple bottom={78} left={20} right={20} top={78} />
-      <ContentSections>
-        <ContentSectionBasic />
-        <ContentSectionDouble />
-      </ContentSections>
-      <Tabs />
-      <CategorySections>
-        <CategorySectionSimple />
-      </CategorySections>
-      <ProductFeatureSimple />
-    </main>
-    </>
+    <main>
+    <HeroSectionBasic />
+    <HeaderSectionSimple bottom={78} left={20} right={20} top={78} />
+    <ContentSections>
+      <ContentSectionBasic />
+      <ContentSectionDouble />
+    </ContentSections>
+    <Tabs />
+    <CategorySections>
+      <CategorySectionSimple />
+    </CategorySections>
+    <ProductFeatureSimple />
+  </main>
   );
 }

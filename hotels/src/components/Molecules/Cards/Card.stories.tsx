@@ -22,7 +22,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 export const add = {
   args: {
-    children: (<Card name='Hello' thumb={['/oasislunch/card/photo1.png','null']} button='Nut lo' className="w-100" />),
+    children: (<Card name='Hello' thumb={['/images/card/photo1.png','null']} button='Nut lo' className="w-100" />),
   },
 };
 

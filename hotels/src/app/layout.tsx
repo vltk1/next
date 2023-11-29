@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import '@styles/globals.scss'
-import "@styles/axis.scss"
-
-export const metadata: Metadata = {
-  title: "Dormyinn",
-  keywords: "Dormyinn",
-  description: "Dormyinn page all",
-};
+import Head from "next/head";
 
 export default function DromyinnLayout({
   children,
@@ -15,6 +9,10 @@ export default function DromyinnLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <title>My page title</title>
+        <meta property="og:title" content="My page title" key="title" />
+      </Head>
       <body>
           {children}
       </body>

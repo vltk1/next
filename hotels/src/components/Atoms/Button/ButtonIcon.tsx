@@ -23,8 +23,8 @@ export function ButtonIcon({ label, active, width, height, radius, color, bgcolo
     >
        <button onClick={onClick} className={`p-2 inline-flex flex-wrap justify-center items-center ${className}`} ref={scope}>
         <span>
-        <b className="block w-full mb-[12rem] font-medium">{label}</b>
-        <i className="p-[6rem] border-r-[0.08em] border-b-[0.08em] border border-t-[0]  border-l-[0]  inline-block rotate-45"></i>
+        <b className="relative top-[7rem] md:top-[12rem] block w-full leading-[1.2] md:mb-[8rem]">{label}</b>
+        <i className="p-[4rem] md:p-[6rem] mt-[10rem] md:mt-0 border-r-[0.08em] border-b-[0.08em] border border-t-[0] border-l-[0] inline-block rotate-45"></i>
         </span>
         
       </button>
@@ -34,11 +34,9 @@ export function ButtonIcon({ label, active, width, height, radius, color, bgcolo
             min-width: ${width};
             min-height: ${height}rem;
             color: ${color};
-            border-radius: ${radius}rem;
             font-size: 23rem;
             line-height: 1.2;
             background-color: ${bgcolor};
-            border: 1px solid ${border};
             transition: all .35s;
           }
         `}

@@ -9,6 +9,7 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
     "@storybook/addon-styling-webpack"
   ],
+  staticDirs: ['../public'],
   framework: {
     name: "@storybook/nextjs",
     options: {},
@@ -16,6 +17,5 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
-  staticDirs: ['../public'],
 };
 export default config;
